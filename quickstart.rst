@@ -1,5 +1,17 @@
 .. _api:
 
+
+=====  =====  ====== 
+   Inputs     Output 
+------------  ------ 
+  A      B    A or B 
+=====  =====  ====== 
+False  False  False 
+True   False  True 
+False  True   True 
+True   True   True 
+=====  =====  ======
+
 API Documentation
 =================
 
@@ -74,6 +86,7 @@ Batch Calls
 All API calls listed in this document can be done in batch calls via the batch API call. A batch call takes a list of http request details (method type, url, params) and runs each request. The response is the result set of all requests.
 
 **Params**
+
 ========= ===================================================================
 Key       Value
 ========= ===================================================================
@@ -156,6 +169,7 @@ Handshake allows users to manage users at their school via the API. This can be 
 Allows administrators to search for students at their school.
 
 **Params**
+
 ========= ==================================================================
 Key       Value                                                              
 ========= ==================================================================
