@@ -15,9 +15,48 @@ API Tokens
 
 API Calls must use an API token to authenticate with the service. API Tokens can be managed in the school administration page. To create an API token, simply specify the purpose (description) of the token and click create. API tokens can be removed at any time. If you believe that an API token has been compromised, simply delete it from the administration page and it will no longer be active.
 
-When making API calls, the API token needs to be passed via an HTTP header. Set the authorization header to have your API token. An example curl request would be:
+When making API calls, the API token needs to be passed via an HTTP header. Set the authorization header to have your API token. An example curl request would be::
 
     curl https://app.joinhandshake.com/api/v1/users/create -H 'Authorization: Token token="token_goes_here"’
+
+API Call Requests
+-----------------
+POST, PUT and DELETE requests take JSON as the request payload. A normal request would look something like the below hash::
+
+    {
+      user: {
+        attr1: “value”,
+        attr2: “value2”
+      }
+    }
+
+API Call Responses
+------------------
+The Handshake API has a consistent response format. API responses are always returned as JSON hash. Each response has a ‘success’ attribute on that hash which will be set to either true or false. This is an easy way to know if the call succeeded.
+
+In addition, there is at least one other attribute which contains the bulk of the data. This will either be a single object (ex. after creating a user), a list (ex. a search) or errors. An example response for each is below::
+
+Single Object
+*************
+
+    {
+      success: true,
+      user: {
+        attr: “value”
+      }
+    }
+
+List
+****
+The individual objects within the ‘objects’ list will typically contain the same data as a single object response would.
+
+    {
+      success: true,
+      users: [
+        { ... }, { ... }
+      ]
+    }
+
 
 Sending DNS Records
 *******************
