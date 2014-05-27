@@ -197,8 +197,9 @@ query      A simple string query to search with
 Allows administrators to add a student.
 
 **Params**
+
 =========================  ==================================================================
-Key                        Value                                                                              
+Key                        Value
 =========================  ==================================================================
 *email_address:            Student’s email address
 *username(required):       Student’s username
@@ -231,8 +232,9 @@ minor_names:               An array of minor names for this student.
 Allows administrators to update a student’s details
 
 **Params**
+
 =========================  ==================================================================
-Key                        Value                                                                              
+Key                        Value
 =========================  ==================================================================
 *email_address:            Student’s email address
 *username(required):       Student’s username
@@ -267,8 +269,9 @@ minor_names:               An array of minor names for this student.
 Allows administrators to remove a student from handshake.
 
 **Params**
+
 =========================  ==================================================================
-Key                        Value                                                      
+Key                        Value
 =========================  ==================================================================
 *email_address:            Student’s email address
 *username(required):       Student’s username
@@ -347,8 +350,9 @@ None
 Allows administrators to add a major to their school. Returns false if major is already at the school.
 
 **Params**
+
 ==========  ==================================================================
-Key         Value                                                            
+Key         Value
 ==========  ==================================================================
 name:       Name of major
 ==========  ==================================================================
@@ -366,8 +370,9 @@ name:       Name of major
 Allows administrators to remove a major from their school. Returns false if major is not at the school.
 
 **Params**
+
 ==========  ==================================================================
-Key         Value                                                            
+Key         Value
 ==========  ==================================================================
 name:       Name of major
 ==========  ==================================================================
