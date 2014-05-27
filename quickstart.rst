@@ -38,7 +38,7 @@ In addition, there is at least one other attribute which contains the bulk of th
 
 Single Object
 *************
-
+:
     {
       success: true,
       user: {
@@ -48,7 +48,7 @@ Single Object
 
 List
 ****
-The individual objects within the ‘objects’ list will typically contain the same data as a single object response would.
+The individual objects within the ‘objects’ list will typically contain the same data as a single object response would:
 
     {
       success: true,
@@ -57,6 +57,115 @@ The individual objects within the ‘objects’ list will typically contain the 
       ]
     }
 
+Error
+*****
+The ‘errors’ attribute is a hash with attributes as keys and values as arrays of errors on that attribute.:
+
+    {
+      success: false,
+      errors: {
+        “attribute”: [“error 1 on attribute”, “error 2 on attribute”],
+        “attribute2”: [“error 1 on attribute2”]
+      }
+    }
+
+Batch Calls
+-----------
+[POST] /batch
+*************
+All API calls listed in this document can be done in batch calls via the batch API call. A batch call takes a list of http request details (method type, url, params) and runs each request. The response is the result set of all requests.
+
+Params
+******
+========= ==================================================================
+Key       Value                                                      
+========= ==================================================================
+ops       An array of objects containing details on the request to be made.                                           
+========= ==================================================================
+
+Sample Params
+*************
+:
+    {
+      ops: [
+        {
+          method: ‘post’,
+          url: ‘app.joinhandshake.com/api/v1/users’,
+          params: {
+            user: {
+              email_address: ‘sgringwe@mtu.edu’,
+              username: ‘sgringwe’,
+              first_name: ‘Scott’,
+              …
+            }
+          }
+        },
+        {
+          method: ‘post’,
+          url: ‘app.joinhandshake.com/api/v1/users’,
+          params: {
+            user: {
+              email_address: ‘bmchrist@mtu.edu’,
+              username: ‘bmchrist’,
+              first_name: ‘Ben’,
+              …
+            }
+          }
+        }
+      ]
+    }
+
+Sample Response
+***************
+:
+
+    {
+      results: [
+        {
+          body: {
+            success: true,
+            user: {
+              ...
+            }
+          },
+          headers: {
+            "Content-Type"=>"application/json; charset=utf-8",
+            ...
+          },
+          status: “200”
+        },
+        {
+          body: {
+            success: true,
+            user: {
+              ...
+            }
+          },
+          headers: {
+            "Content-Type"=>"application/json; charset=utf-8",
+            ...
+          },
+          status: “200”
+        }
+
+      ]
+    }
+
+User Management
+---------------
+Handshake allows users to manage users at their school via the API. This can be useful when integrating with other systems at the university which hold student data in order to keep Handshake up to date.
+
+[GET] /users
+************
+Allows administrators to search for students at their school.
+
+Params
+******
+========= ==================================================================
+Key       Value                                                      
+========= ==================================================================
+query     A simple string query to search with                                           
+========= ==================================================================
 
 Sending DNS Records
 *******************
@@ -68,7 +177,7 @@ Sending DNS Records
 ========= =========================================================== ==================== 
 Type      Value                                                       Purpose    
 ========= =========================================================== ==================== 
-TXT       "v=spf1 include:mailgun.org ~all"                           SPF (Required)
+ops       "v=spf1 include:mailgun.org ~all"                           SPF (Required)
 TXT       *Find this record in your Control Panel, Domains Tab*       DKIM (Required)
 CNAME     "mailgun.org"                                               Tracking (Optional)
 ========= =========================================================== ==================== 
