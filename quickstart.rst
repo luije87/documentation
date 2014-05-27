@@ -1,33 +1,23 @@
-.. _quickstart:
+.. _api:
 
-Quickstart Guide
+API Documentation
 =================
 
-Verifying Your Domain
+Introduction
 -----------------------
 
-For the best experience using Mailgun, we recommend you add a domain you own (instead of a mailgun subdomain) and verify it by setting up the SPF and DKIM records we provide at your DNS provider. These DNS records simultaneously allow Mailgun to deliver email on your behalf and **prove that you are an authorized sender for the domain**.  
+The Handshake API allows users to make RESTful calls using JSON for sending and receiving data.
 
-Benefits of verifying your domain
-*********************************
+The API root URL is : `https://app.joinhandshake.com/api/v1/ <https://app.joinhandshake.com/api/v1/>`__
 
-- Complete white labeling of your emails so you won't see "sent via Mailgun.org" message in your emails.
-- Establishing a positive email reputation for your own domain. 
-- The Mailgun reputation system is less suspicious of traffic that is being sent on verified domains and so using one reduces the likelihood of being disabled. 
-- Verified domains are not subject to a sending limit of 300 emails per day.
+API Tokens
+----------
 
-How to verify your domain
-*************************
+API Calls must use an API token to authenticate with the service. API Tokens can be managed in the school administration page. To create an API token, simply specify the purpose (description) of the token and click create. API tokens can be removed at any time. If you believe that an API token has been compromised, simply delete it from the administration page and it will no longer be active.
 
-1. Add a domain or subdomain you own in the Domains tab of your control panel.  
-2. Next, add the two TXT DNS records found in your control panel at your DNS provider. You'll find these DNS records when you click on a domain under the ``Domains`` tab on the Mailgun control panel. There are two types of DNS records, ``Sending`` and ``Receiving`` records.   The two TXT records needed to verify your domain are listed under the ``Sending`` section.
-3. Though not required to verify your domain, if you want Mailgun to track clicks and opens you can also add the CNAME record. MX records should also be added unless you already have MX records for your domain pointed at another email service provider.  
+When making API calls, the API token needs to be passed via an HTTP header. Set the authorization header to have your API token. An example curl request would be:
 
-Once you've added the two TXT records and they've propagated, your domain will be verified.  In some instances, we may need additional information to verify your domain.  If this is the case, we will contact you to resolve the issue.
-
-.. note::  It can take 24-48 hours for DNS changes to propagate.
-
-If you will be creating a lot of domains, Mailgun offers an API endpoint for adding/editing/removing domains from your account. See the :ref:`api-domains` endpoint for more information.
+    curl https://app.joinhandshake.com/api/v1/users/create -H 'Authorization: Token token="token_goes_here"’
 
 Sending DNS Records
 *******************
