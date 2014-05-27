@@ -47,6 +47,7 @@ In addition, there is at least one other attribute which contains the bulk of th
     }
 
 **List**
+
 The individual objects within the ‘objects’ list will typically contain the same data as a single object response would::
 
     {
@@ -57,6 +58,7 @@ The individual objects within the ‘objects’ list will typically contain the 
     }
 
 **Error**
+
 The ‘errors’ attribute is a hash with attributes as keys and values as arrays of errors on that attribute::
 
     {
@@ -190,7 +192,7 @@ Allows administrators to add a student.
 Key                        Value
 =========================  ==================================================================
 *email_address:            Student’s email address
-*username(required):       Student’s username
+*username:                 Student’s username
 first_name:                Student’s first name
 last_name:                 Student’s last name
 school_year_name:          The name of student’s school year
@@ -225,7 +227,7 @@ Allows administrators to update a student’s details
 Key                        Value
 =========================  ==================================================================
 *email_address:            Student’s email address
-*username(required):       Student’s username
+*username:                 Student’s username
 first_name:                Student’s first name
 last_name:                 Student’s last name
 school_year_name:          The name of student’s school year
@@ -262,7 +264,7 @@ Allows administrators to remove a student from handshake.
 Key                        Value
 =========================  ==================================================================
 *email_address:            Student’s email address
-*username(required):       Student’s username
+*username:                 Student’s username
 =========================  ==================================================================
 *One of email_address or username must be passed in order to find the user to remove
 
@@ -309,7 +311,7 @@ None
         [column1, column2, column3], #column list
         [
           {column1: value, column2: value}, #row 1
-          {column1: value, column2: value}, #row2
+          {column1: value, column2: value}, #row 2
         ]
       ]
     }
@@ -323,6 +325,7 @@ The following is the same for minors
 Allows administrators to list majors for their school by name
 
 **Params**
+
 None
 
 **Sample Response**
