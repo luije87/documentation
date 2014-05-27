@@ -87,11 +87,11 @@ All API calls listed in this document can be done in batch calls via the batch A
 
 **Params**
 
-========= ===================================================================
-Key       Value
-========= ===================================================================
-ops       "An array of objects containing details on the request to be made."
-========= ===================================================================
+=========  ===================================================================
+Key        Value
+=========  ===================================================================
+ops        "An array of objects containing details on the request to be made."
+=========  ===================================================================
 
 **Sample Params**
 ::
@@ -170,11 +170,11 @@ Allows administrators to search for students at their school.
 
 **Params**
 
-========= ==================================================================
-Key       Value                                                              
-========= ==================================================================
-query     A simple string query to search with                                           
-========= ==================================================================
+=========  ==================================================================
+Key        Value                                                              
+=========  ==================================================================
+query      A simple string query to search with                                           
+=========  ==================================================================
 
 **Sample Response**
 ::
@@ -197,21 +197,21 @@ query     A simple string query to search with
 Allows administrators to add a student.
 
 **Params**
-========================= ==================================================================
-Key                       Value                                                                              
-========================= ==================================================================
-*email_address:           Student’s email address
-*username(required):      Student’s username
-first_name:               Student’s first name
-last_name:                Student’s last name
-school_year_name:         The name of student’s school year
-work_authorization_name:  The name of the student’s work authorization status
-department_gpa:           Decimal of student’s departmental GPA.
-cumulative_gpa:           Decimal of student’s cumulative GPA.
-bio:                      A student bio
-major_names:              An array of major names for this student
-minor_names:              An array of minor names for this student.
-========================= ==================================================================
+=========================  ==================================================================
+Key                        Value                                                                              
+=========================  ==================================================================
+*email_address:            Student’s email address
+*username(required):       Student’s username
+first_name:                Student’s first name
+last_name:                 Student’s last name
+school_year_name:          The name of student’s school year
+work_authorization_name:   The name of the student’s work authorization status
+department_gpa:            Decimal of student’s departmental GPA.
+cumulative_gpa:            Decimal of student’s cumulative GPA.
+bio:                       A student bio
+major_names:               An array of major names for this student
+minor_names:               An array of minor names for this student.
+=========================  ==================================================================
 
 **Sample Response**
 ::
@@ -231,21 +231,21 @@ minor_names:              An array of minor names for this student.
 Allows administrators to update a student’s details
 
 **Params**
-========================= ==================================================================
-Key                       Value                                                                             
-========================= ==================================================================
-*email_address:           Student’s email address                                            
-*username(required):      Student’s username                                                 
-first_name:               Student’s first name                                                 
-last_name:                Student’s last name                                                 
-school_year_name:         The name of student’s school year                                                 
-work_authorization_name:  The name of the student’s work authorization status                                                 
-department_gpa:           Decimal of student’s departmental GPA.                                                 
-cumulative_gpa:           Decimal of student’s cumulative GPA.                                                 
-bio:                      A student bio                                                 
-major_names:              An array of major names for this student                                                 
-minor_names:              An array of minor names for this student.                                                 
-========================= ==================================================================
+=========================  ==================================================================
+Key                        Value                                                                              
+=========================  ==================================================================
+*email_address:            Student’s email address
+*username(required):       Student’s username
+first_name:                Student’s first name
+last_name:                 Student’s last name
+school_year_name:          The name of student’s school year
+work_authorization_name:   The name of the student’s work authorization status
+department_gpa:            Decimal of student’s departmental GPA.
+cumulative_gpa:            Decimal of student’s cumulative GPA.
+bio:                       A student bio
+major_names:               An array of major names for this student
+minor_names:               An array of minor names for this student.
+=========================  ==================================================================
 
 *One of email_address or username must be passed in order to find the user to update
 
@@ -267,12 +267,12 @@ minor_names:              An array of minor names for this student.
 Allows administrators to remove a student from handshake.
 
 **Params**
-========================= ==================================================================
-Key                       Value                                                      
-========================= ==================================================================
-*email_address:           Student’s email address
-*username(required):      Student’s username
-========================= ==================================================================
+=========================  ==================================================================
+Key                        Value                                                      
+=========================  ==================================================================
+*email_address:            Student’s email address
+*username(required):       Student’s username
+=========================  ==================================================================
 *One of email_address or username must be passed in order to find the user to remove
 
 **Sample Response**
@@ -347,11 +347,11 @@ None
 Allows administrators to add a major to their school. Returns false if major is already at the school.
 
 **Params**
-========== ==================================================================
-Key        Value                                                            
-========== ==================================================================
-name:      Name of major
-========== ==================================================================
+==========  ==================================================================
+Key         Value                                                            
+==========  ==================================================================
+name:       Name of major
+==========  ==================================================================
 
 **Sample Response**
 ::
@@ -366,11 +366,11 @@ name:      Name of major
 Allows administrators to remove a major from their school. Returns false if major is not at the school.
 
 **Params**
-========== ==================================================================
-Key        Value                                                            
-========== ==================================================================
-name:      Name of major
-========== ==================================================================
+==========  ==================================================================
+Key         Value                                                            
+==========  ==================================================================
+name:       Name of major
+==========  ==================================================================
 
 **Sample Response**
 ::
