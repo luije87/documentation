@@ -38,7 +38,7 @@ In addition, there is at least one other attribute which contains the bulk of th
 
 Single Object
 *************
-:
+::
     {
       success: true,
       user: {
@@ -48,7 +48,7 @@ Single Object
 
 List
 ****
-The individual objects within the ‘objects’ list will typically contain the same data as a single object response would:
+The individual objects within the ‘objects’ list will typically contain the same data as a single object response would::
 
     {
       success: true,
@@ -59,7 +59,7 @@ The individual objects within the ‘objects’ list will typically contain the 
 
 Error
 *****
-The ‘errors’ attribute is a hash with attributes as keys and values as arrays of errors on that attribute.:
+The ‘errors’ attribute is a hash with attributes as keys and values as arrays of errors on that attribute::
 
     {
       success: false,
@@ -85,7 +85,7 @@ ops       An array of objects containing details on the request to be made.
 
 Sample Params
 *************
-:
+::
     {
       ops: [
         {
@@ -117,7 +117,7 @@ Sample Params
 
 Sample Response
 ***************
-:
+::
 
     {
       results: [
