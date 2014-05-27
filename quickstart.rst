@@ -157,7 +157,7 @@ Allows administrators to search for students at their school.
 
 **Params**
 ========= ==================================================================
-Key       Value                                                      
+Key       Value                                                              
 ========= ==================================================================
 query     A simple string query to search with                                           
 ========= ==================================================================
@@ -184,7 +184,7 @@ Allows administrators to add a student.
 
 **Params**
 ========================= ==================================================================
-Key       Value                                                      
+Key                       Value                                                                              
 ========================= ==================================================================
 *email_address:           Student’s email address
 *username(required):      Student’s username
@@ -197,7 +197,6 @@ cumulative_gpa:           Decimal of student’s cumulative GPA.
 bio:                      A student bio
 major_names:              An array of major names for this student
 minor_names:              An array of minor names for this student.
-                                          
 ========================= ==================================================================
 
 **Sample Response**
@@ -219,20 +218,19 @@ Allows administrators to update a student’s details
 
 **Params**
 ========================= ==================================================================
-Key       Value                                                      
+Key                       Value                                                                             
 ========================= ==================================================================
-*email_address:           Student’s email address
-*username(required):      Student’s username
-first_name:               Student’s first name
-last_name:                Student’s last name
-school_year_name:         The name of student’s school year
-work_authorization_name:  The name of the student’s work authorization status
-department_gpa:           Decimal of student’s departmental GPA.
-cumulative_gpa:           Decimal of student’s cumulative GPA.
-bio:                      A student bio
-major_names:              An array of major names for this student
-minor_names:              An array of minor names for this student.
-                                          
+*email_address:           Student’s email address                                            
+*username(required):      Student’s username                                                 
+first_name:               Student’s first name                                                 
+last_name:                Student’s last name                                                 
+school_year_name:         The name of student’s school year                                                 
+work_authorization_name:  The name of the student’s work authorization status                                                 
+department_gpa:           Decimal of student’s departmental GPA.                                                 
+cumulative_gpa:           Decimal of student’s cumulative GPA.                                                 
+bio:                      A student bio                                                 
+major_names:              An array of major names for this student                                                 
+minor_names:              An array of minor names for this student.                                                 
 ========================= ==================================================================
 
 *One of email_address or username must be passed in order to find the user to update
@@ -256,7 +254,7 @@ Allows administrators to remove a student from handshake.
 
 **Params**
 ========================= ==================================================================
-Key       Value                                                      
+Key                       Value                                                      
 ========================= ==================================================================
 *email_address:           Student’s email address
 *username(required):      Student’s username
@@ -335,11 +333,11 @@ None
 Allows administrators to add a major to their school. Returns false if major is already at the school.
 
 **Params**
-========================= ==================================================================
-Key       Value                                                      
-========================= ==================================================================
-name:                     Name of major
-========================= ==================================================================
+========== ==================================================================
+Key        Value                                                            
+========== ==================================================================
+name:      Name of major
+========== ==================================================================
 
 **Sample Response**
 ::
@@ -354,11 +352,11 @@ name:                     Name of major
 Allows administrators to remove a major from their school. Returns false if major is not at the school.
 
 **Params**
-========================= ==================================================================
-Key       Value                                                      
-========================= ==================================================================
-name:                     Name of major
-========================= ==================================================================
+========== ==================================================================
+Key        Value                                                            
+========== ==================================================================
+name:      Name of major
+========== ==================================================================
 
 **Sample Response**
 ::
