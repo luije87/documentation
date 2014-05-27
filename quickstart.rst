@@ -83,9 +83,7 @@ Key       Value
 ops       An array of objects containing details on the request to be made.                                           
 ========= ==================================================================
 
-Sample Params
-*************
-::
+**Sample Params**::
     {
       ops: [
         {
@@ -115,9 +113,7 @@ Sample Params
       ]
     }
 
-Sample Response
-***************
-::
+**Sample Response**::
 
     {
       results: [
