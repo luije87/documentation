@@ -196,7 +196,7 @@ Key                        Value
 first_name:                Student’s first name
 last_name:                 Student’s last name
 school_year_name:          The name of student’s school year
-work_authorization_name:   The name of the student’s work authorization status
+work_authorization_name:   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
 department_gpa:            Decimal of student’s departmental GPA.
 cumulative_gpa:            Decimal of student’s cumulative GPA.
 bio:                       A student bio
@@ -231,7 +231,7 @@ Key                        Value
 first_name:                Student’s first name
 last_name:                 Student’s last name
 school_year_name:          The name of student’s school year
-work_authorization_name:   The name of the student’s work authorization status
+work_authorization_name:   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
 department_gpa:            Decimal of student’s departmental GPA.
 cumulative_gpa:            Decimal of student’s cumulative GPA.
 bio:                       A student bio
