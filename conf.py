@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'handshake'
-copyright = u'2014, Stryder Corp'
+copyright = u'2014, Handshake'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -241,7 +241,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'handshake', u'handshake Documentation',
-   u'Scott Ringwelski', 'handshake', 'One line description of project.',
+   u'Scott Ringwelski', 'handshake', 'Career Services Management Application.',
    'Miscellaneous'),
 ]
 

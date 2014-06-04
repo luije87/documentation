@@ -318,7 +318,7 @@ None
 
 Majors/Minors
 -----------------
-The following is the same for minors
+The following is the same for minors. This part of the API allows career services centers to add, remove and receive a list of majors in the system for their school.
 
 [GET] /majors
 *************
@@ -374,4 +374,79 @@ name:       Name of major
     {
       success: true,
       major: ‘Major name that was removed’
+    }
+
+Employers
+-----------------
+Allows managing employers in your school's list of approved employers.
+
+[GET] /employers
+*************
+Allows administrators to list employers that are approved at your school.
+
+**Params**
+
+None
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      employers: [
+        {
+          name: 'Acme Corp.',
+          email_domain: 'careers@acmecorp.com'
+        }
+      ]
+    }
+
+[POST] /employers
+**************
+Allows administrators to approve an employer at their school. Returns false if major is already at the school.
+
+**Params**
+
+============== ==================================================================
+Key            Value
+============== ==================================================================
+*name:          Name of major
+*email_domain:  Email domain of the company. For example, 'acmecorp.com'.
+============== ==================================================================
+
+* Required fields
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      employer: {
+        name: 'Acme Corp.',
+        email_domain: 'careers@acmecorp.com'
+      }
+    }
+
+[DELETE] /employers/destroy
+************************
+Allows administrators to remove an employer from their school. Returns false if employer is not at the school.
+
+**Params**
+
+============== ==================================================================
+Key            Value
+============== ==================================================================
+*name:          Name of major
+*email_domain:  Email domain of the company. For example, 'acmecorp.com'.
+============== ==================================================================
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      employer: {
+        name: 'Acme Corp.',
+        email_domain: 'careers@acmecorp.com'
+      }
     }
