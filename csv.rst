@@ -3,19 +3,26 @@
 CSV Upload
 =================
 
+Users
+-----
+
 Fields
------------------------
-Fields we accept (csv column header name) - required are bold
-**First Name** (first_name)
-**Last Name** (last_name)
-**Email** (email)
-**SSO Identifier** (username)
-**User type** (user_type) - [One of: "administrator", "student", "alumni"]
-Mobile Number (mobile_number)
-Bio (bio)
-School Year (school_year) - [ One of: "First Year", "Sophomore", "Junior", "Senior", "Graduate", "Post Graduate", "Alumni" ]
-Work Study Eligibility (work_study_eligible) - [ One of "true", "false" ]
-Major(s) (majors) - [semi-colon separated strings]
-Minor(s) (minors) - [semi-colon separated strings] 
-Departmental GPA (department_gpa)
-Cumulative GPA (cumulative_gpa)
+******
+================== ==================================================================
+Key                Value
+================== ==================================================================
+*First Name:       First name of user
+*Last Name:        Last name of user
+*Email:            Email of user
+*SSO Identifier:   Username of user 
+Mobile Number:     Mobil number
+Bio:               Bio. Mostly used for staff members and mentors.
+School Year:       One of "First Year", "Sophomore", "Junior", "Senior", "Graduate", "Post Graduate", "Alumni"
+Work Study:        One of "true", "false"
+Majors:            semi-colon separated strings
+Minors:            semi-colon separated strings
+Departmental GPA:  Decimal value
+Cumulative GPA:    Decimal value
+============== ==================================================================
+
+*required
