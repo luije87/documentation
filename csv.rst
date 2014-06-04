@@ -24,6 +24,6 @@ Majors:            semi-colon separated strings
 Minors:            semi-colon separated strings
 Departmental GPA:  Decimal value
 Cumulative GPA:    Decimal value
-============== ==================================================================
+================== ==================================================================
 
 *required
