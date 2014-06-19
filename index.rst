@@ -13,4 +13,5 @@ Contents:
 
    api
    csv
+   timezones
 
