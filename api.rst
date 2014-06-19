@@ -193,7 +193,7 @@ Key                        Value
 =========================  ==================================================================
 *email_address:            Student’s email address
 *username:                 Student’s username
-user_type:                 One of "Students", "Career Services", "Mentors"
+user_type:                 Defaults to "Students", one of "Students", "Career Services", "Mentors"
 first_name:                Student’s first name
 last_name:                 Student’s last name
 school_year_name:          The name of student’s school year

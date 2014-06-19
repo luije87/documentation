@@ -16,6 +16,7 @@ Key                        Value
 *Last Name:                Last name of user
 *Email:                    Email of user
 *SSO Identifier:           Username of user 
+User Type                  Defaults to "Students", one of "Students", "Career Services", "Mentors"
 Work Authorization         One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
 Mobile Number:             Mobile number. Optionally used for notifications.
 Bio:                       Mostly used for staff members and mentors.
