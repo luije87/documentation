@@ -90,7 +90,7 @@ ops        "An array of objects containing details on the request to be made."
       ops: [
         {
           method: ‘post’,
-          url: ‘app.joinhandshake.com/api/v1/users’,
+          url: ‘/api/v1/users’,
           params: {
             user: {
               email_address: ‘sgringwe@mtu.edu’,
@@ -102,7 +102,7 @@ ops        "An array of objects containing details on the request to be made."
         },
         {
           method: ‘post’,
-          url: ‘app.joinhandshake.com/api/v1/users’,
+          url: ‘/api/v1/users’,
           params: {
             user: {
               email_address: ‘bmchrist@mtu.edu’,
