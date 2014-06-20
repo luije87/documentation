@@ -73,7 +73,7 @@ Batch Requests
 -----------
 [POST] /batch
 *************
-All API calls listed in this document can be done in batch calls via the batch API call. A batch call takes a list of http request details (method type, url, params) and runs each request. The response is the result set of all requests.
+All API calls listed in this document can be done in batch calls via the batch API call. A batch call takes a list of http request details (method type, url, params) and runs each request. The response is the result set of all requests. Maximum of 50 ops per call can be included.
 
 **Params**
 
