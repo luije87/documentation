@@ -271,6 +271,55 @@ Key                        Value
       }
     }
 
+Student Sync
+------------
+
+[POST] /users/start_sync
+***********************
+Tells the Handshake API that you are beginning a student data sync and moves the school in to "sync status".
+
+**Sample Response**
+::
+
+    {
+      success: true
+    }
+
+[POST] /users/create_or_update
+***********************
+Takes in normal user params (see POST to /users). If user does not yet exists, creates them. If user already exists, updates with given fields.
+
+**Sample Response**
+
+See POST to /users
+
+[POST] /users/sync_details
+***********************
+Gives details about the current status of the sync including how many have been updated, how many have been created and how many users are not yet accounted for.
+
+**Sample Response**
+The following is an example of a response near the beginning of the sync process.
+
+::
+
+    {
+      success: true,
+      unaccounted_count: 11283,
+      updated_count: 4239,
+      created_count: 4
+    }
+
+[POST] /users/end_sync
+***********************
+Finishes the sync process. Disables any students who were not accounted for during the sync and moves the school out of "sync status".
+
+**Sample Response**
+::
+
+    {
+      success: true
+    }
+
 Reports
 ---------
 
