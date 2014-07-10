@@ -442,14 +442,14 @@ None
 
 [POST] /employers
 **************
-Allows administrators to approve an employer at their school. Returns false if major is already at the school.
+Allows administrators to approve an employer at their school. Returns false if employer is already at the school.
 
 **Params**
 
 ============== ==================================================================
 Key            Value
 ============== ==================================================================
-*name:          Name of major
+*name:          Name of employer
 *email_domain:  Email domain of the company. For example, 'acmecorp.com'.
 ============== ==================================================================
 
@@ -475,7 +475,7 @@ Allows administrators to remove an employer from their school. Returns false if 
 ============== ==================================================================
 Key            Value
 ============== ==================================================================
-*name:          Name of major
+*name:          Name of employer
 *email_domain:  Email domain of the company. For example, 'acmecorp.com'.
 ============== ==================================================================
 
@@ -487,5 +487,76 @@ Key            Value
       employer: {
         name: 'Acme Corp.',
         email_domain: 'careers@acmecorp.com'
+      }
+    }
+
+Jobs
+-----------------
+Allows managing jobs at your school
+
+[GET] /jobs
+*************
+Allows administrators to list jobs at your school 
+
+**Params**
+
+None
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      jobs: [
+        {
+          title: 'Engineering Intern'
+        }
+      ]
+    }
+
+[POST] /jobs
+**************
+Allows administrators to create jobs at your school 
+
+**Params**
+
+============== ==================================================================
+Key            Value
+============== ==================================================================
+*title:         The jobs's title
+*employer_id:   System ID of the employer associated with this job 
+============== ==================================================================
+
+* Required fields
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      job: {
+        title: 'Engineering Intern'
+      }
+    }
+
+[DELETE] /jobs/destroy
+************************
+Allows administrators to remove a job from your school 
+
+**Params**
+
+============== ==================================================================
+Key            Value
+============== ==================================================================
+*job_id:        System ID of the job 
+============== ==================================================================
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      job: {
+        title: 'Engineering Intern',
       }
     }
