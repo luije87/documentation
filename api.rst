@@ -450,7 +450,7 @@ Allows administrators to approve an employer at their school. Returns false if m
 ====================== ==================================================================
 Key                    Value
 ====================== ==================================================================
-*name:                 Name of major
+*name:                 Name of employer
 *email_domain:         Email domain of the company. For example, 'acmecorp.com'.
 industry_name:         The name of the company's industry.
 institution_type_name: The type of employer.
@@ -487,7 +487,7 @@ Allows administrators to remove an employer from their school. Returns false if 
 ====================== ==================================================================
 Key                    Value
 ====================== ==================================================================
-*name:                 Name of major
+*name:                 Name of employer
 *email_domain:         Email domain of the company. For example, 'acmecorp.com'.
 ====================== ==================================================================
 
