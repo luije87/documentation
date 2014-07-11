@@ -17,7 +17,7 @@ API Calls must use an API token to authenticate with the service. API Tokens can
 
 When making API calls, the API token needs to be passed via an HTTP header. Set the authorization header to have your API token. An example curl request would be::
 
-    curl https://app.joinhandshake.com/api/v1/users/create -H 'Authorization: Token token="token_goes_here"’
+    curl https://app.joinhandshake.com/api/v1/users/create -H 'Authorization: Token token="token_goes_here"'
 
 Requests
 -----------------
@@ -32,7 +32,7 @@ POST, PUT and DELETE requests take JSON as the request payload. A normal request
 
 Responses
 ------------------
-The Handshake API has a consistent response format. API responses are always returned as JSON hash. Each response has a ‘success’ attribute on that hash which will be set to either true or false. This is an easy way to know if the call succeeded.
+The Handshake API has a consistent response format. API responses are always returned as JSON hash. Each response has a 'success' attribute on that hash which will be set to either true or false. This is an easy way to know if the call succeeded.
 
 In addition, there is at least one other attribute which contains the bulk of the data. This will either be a single object (ex. after creating a user), a list (ex. a search) or errors. An example response for each is below.
 
@@ -48,7 +48,7 @@ In addition, there is at least one other attribute which contains the bulk of th
 
 **List**
 
-The individual objects within the ‘objects’ list will typically contain the same data as a single object response would::
+The individual objects within the 'objects' list will typically contain the same data as a single object response would::
 
     {
       success: true,
@@ -59,7 +59,7 @@ The individual objects within the ‘objects’ list will typically contain the 
 
 **Error**
 
-The ‘errors’ attribute is a hash with attributes as keys and values as arrays of errors on that attribute::
+The 'errors' attribute is a hash with attributes as keys and values as arrays of errors on that attribute::
 
     {
       success: false,
@@ -93,9 +93,9 @@ ops        "An array of objects containing details on the request to be made."
           url: ‘/api/v1/users’,
           params: {
             user: {
-              email_address: ‘sgringwe@mtu.edu’,
-              username: ‘sgringwe’,
-              first_name: ‘Scott’,
+              email_address: 'sgringwe@mtu.edu',
+              username: 'sgringwe',
+              first_name: 'Scott',
               …
             }
           }
@@ -105,9 +105,9 @@ ops        "An array of objects containing details on the request to be made."
           url: ‘/api/v1/users’,
           params: {
             user: {
-              email_address: ‘bmchrist@mtu.edu’,
-              username: ‘bmchrist’,
-              first_name: ‘Ben’,
+              email_address: 'bmchrist@mtu.edu',
+              username: 'bmchrist',
+              first_name: 'Ben',
               …
             }
           }
@@ -191,15 +191,15 @@ Allows administrators to add a student.
 =========================  ==================================================================
 Key                        Value
 =========================  ==================================================================
-*email_address:            Student’s email address
-*username:                 Student’s username
+*email_address:            Student's email address
+*username:                 Student's username
 user_type:                 Defaults to "Students", one of "Students", "Career Services", "Mentors"
-first_name:                Student’s first name
-last_name:                 Student’s last name
-school_year_name:          The name of student’s school year
+first_name:                Student's first name
+last_name:                 Student's last name
+school_year_name:          The name of student's school year
 work_authorization_name:   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
-department_gpa:            Decimal of student’s departmental GPA
-cumulative_gpa:            Decimal of student’s cumulative GPA
+department_gpa:            Decimal of student's departmental GPA
+cumulative_gpa:            Decimal of student's cumulative GPA
 bio:                       A student bio
 major_names:               An array of major names for this student
 minor_names:               An array of minor names for this student
@@ -225,7 +225,7 @@ is_public:                 Pass false if this student's profile should not be vi
 
 [PUT] /users/update
 *******************
-Allows administrators to update a student’s details
+Allows administrators to update a student's details
 
 **Params**
 
@@ -253,8 +253,8 @@ Allows administrators to remove a student from handshake.
 =========================  ==================================================================
 Key                        Value
 =========================  ==================================================================
-*email_address:            Student’s email address
-*username:                 Student’s username
+*email_address:            Student's email address
+*username:                 Student's username
 =========================  ==================================================================
 *One of email_address or username must be passed in order to find the user to remove
 
@@ -275,7 +275,7 @@ Student Sync
 ------------
 
 [POST] /users/start_sync
-***********************
+************************
 Tells the Handshake API that you are beginning a student data sync and moves the school in to "sync status".
 
 **Sample Response**
@@ -286,7 +286,7 @@ Tells the Handshake API that you are beginning a student data sync and moves the
     }
 
 [POST] /users/create_or_update
-***********************
+******************************
 Takes in normal user params (see POST to /users). If user does not yet exists, creates them. If user already exists, updates with given fields.
 
 **Sample Response**
@@ -294,7 +294,7 @@ Takes in normal user params (see POST to /users). If user does not yet exists, c
 See POST to /users
 
 [POST] /users/sync_details
-***********************
+**************************
 Gives details about the current status of the sync including how many have been updated, how many have been created and how many users are not yet accounted for.
 
 **Sample Response**
@@ -356,7 +356,7 @@ None
     }
 
 Majors/Minors
------------------
+-------------
 The following is the same for minors. This part of the API allows career services centers to add, remove and receive a list of majors in the system for their school.
 
 [GET] /majors
@@ -372,7 +372,7 @@ None
 
     {
       success: true,
-      majors: [‘Major name’, ‘Major 2 name’]
+      majors: ['Major name', 'Major 2 name']
     }
 
 [POST] /majors
@@ -392,7 +392,7 @@ name:       Name of major
 
     {
       success: true,
-      major: ‘Major name that was added’
+      major: 'Major name that was added'
     }
 
 [DELETE] /majors/destroy
@@ -412,15 +412,15 @@ name:       Name of major
 
     {
       success: true,
-      major: ‘Major name that was removed’
+      major: 'Major name that was removed'
     }
 
 Employers
------------------
+---------
 Allows managing employers in your school's list of approved employers.
 
 [GET] /employers
-*************
+****************
 Allows administrators to list employers that are approved at your school.
 
 **Params**
@@ -437,21 +437,33 @@ None
           name: 'Acme Corp.',
           email_domain: 'careers@acmecorp.com'
         }
-      ]
+      ],
+      { ... }
     }
 
 [POST] /employers
-**************
-Allows administrators to approve an employer at their school. Returns false if employer is already at the school.
+*****************
+Allows administrators to approve an employer at their school. Returns false if major is already at the school.
 
 **Params**
 
-============== ==================================================================
-Key            Value
-============== ==================================================================
-*name:          Name of employer
-*email_domain:  Email domain of the company. For example, 'acmecorp.com'.
-============== ==================================================================
+====================== ==================================================================
+Key                    Value
+====================== ==================================================================
+*name:                 Name of major
+*email_domain:         Email domain of the company. For example, 'acmecorp.com'.
+industry_name:         The name of the company's industry.
+institution_type_name: The type of employer.
+institution_size_name: The size of the employer.
+description:           The description of the employer.
+website:               A url directing to the employer's website.
+email:                 A general email address for contacting the employer.
+phone:                 A geenral phone number for contacting the employer.
+blog_rss:              A url directing to the employer's career blog feed.
+location_name:         The name of the city of the employer headquarters.
+address:               The address of the employer headquarters.
+zipcode:               The zipcode of the employer headquarters.
+====================== ==================================================================
 
 * Required fields
 
@@ -467,17 +479,110 @@ Key            Value
     }
 
 [DELETE] /employers/destroy
-************************
+***************************
 Allows administrators to remove an employer from their school. Returns false if employer is not at the school.
+
+**Params**
+
+====================== ==================================================================
+Key                    Value
+====================== ==================================================================
+*name:                 Name of major
+*email_domain:         Email domain of the company. For example, 'acmecorp.com'.
+====================== ==================================================================
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      employer: {
+        name: 'Acme Corp.',
+        email_domain: 'careers@acmecorp.com',
+        ...
+      },
+      { ... }
+    }
+
+Contacts
+--------
+Allows managing contacts at your employers.
+
+[GET] /contacts
+***************
+Allows administrators to list contacts at the specified employer.
 
 **Params**
 
 ============== ==================================================================
 Key            Value
 ============== ==================================================================
-*name:          Name of employer
-*email_domain:  Email domain of the company. For example, 'acmecorp.com'.
+*employer_id:  The id of the employer that you want to list the contacts for.
 ============== ==================================================================
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      contacts: [
+        {
+          first_name: 'Bill',
+          last_name: 'Hertz',
+          email_address: 'careers@acmecorp.com',
+          ...
+        },
+        { ... },
+      ]
+    }
+
+[POST] /contacts
+****************
+Add a contact to an employer
+
+**Params**
+
+=============== ==================================================================
+Key             Value
+=============== ==================================================================
+*employer_id:   The id of the employer to add the contact to.
+*email_address: The email address of the contact.
+first_name:     The first name of the contact.
+last_name:      The last name of the contact.
+title:          The title of the contact.
+address:        The address of the contact.
+location_id:    The id of the work location of the contact.
+phone:          The phone number of the contact
+cell_phone:     The cell phone number of the contact
+fax:            The fax number of the contact
+=============== ===================================================================
+
+* Required fields
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      contact: {
+        employer_id: 1,
+        email_address: 'bill@acmecorp.com',
+        ...
+      }
+    }
+
+[DELETE] /contacts/destroy
+**************************
+Allows administrators to remove a contact from an employer. Returns false if contact is not at the school.
+
+**Params**
+
+=============== ==================================================================
+Key             Value
+=============== ==================================================================
+*employer_id:   The id of the employer to add the contact to.
+*email_address: The email address of the contact.
+=============== ==================================================================
 
 **Sample Response**
 ::
