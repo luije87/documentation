@@ -525,6 +525,13 @@ Key            Value
 ============== ==================================================================
 *title:         The jobs's title
 *employer_id:   System ID of the employer associated with this job 
+*job_type_name:  The type of job. Must be one of the system job types 
+*application_method: The method a student should use to apply. One of handsake, external_link, offline
+*emloyer_id:     The ID of the employer associated with the job
+description:    Description of the job
+job_function_name: The job function name. Must be one of the system job functions.
+location:       The location of the job
+salary_type:    The salary type. Must be one of the system salary types
 ============== ==================================================================
 
 * Required fields
@@ -536,27 +543,5 @@ Key            Value
       success: true,
       job: {
         title: 'Engineering Intern'
-      }
-    }
-
-[DELETE] /jobs/destroy
-************************
-Allows administrators to remove a job from your school 
-
-**Params**
-
-============== ==================================================================
-Key            Value
-============== ==================================================================
-*job_id:        System ID of the job 
-============== ==================================================================
-
-**Sample Response**
-::
-
-    {
-      success: true,
-      job: {
-        title: 'Engineering Intern',
       }
     }
