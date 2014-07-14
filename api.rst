@@ -451,7 +451,7 @@ Allows administrators to approve an employer at their school. Returns false if m
 Key                    Value
 ====================== ==================================================================
 *name:                 Name of employer
-*email_domain:         Email domain of the company. For example, 'acmecorp.com'.
+email_domain:         Email domain of the company. For example, 'acmecorp.com'.
 industry_name:         The name of the company's industry.
 institution_type_name: The type of employer.
 institution_size_name: The size of the employer.
@@ -517,8 +517,20 @@ Allows administrators to list contacts at the specified employer.
 ============== ==================================================================
 Key            Value
 ============== ==================================================================
-*employer_id:  The id of the employer that you want to list the contacts for.
+**employer_id:  The id of the employer that you want to list the contacts for.
+**employer_name: The name of the employer that the contact represents
+*first_name:    ..
+*last_name:     ..
+*email_address: ..
+location_id     ..
+phone           ..
+cell_phone      ..
+fax             ..
 ============== ==================================================================
+* Required
+** At least either employer_id or employer_name must be provided
+
+
 
 **Sample Response**
 ::
@@ -632,9 +644,8 @@ Key            Value
 *employer_id:   System ID of the employer associated with this job 
 *job_type_name:  The type of job. Must be one of the system job types 
 *application_method: The method a student should use to apply. One of handsake, external_link, offline
-*emloyer_id:     The ID of the employer associated with the job
 description:    Description of the job
-job_function_name: The job function name. Must be one of the system job functions.
+job_function_names: An array of job function names which must be one of the system job functions.
 location:       The location of the job
 salary_type:    The salary type. Must be one of the system salary types
 contact_email:  The email of the contact to be associated with the job. Must match with an existing contact
