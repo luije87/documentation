@@ -19,11 +19,11 @@ Timestamps are optional, but can be used to make sure only the latest users list
 Fields
 ******
 =========================  ==================================================================
-Header                        Value
+Header                     Value
 =========================  ==================================================================
-\*email_address:            Student’s email address
-\*username:                 Student’s username
-\*user_type:                 Defaults to "Students", one of "Students", "Career Services", "Mentors"
+\*email_address:           Student’s email address
+\*username:                Student’s username
+\*user_type:               Defaults to "Students", one of "Students", "Career Services", "Mentors"
 first_name:                Student’s first name
 last_name:                 Student’s last name
 school_year_name:          The name of student’s school year
@@ -50,10 +50,10 @@ File name: employers.csv
 Fields
 ******
 ====================== ==================================================================
-Header                    Value
+Header                 Value
 ====================== ==================================================================
-\*name:                 Name of employer
-email_domain:         Email domain of the company. For example, 'acmecorp.com'.
+\*name:                Name of employer
+email_domain:          Email domain of the company. For example, 'acmecorp.com'.
 industry_name:         The name of the company's industry.
 institution_type_name: The type of employer.
 institution_size_name: The size of the employer.
