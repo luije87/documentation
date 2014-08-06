@@ -17,13 +17,13 @@ Timestamps are optional, but can be used to make sure only the latest users list
 
 
 Fields
-***
+******
 =========================  ==================================================================
 Header                        Value
 =========================  ==================================================================
-**email_address:            Student’s email address
-**username:                 Student’s username
-**user_type:                 Defaults to "Students", one of "Students", "Career Services", "Mentors"
+\*email_address:            Student’s email address
+\*username:                 Student’s username
+\*user_type:                 Defaults to "Students", one of "Students", "Career Services", "Mentors"
 first_name:                Student’s first name
 last_name:                 Student’s last name
 school_year_name:          The name of student’s school year
@@ -38,21 +38,21 @@ disabled:                  Pass true if this student should not be able to login
 work_study_eligible:       Pass true if this student is eligible for work study jobs
 is_public:                 Pass false if this student's profile should not be viewable by approved employers
 =========================  ==================================================================
-**required
+\*required
 
 
 
 Employers
------
+---------
 
 File name: employers.csv
 
 Fields
-***
+******
 ====================== ==================================================================
 Header                    Value
 ====================== ==================================================================
-**name:                 Name of employer
+\*name:                 Name of employer
 email_domain:         Email domain of the company. For example, 'acmecorp.com'.
 industry_name:         The name of the company's industry.
 institution_type_name: The type of employer.
@@ -66,7 +66,7 @@ location_name:         The name of the city of the employer headquarters.
 address:               The address of the employer headquarters.
 zipcode:               The zipcode of the employer headquarters.
 ====================== ==================================================================
-**required
+\*required
 
 
 
@@ -74,23 +74,23 @@ Contacts
 --------
 Allows managing contacts at your employers.
 
-**Params**
+\*Params**
 
 ============== ==================================================================
 Header            Value
 ============== ==================================================================
-**employer_id:  The id of the employer that you want to list the contacts for.
-**employer_name: The name of the employer that the contact represents
-**first_name:    ..
-**last_name:     ..
-**email_address: ..
+\*employer_id:  The id of the employer that you want to list the contacts for.
+\*employer_name: The name of the employer that the contact represents
+\*first_name:    ..
+\*last_name:     ..
+\*email_address: ..
 location_id     ..
 phone           ..
 cell_phone      ..
 fax             ..
 ============== ==================================================================
 * Required
-** At least either employer_id or employer_name must be provided
+\* At least either employer_id or employer_name must be provided
 
 
 
@@ -102,10 +102,10 @@ File name: jobs.csv
 ============== ==================================================================
 Header            Value
 ============== ==================================================================
-**title:         The jobs's title
-**employer_id:   System ID of the employer associated with this job 
-**job_type_name:  The type of job. Must be one of the system job types 
-**application_method: The method a student should use to apply. One of handsake, external_link, offline
+\*title:         The jobs's title
+\*employer_id:   System ID of the employer associated with this job 
+\*job_type_name:  The type of job. Must be one of the system job types 
+\*application_method: The method a student should use to apply. One of handsake, external_link, offline
 description:    Description of the job
 job_function_name: The job function name. Must be one of the system job functions.
 location:       The location of the job
