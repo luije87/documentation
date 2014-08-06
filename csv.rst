@@ -76,19 +76,19 @@ Allows managing contacts at your employers.
 
 \*Params**
 
-============== ==================================================================
-Header            Value
-============== ==================================================================
-\*employer_id:  The id of the employer that you want to list the contacts for.
+================ ==================================================================
+Header           Value
+================ ==================================================================
+\*employer_id:   The id of the employer that you want to list the contacts for.
 \*employer_name: The name of the employer that the contact represents
 \*first_name:    ..
 \*last_name:     ..
 \*email_address: ..
-location_id     ..
-phone           ..
-cell_phone      ..
-fax             ..
-============== ==================================================================
+location_id      ..
+phone            ..
+cell_phone       ..
+fax              ..
+================ ==================================================================
 * Required
 \* At least either employer_id or employer_name must be provided
 
@@ -99,21 +99,21 @@ Jobs
 
 File name: jobs.csv
 
-============== ==================================================================
-Header            Value
-============== ==================================================================
-\*title:         The jobs's title
-\*employer_id:   System ID of the employer associated with this job 
-\*job_type_name:  The type of job. Must be one of the system job types 
+===================== ==================================================================
+Header                Value
+===================== ==================================================================
+\*title:              The jobs's title
+\*employer_id:        System ID of the employer associated with this job 
+\*job_type_name:      The type of job. Must be one of the system job types 
 \*application_method: The method a student should use to apply. One of handsake, external_link, offline
-description:    Description of the job
-job_function_name: The job function name. Must be one of the system job functions.
-location:       The location of the job
-salary_type:    The salary type. Must be one of the system salary types
-contact_email:  The email of the contact to be associated with the job. Must match with an existing contact
-expiration_date: The date the posting should expire. yyyy-mm-dd
-job_function_names: A semicolon separated list of job function names which must be one of the system job functions.
-============== ==================================================================
+description:          Description of the job
+job_function_name:    The job function name. Must be one of the system job functions.
+location:             The location of the job
+salary_type:          The salary type. Must be one of the system salary types
+contact_email:        The email of the contact to be associated with the job. Must match with an existing contact
+expiration_date:      The date the posting should expire. yyyy-mm-dd
+job_function_names:   A semicolon separated list of job function names which must be one of the system job functions.
+===================== ==================================================================
 
 * Required fields
 
