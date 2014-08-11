@@ -103,9 +103,9 @@ File name: jobs.csv
 Header                Value
 ===================== ==================================================================
 \*title:              The jobs's title
-\*employer_id:        System ID of the employer associated with this job 
 \*job_type_name:      The type of job. Must be one of the system job types 
 \*application_method: The method a student should use to apply. One of handsake, external_link, offline
+department_code:      The code corresponding to the department this job belongs to 
 description:          Description of the job
 job_function_name:    The job function name. Must be one of the system job functions.
 location:             The location of the job
