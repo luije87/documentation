@@ -80,14 +80,13 @@ Allows managing contacts at your employers.
 Header           Value
 ================ ==================================================================
 \*employer_id    The id of the employer that you want to list the contacts for.
-\*employer_name  The name of the employer that the contact represents
-\*first_name     ..
-\*last_name      ..
-\*email_address  ..
-location_id      ..
-phone            ..
-cell_phone       ..
-fax              ..
+\*first_name     The first name of the contact
+\*last_name      The last name of the contact
+\*email_address  The email of the contact.
+location_name    The location, in the form "City, State" or "Country"
+phone            The contact's phone number
+cell_phone       The contact's cell number
+fax              The contact's fax machine number
 ================ ==================================================================
 * Required
 \* At least either employer_id or employer_name must be provided
@@ -105,14 +104,16 @@ Header                Value
 \*title               The jobs's title
 \*job_type_name       The type of job. Must be one of the system job types 
 \*application_medium  The method a student should use to apply. One of handsake, external_link, offline
-division_code         The code corresponding to the department this job belongs to 
+division_code         The code corresponding to the division this job belongs to 
 description           Description of the job
 job_function_name     The job function name. Must be one of the system job functions.
-location              The location of the job
+location_name         The location of the job in the format "City, State" or "Country"
 salary_type_name      The salary type. Must be one of the system salary types
 contact_email         The email of the contact to be associated with the job. Must match with an existing contact
 expiration_date       The date the posting should expire. yyyy-mm-dd
 job_function_names    A semicolon separated list of job function names which must be one of the system job functions.
+work_study_job        Boolean. True if this is a work study job
+document_type_ids     Specifies which documents are required. Comma separated numbers, selected based on this list: [[1, "Resume"], [2, "Cover Letter"], [3, "Transcript"], [4, "Work Sample"], [5, "Other Document"]]
 ===================== ==================================================================
 
 * Required fields
