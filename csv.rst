@@ -21,22 +21,22 @@ Fields
 =========================  ==================================================================
 Header                     Value
 =========================  ==================================================================
-\*email_address:           Student’s email address
-\*username:                Student’s username
-\*user_type:               Defaults to "Students", one of "Students", "Career Services", "Mentors"
-first_name:                Student’s first name
-last_name:                 Student’s last name
-school_year_name:          The name of student’s school year
-work_authorization_name:   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
-department_gpa:            Decimal of student’s departmental GPA
-cumulative_gpa:            Decimal of student’s cumulative GPA
-bio:                       A student bio
-major_names:               Semi-colon separated list
-minor_names:               Semi-colon separated list
-time_zone:                 The time zone that this user is in. See time zones section for more details.
-disabled:                  Pass true if this student should not be able to login
-work_study_eligible:       Pass true if this student is eligible for work study jobs
-is_public:                 Pass false if this student's profile should not be viewable by approved employers
+\*email_address            Student’s email address
+\*username                 Student’s username
+\*user_type                Defaults to "Students", one of "Students", "Career Services", "Mentors"
+first_name                 Student’s first name
+last_name                  Student’s last name
+school_year_name           The name of student’s school year
+work_authorization_name    One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
+department_gpa             Decimal of student’s departmental GPA
+cumulative_gpa             Decimal of student’s cumulative GPA
+bio                        A student bio
+major_names                Semi-colon separated list
+minor_names                Semi-colon separated list
+time_zone                  The time zone that this user is in. See time zones section for more details.
+disabled                   Pass true if this student should not be able to login
+work_study_eligible        Pass true if this student is eligible for work study jobs
+is_public                  Pass false if this student's profile should not be viewable by approved employers
 =========================  ==================================================================
 \*required
 
@@ -52,19 +52,19 @@ Fields
 ====================== ==================================================================
 Header                 Value
 ====================== ==================================================================
-\*name:                Name of employer
-email_domain:          Email domain of the company. For example, 'acmecorp.com'.
-industry_name:         The name of the company's industry.
-institution_type_name: The type of employer.
-institution_size_name: The size of the employer.
-description:           The description of the employer.
-website:               A url directing to the employer's website.
-email:                 A general email address for contacting the employer.
-phone:                 A geenral phone number for contacting the employer.
-blog_rss:              A url directing to the employer's career blog feed.
-location_name:         The name of the city of the employer headquarters.
-address:               The address of the employer headquarters.
-zipcode:               The zipcode of the employer headquarters.
+\*name                 Name of employer
+email_domain           Email domain of the company. For example, 'acmecorp.com'.
+industry_name          The name of the company's industry.
+institution_type_name  The type of employer.
+institution_size_name  The size of the employer.
+description            The description of the employer.
+website                A url directing to the employer's website.
+email                  A general email address for contacting the employer.
+phone                  A geenral phone number for contacting the employer.
+blog_rss               A url directing to the employer's career blog feed.
+location_name          The name of the city of the employer headquarters.
+address                The address of the employer headquarters.
+zipcode                The zipcode of the employer headquarters.
 ====================== ==================================================================
 \*required
 
@@ -79,11 +79,11 @@ Allows managing contacts at your employers.
 ================ ==================================================================
 Header           Value
 ================ ==================================================================
-\*employer_id:   The id of the employer that you want to list the contacts for.
-\*employer_name: The name of the employer that the contact represents
-\*first_name:    ..
-\*last_name:     ..
-\*email_address: ..
+\*employer_id    The id of the employer that you want to list the contacts for.
+\*employer_name  The name of the employer that the contact represents
+\*first_name     ..
+\*last_name      ..
+\*email_address  ..
 location_id      ..
 phone            ..
 cell_phone       ..
@@ -102,17 +102,17 @@ File name: jobs.csv
 ===================== ==================================================================
 Header                Value
 ===================== ==================================================================
-\*title:              The jobs's title
-\*job_type_name:      The type of job. Must be one of the system job types 
-\*application_method: The method a student should use to apply. One of handsake, external_link, offline
-department_code:      The code corresponding to the department this job belongs to 
-description:          Description of the job
-job_function_name:    The job function name. Must be one of the system job functions.
-location:             The location of the job
-salary_type:          The salary type. Must be one of the system salary types
-contact_email:        The email of the contact to be associated with the job. Must match with an existing contact
-expiration_date:      The date the posting should expire. yyyy-mm-dd
-job_function_names:   A semicolon separated list of job function names which must be one of the system job functions.
+\*title               The jobs's title
+\*job_type_name       The type of job. Must be one of the system job types 
+\*application_medium  The method a student should use to apply. One of handsake, external_link, offline
+division_code         The code corresponding to the department this job belongs to 
+description           Description of the job
+job_function_name     The job function name. Must be one of the system job functions.
+location              The location of the job
+salary_type_name      The salary type. Must be one of the system salary types
+contact_email         The email of the contact to be associated with the job. Must match with an existing contact
+expiration_date       The date the posting should expire. yyyy-mm-dd
+job_function_names    A semicolon separated list of job function names which must be one of the system job functions.
 ===================== ==================================================================
 
 * Required fields
