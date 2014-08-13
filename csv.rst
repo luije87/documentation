@@ -42,34 +42,6 @@ is_public                  Pass false if this student's profile should not be vi
 
 
 
-Employers
----------
-
-File name: employers.csv
-
-Fields
-******
-====================== ==================================================================
-Header                 Value
-====================== ==================================================================
-\*name                 Name of employer
-email_domain           Email domain of the company. For example, 'acmecorp.com'.
-industry_name          The name of the company's industry.
-institution_type_name  The type of employer.
-institution_size_name  The size of the employer.
-description            The description of the employer.
-website                A url directing to the employer's website.
-email                  A general email address for contacting the employer.
-phone                  A geenral phone number for contacting the employer.
-blog_rss               A url directing to the employer's career blog feed.
-location_name          The name of the city of the employer headquarters.
-address                The address of the employer headquarters.
-zipcode                The zipcode of the employer headquarters.
-====================== ==================================================================
-\*required
-
-
-
 Contacts
 --------
 Allows managing contacts at your employers.
