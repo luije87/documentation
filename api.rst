@@ -514,28 +514,6 @@ Allows administrators to list contacts.
 
 **Params**
 
-# Table name: contacts
-#
-#  id               :integer          not null, primary key
-#  employer_id      :integer
-#  first_name       :string(255)
-#  last_name        :string(255)
-#  title            :string(255)
-#  location_id      :integer
-#  phone            :string(255)
-#  cell_phone       :string(255)
-#  fax              :string(255)
-#  email_address    :string(255)
-#  created_at       :datetime
-#  updated_at       :datetime
-#  address_one      :string(255)
-#  address_two      :string(255)
-#  institution_id   :integer
-#  institution_type :string(255)
-#  employer_name    :string(255)
-#  description      :text
-#  assigned_to_id   :integer
-
 ================= ==================================================================
 Key               Value
 ================== ==================================================================
