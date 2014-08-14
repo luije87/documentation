@@ -514,18 +514,45 @@ Allows administrators to list contacts.
 
 **Params**
 
+# Table name: contacts
+#
+#  id               :integer          not null, primary key
+#  employer_id      :integer
+#  first_name       :string(255)
+#  last_name        :string(255)
+#  title            :string(255)
+#  location_id      :integer
+#  phone            :string(255)
+#  cell_phone       :string(255)
+#  fax              :string(255)
+#  email_address    :string(255)
+#  created_at       :datetime
+#  updated_at       :datetime
+#  address_one      :string(255)
+#  address_two      :string(255)
+#  institution_id   :integer
+#  institution_type :string(255)
+#  employer_name    :string(255)
+#  description      :text
+#  assigned_to_id   :integer
+
 ================= ==================================================================
 Key               Value
 ================== ==================================================================
 \*first_name:     ..
 \*last_name:      ..
 \*email_address:  ..
-\**employer_id:   The id of the employer that you want to list the contacts for.
+\**employer_id:   The id of the employer that you want to list the contact for
 \**employer_name: The name of the employer that the contact represents
+title             The job title of this contact, for example 'University Relations'
 location_id       ..
 phone             ..
 cell_phone        ..
 fax               ..
+address_one       ..
+address_two       ..
+description       ..
+assigned_to_id    The id of the user in Handshake that manages this contact
 ================= ==================================================================
 \* Required
 \** Either employer_id or employer_name may be provided, but employer_id is more accurate
