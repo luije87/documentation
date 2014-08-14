@@ -506,29 +506,29 @@ Key                    Value
 
 Contacts
 --------
-Allows managing contacts at your employers.
+Allows managing contacts at your institution.
 
 [GET] /contacts
 ***************
-Allows administrators to list contacts at the specified employer.
+Allows administrators to list contacts.
 
 **Params**
 
-============== ==================================================================
-Key            Value
-============== ==================================================================
-**employer_id:  The id of the employer that you want to list the contacts for.
-**employer_name: The name of the employer that the contact represents
-*first_name:    ..
-*last_name:     ..
-*email_address: ..
-location_id     ..
-phone           ..
-cell_phone      ..
-fax             ..
-============== ==================================================================
-* Required
-** At least either employer_id or employer_name must be provided
+================= ==================================================================
+Key               Value
+================== ==================================================================
+\*first_name:     ..
+\*last_name:      ..
+\*email_address:  ..
+\**employer_id:   The id of the employer that you want to list the contacts for.
+\**employer_name: The name of the employer that the contact represents
+location_id       ..
+phone             ..
+cell_phone        ..
+fax               ..
+================= ==================================================================
+\* Required
+\** Either employer_id or employer_name may be provided, but employer_id is more accurate
 
 
 

@@ -51,17 +51,17 @@ Allows managing contacts at your employers.
 ================ ==================================================================
 Header           Value
 ================ ==================================================================
-\*employer_id    The id of the employer that you want to list the contacts for.
 \*first_name     The first name of the contact
 \*last_name      The last name of the contact
 \*email_address  The email of the contact.
+employer_id      The id of the employer that you want to list the contacts for.
+employer_name    The name of the employer that you want to list the contacts for.
 location_name    The location, in the form "City, State" or "Country"
 phone            The contact's phone number
 cell_phone       The contact's cell number
 fax              The contact's fax machine number
 ================ ==================================================================
 * Required
-\* At least either employer_id or employer_name must be provided
 
 
 
