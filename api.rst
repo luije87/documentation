@@ -4,7 +4,7 @@ API Documentation
 =================
 
 Introduction
------------------------
+------------
 
 The Handshake API allows users to make RESTful calls using JSON for sending and receiving data.
 
