@@ -3,6 +3,8 @@
 Industries
 ==========
 
+The following standardized list of industries are supported in Handshake::
+
     Accounting
     Airlines/Aviation
     Alternative Dispute Resolution
@@ -151,6 +153,93 @@ Industries
     Wine/Spirits
     Wireless
     Writing/Editing
+
+Job Functions
+=============
+
+The following standardized list of job functions are supported in Handshake::
+
+    Account Management/Planning
+    Accounting/Auditing
+    Administration
+    Administrative/Support Services
+    Advertising
+    Advocacy
+    Analyst
+    Animal Care
+    Bookkeeping
+    Brand Management
+    Broadcasting
+    Business Development
+    Buying/Purchasing
+    Childcare
+    Childcare
+    Coaching
+    Community Service
+    Computer Drafting and Design
+    Conflict Resolution
+    Construction/Contracting
+    Consulting
+    Counseling
+    Creative/Design/Multimedia
+    Curriculum Development
+    Customer Service
+    Cyber Security
+    Data Entry
+    Data Management
+    Database Management
+    Distribution
+    Domestic Care/Services
+    Economic/Community Development
+    Engineering
+    Entrepreneur
+    Event Planning
+    Finance
+    Financial Planning
+    Fundraising/Development
+    Game Design
+    Graphic Design
+    Health Services/Healthcare
+    Horticulture
+    Hotel/Restaurant/Hospitality
+    Human Resources
+    Information Management/MIS
+    Interactive Media
+    IT/Systems
+    Law
+    Library Science
+    Management
+    Marketing
+    Not Specified
+    Operations
+    Other
+    Political Organization/Lobbying
+    Product Management
+    Production
+    Programming/Software Development
+    Project Management
+    Psychology
+    Public Relations
+    Quality Control/Assurance
+    Reporting
+    Research
+    Risk Management/Assessment
+    Sales
+    Skilled Labor
+    Social Work
+    Supply Chain Management/Logistics
+    Sustainability
+    Tax
+    Teaching/Education
+    Technical Support
+    Technician
+    Therapy
+    Training
+    Urban and Regional Planning
+    Volunteer
+    Warehousing/Materials Management
+    Web Design
+    Web Development
 
 
 Time Zone Options
