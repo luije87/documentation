@@ -1,7 +1,10 @@
 .. _references:
 
-Industries
+References
 ==========
+
+Industries
+----------
 
 The following standardized list of industries are supported in Handshake::
 
@@ -155,7 +158,7 @@ The following standardized list of industries are supported in Handshake::
     Writing/Editing
 
 Job Functions
-=============
+-------------
 
 The following standardized list of job functions are supported in Handshake::
 
@@ -243,7 +246,7 @@ The following standardized list of job functions are supported in Handshake::
 
 
 Time Zone Options
-=================
+-----------------
 
 The supported options for time zones in Handshake are::
 
