@@ -188,26 +188,44 @@ Allows administrators to add a student.
 
 **Params**
 
-=========================  ==================================================================
-Key                        Value
-=========================  ==================================================================
-*email_address:            Student's email address
-*username:                 Student's username
-user_type:                 Defaults to "Students", one of "Students", "Career Services", "Mentors"
-first_name:                Student's first name
-last_name:                 Student's last name
-school_year_name:          The name of student's school year
-work_authorization_name:   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
-department_gpa:            Decimal of student's departmental GPA
-cumulative_gpa:            Decimal of student's cumulative GPA
-bio:                       A student bio
-major_names:               An array of major names for this student
-minor_names:               An array of minor names for this student
-time_zone:                 The time zone that this user is in. See time zones section for more details.
-disabled:                  Pass true if this student should not be able to login
-work_study_eligible:       Pass true if this student is eligible for work study jobs
-is_public:                 Pass false if this student's profile should not be viewable by approved employers
-=========================  ==================================================================
+============================== ==================================================================
+Key                            Value
+============================== ==================================================================
+*email_address:                Student's email address
+*username:                     Student's username
+user_type:                     Defaults to "Students", one of "Students", "Career Services", "Mentors"
+first_name:                    Student's first name
+last_name:                     Student's last name
+school_year_name:              The name of student's school year
+work_authorization_name:       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
+department_gpa:                Decimal of student's departmental GPA
+cumulative_gpa:                Decimal of student's cumulative GPA
+bio:                           A student bio
+major_names:                   An array of major names for this student
+minor_names:                   An array of minor names for this student
+time_zone:                     The time zone that this user is in. See time zones section for more details.
+disabled:                      Pass true if this student should not be able to login
+work_study_eligible:           Pass true if this student is eligible for work study jobs
+is_public:                     Pass false if this student's profile should not be viewable by approved employers
+job_function_name:             The user's job function (in industry). See reference list.
+mentor_information_attributes: A nested hash containing mentor-specific attributes. See below table for possible values.
+============================== ==================================================================
+
+**Mentor information params**
+These are nested inside of 'mentor_information_attributes' above
+
+=================================== ==================================================================
+Key                                 Value
+=================================== ==================================================================
+student_contact_preference:         How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
+expertise_names:                    An array of expertise that this mentor has. Will create if not already listed on school administrator page.
+maximum_mentees:                    The maximum number of ongoing mentorships that this mentor is willing to do.
+maximum_student_contacts_per_month: The maximum number of messages that this mentor is willing to receive.
+industry_name:                      The industry that this mentor is in
+advice:                             Generic advice that this mentor has to offer
+hobbies:                            Relevant hobbies that this mentor listed
+=================================== ==================================================================
+
 * required
 
 **Sample Response**
