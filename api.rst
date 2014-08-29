@@ -70,7 +70,7 @@ The 'errors' attribute is a hash with attributes as keys and values as arrays of
     }
 
 Batch Requests
------------
+--------------
 [POST] /batch
 *************
 All API calls listed in this document can be done in batch calls via the batch API call. A batch call takes a list of http request details (method type, url, params) and runs each request. The response is the result set of all requests. Maximum of 50 ops per call can be included.
@@ -191,8 +191,8 @@ Allows administrators to add a student.
 ============================== ==================================================================
 Key                            Value
 ============================== ==================================================================
-*email_address:                Student's email address
-*username:                     Student's username
+\*email_address:                Student's email address
+\*username:                     Student's username
 user_type:                     Defaults to "Students", one of "Students", "Career Services", "Mentors"
 first_name:                    Student's first name
 last_name:                     Student's last name
@@ -271,10 +271,10 @@ Allows administrators to remove a student from handshake.
 =========================  ==================================================================
 Key                        Value
 =========================  ==================================================================
-*email_address:            Student's email address
-*username:                 Student's username
+\*email_address:            Student's email address
+\*username:                 Student's username
 =========================  ==================================================================
-*One of email_address or username must be passed in order to find the user to remove
+\*One of email_address or username must be passed in order to find the user to remove
 
 **Sample Response**
 ::
@@ -468,7 +468,7 @@ Allows administrators to approve an employer at their school. Returns false if m
 ====================== ==================================================================
 Key                    Value
 ====================== ==================================================================
-*name:                 Name of employer
+\*name:                 Name of employer
 email_domain:         Email domain of the company. For example, 'acmecorp.com'.
 industry_name:         The name of the company's industry.
 institution_type_name: The type of employer.
@@ -483,7 +483,7 @@ address:               The address of the employer headquarters.
 zipcode:               The zipcode of the employer headquarters.
 ====================== ==================================================================
 
-* Required fields
+\* Required fields
 
 **Sample Response**
 ::
@@ -505,8 +505,8 @@ Allows administrators to remove an employer from their school. Returns false if 
 ====================== ==================================================================
 Key                    Value
 ====================== ==================================================================
-*name:                 Name of employer
-*email_domain:         Email domain of the company. For example, 'acmecorp.com'.
+\*name:                 Name of employer
+\*email_domain:         Email domain of the company. For example, 'acmecorp.com'.
 ====================== ==================================================================
 
 **Sample Response**
@@ -535,11 +535,11 @@ Allows administrators to list contacts.
 ================= ==================================================================
 Key               Value
 ================= ==================================================================
-*first_name:      ..
-*last_name:       ..
-*email_address:   ..
-**employer_id:    The id of the employer that you want to list the contact for
-**employer_name:  The name of the employer that the contact represents
+\*first_name:      ..
+\*last_name:       ..
+\*email_address:   ..
+\*\*employer_id:    The id of the employer that you want to list the contact for
+\*\*employer_name:  The name of the employer that the contact represents
 title             The job title of this contact, for example 'University Relations'
 location_id       ..
 phone             ..
@@ -580,8 +580,8 @@ Add a contact to an employer
 =============== ==================================================================
 Key             Value
 =============== ==================================================================
-*employer_id:   The id of the employer to add the contact to.
-*email_address: The email address of the contact.
+\*employer_id:   The id of the employer to add the contact to.
+\*email_address: The email address of the contact.
 first_name:     The first name of the contact.
 last_name:      The last name of the contact.
 title:          The title of the contact.
@@ -592,7 +592,7 @@ cell_phone:     The cell phone number of the contact
 fax:            The fax number of the contact
 =============== ===================================================================
 
-* Required fields
+\* Required fields
 
 **Sample Response**
 ::
@@ -615,8 +615,8 @@ Allows administrators to remove a contact from an employer. Returns false if con
 =============== ==================================================================
 Key             Value
 =============== ==================================================================
-*employer_id:   The id of the employer to add the contact to.
-*email_address: The email address of the contact.
+\*employer_id:   The id of the employer to add the contact to.
+\*email_address: The email address of the contact.
 =============== ==================================================================
 
 **Sample Response**
@@ -663,10 +663,10 @@ Allows administrators to create jobs at your school
 ============== ==================================================================
 Key            Value
 ============== ==================================================================
-*title:         The jobs's title
-*employer_id:   System ID of the employer associated with this job 
-*job_type_name:  The type of job. Must be one of the system job types 
-*application_method: The method a student should use to apply. One of handsake, external_link, offline
+\*title:         The jobs's title
+\*employer_id:   System ID of the employer associated with this job 
+\*job_type_name:  The type of job. Must be one of the system job types 
+\*application_method: The method a student should use to apply. One of handsake, external_link, offline
 description:    Description of the job
 job_function_names: An array of job function names which must be one of the system job functions.
 location:       The location of the job
