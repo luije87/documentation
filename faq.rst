@@ -24,11 +24,13 @@ A quick overview of a few of our features:
 * We do monthly exhaustive penetration tests against our application
 * Production access is strictly controlled, logged and regulated
 * Our infrastructure provider is compliant or has been audited under the following:
+
   * ISO 27001
   * SOC 1 and SOC 2/SSAE 16/ISAE 3402 (Previously SAS 70 Type II)
   * PCI Level 1
   * FISMA Moderate
   * Sarbanes-Oxley (SOX)
+
 * The data centers we use are ISO 27001 and FISMA certified 
 * Firewalls, port scanning protection, DDoS mitigation, etc is in place
 * We offer at-rest encryption for all data in the system for an additional fee if this is required.
