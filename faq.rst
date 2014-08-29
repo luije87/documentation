@@ -10,7 +10,6 @@ A quick overview of a few of our features:
 
 * 99.9% Uptime Policy
 * Automatic horizontal scaling and load balancing
-* 24/7 support
 * Distributed across multiple regions for high availability
 * Granular level access control
 * Globally distributed content delivery network
@@ -20,8 +19,19 @@ A quick overview of a few of our features:
 * DDoS mitigation
 * Caching across the application
 * Over 1000 automated tests verify features are working and system is continuously secure
-* SSL Security
+* SSL Security on all client to app and inter-app communications
 * All production deployments pass through a rigorous change management process and testing procedure
+* We do monthly exhaustive penetration tests against our application
+* Production access is strictly controlled, logged and regulated
+* Our infrastructure provider is compliant or has been audited under the following:
+  * ISO 27001
+  * SOC 1 and SOC 2/SSAE 16/ISAE 3402 (Previously SAS 70 Type II)
+  * PCI Level 1
+  * FISMA Moderate
+  * Sarbanes-Oxley (SOX)
+* The data centers we use are ISO 27001 and FISMA certified 
+* Firewalls, port scanning protection, DDoS mitigation, etc is in place
+* We offer at-rest encryption for all data in the system for an additional fee if this is required.
  
 
 What SSO systems do you support out of the box?
@@ -41,6 +51,7 @@ There are two primary ways to get student data into the system, depending on you
 2. Simple CSV dump
   With the Simple CSV dump, we ask for an export of data from your student information system (ie Banner, DataTel, etc). We then have you push the data to our secured and sandboxed S3 environment. Pushing data to S3 is simple and over a secure connection with the AWS CLI or our small python script that uses the REST S3 API.
   All of your data that you send us on S3 is not readable by anybody except for a single account that we tightly monitor and control. Even if your own credentials are compromised, an attacker will not be able to access the data.
+  Student sync data is encrypted in transit and at reset with AES 256 bit encryption
 
 3. No student data import
   If you don't want to integrate with your student data, that is fine as well. Students can create their profiles from scratch, and can still parse resumes to help them build robust profiles quickly. 
