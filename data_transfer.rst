@@ -16,7 +16,7 @@ All encryption is transferred over SSL
 
 How should I format my [student/staff/alumni] data?
 ---------------------------------------------------
-An up-to-date format for CSV files is included here: :ref:`CSV Documenation <csv>`
+An up-to-date format for CSV files is included here: :doc:`csv`
 If you have any questions about formatting, or we don't have a field included that you require, let us know and we are more than happy to work with you to ensure we meet all of your needs.
 
 Our preferred format is with all users together in one CSV, and a user type field indicating if they are student, staff, alum, etc. If this is not possible, and they must be separate files, let us know.
