@@ -191,8 +191,8 @@ Allows administrators to add a student.
 ============================== ==================================================================
 Key                            Value
 ============================== ==================================================================
-\*email_address:                Student's email address
-\*username:                     Student's username
+\*email_address:               Student's email address
+\*username:                    Student's username
 user_type:                     Defaults to "Students", one of "Students", "Career Services", "Mentors"
 first_name:                    Student's first name
 last_name:                     Student's last name
@@ -271,8 +271,8 @@ Allows administrators to remove a student from handshake.
 =========================  ==================================================================
 Key                        Value
 =========================  ==================================================================
-\*email_address:            Student's email address
-\*username:                 Student's username
+\*email_address:           Student's email address
+\*username:                Student's username
 =========================  ==================================================================
 \*One of email_address or username must be passed in order to find the user to remove
 
@@ -468,8 +468,8 @@ Allows administrators to approve an employer at their school. Returns false if m
 ====================== ==================================================================
 Key                    Value
 ====================== ==================================================================
-\*name:                 Name of employer
-email_domain:         Email domain of the company. For example, 'acmecorp.com'.
+\*name:                Name of employer
+email_domain:          Email domain of the company. For example, 'acmecorp.com'.
 industry_name:         The name of the company's industry.
 institution_type_name: The type of employer.
 institution_size_name: The size of the employer.
@@ -505,8 +505,8 @@ Allows administrators to remove an employer from their school. Returns false if 
 ====================== ==================================================================
 Key                    Value
 ====================== ==================================================================
-\*name:                 Name of employer
-\*email_domain:         Email domain of the company. For example, 'acmecorp.com'.
+\*name:                Name of employer
+\*email_domain:        Email domain of the company. For example, 'acmecorp.com'.
 ====================== ==================================================================
 
 **Sample Response**
@@ -532,24 +532,24 @@ Allows administrators to list contacts.
 
 **Params**
 
-================= ==================================================================
-Key               Value
-================= ==================================================================
+================== ==================================================================
+Key                Value
+================== ==================================================================
 \*first_name:      ..
 \*last_name:       ..
 \*email_address:   ..
-\*\*employer_id:    The id of the employer that you want to list the contact for
-\*\*employer_name:  The name of the employer that the contact represents
-title             The job title of this contact, for example 'University Relations'
-location_id       ..
-phone             ..
-cell_phone        ..
-fax               ..
-address_one       ..
-address_two       ..
-description       ..
-assigned_to_id    The id of the user in Handshake that manages this contact
-================= ==================================================================
+\*\*employer_id:   The id of the employer that you want to list the contact for
+\*\*employer_name: The name of the employer that the contact represents
+title              The job title of this contact, for example 'University Relations'
+location_id        ..
+phone              ..
+cell_phone         ..
+fax                ..
+address_one        ..
+address_two        ..
+description        ..
+assigned_to_id     The id of the user in Handshake that manages this contact
+================== ==================================================================
 * Required
 ** Either employer_id or employer_name may be provided, but employer_id is more accurate
 
@@ -577,20 +577,20 @@ Add a contact to an employer
 
 **Params**
 
-=============== ==================================================================
-Key             Value
-=============== ==================================================================
+================ ==================================================================
+Key              Value
+================ ==================================================================
 \*employer_id:   The id of the employer to add the contact to.
 \*email_address: The email address of the contact.
-first_name:     The first name of the contact.
-last_name:      The last name of the contact.
-title:          The title of the contact.
-address:        The address of the contact.
-location_id:    The id of the work location of the contact.
-phone:          The phone number of the contact
-cell_phone:     The cell phone number of the contact
-fax:            The fax number of the contact
-=============== ===================================================================
+first_name:      The first name of the contact.
+last_name:       The last name of the contact.
+title:           The title of the contact.
+address:         The address of the contact.
+location_id:     The id of the work location of the contact.
+phone:           The phone number of the contact
+cell_phone:      The cell phone number of the contact
+fax:             The fax number of the contact
+================ ==================================================================
 
 \* Required fields
 
@@ -612,12 +612,12 @@ Allows administrators to remove a contact from an employer. Returns false if con
 
 **Params**
 
-=============== ==================================================================
-Key             Value
-=============== ==================================================================
+================ ==================================================================
+Key              Value
+================ ==================================================================
 \*employer_id:   The id of the employer to add the contact to.
 \*email_address: The email address of the contact.
-=============== ==================================================================
+================ ==================================================================
 
 **Sample Response**
 ::
@@ -660,20 +660,20 @@ Allows administrators to create jobs at your school
 
 **Params**
 
-============== ==================================================================
-Key            Value
-============== ==================================================================
-\*title:         The jobs's title
-\*employer_id:   System ID of the employer associated with this job 
-\*job_type_name:  The type of job. Must be one of the system job types 
+===================== ==================================================================
+Key                   Value
+===================== ==================================================================
+\*title:              The jobs's title
+\*employer_id:        System ID of the employer associated with this job 
+\*job_type_name:      The type of job. Must be one of the system job types 
 \*application_method: The method a student should use to apply. One of handsake, external_link, offline
-description:    Description of the job
-job_function_names: An array of job function names which must be one of the system job functions.
-location:       The location of the job
-salary_type:    The salary type. Must be one of the system salary types
-contact_email:  The email of the contact to be associated with the job. Must match with an existing contact
-expiration_date: The date the posting should expire. yyyy-mm-dd
-============== ==================================================================
+description:          Description of the job
+job_function_names:   An array of job function names which must be one of the system job functions.
+location:             The location of the job
+salary_type:          The salary type. Must be one of the system salary types
+contact_email:        The email of the contact to be associated with the job. Must match with an existing contact
+expiration_date:      The date the posting should expire. yyyy-mm-dd
+===================== ==================================================================
 
 * Required fields
 
