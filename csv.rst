@@ -40,6 +40,7 @@ disabled                   Pass true if this student should not be able to login
 work_study_eligible        Pass true if this student is eligible for work study jobs
 is_public                  Pass false if this student's profile should not be viewable by approved employers
 =========================  ==================================================================
+
 \*required
 
 
@@ -63,6 +64,7 @@ phone            The contact's phone number
 cell_phone       The contact's cell number
 fax              The contact's fax machine number
 ================ ==================================================================
+
 * Required
 
 

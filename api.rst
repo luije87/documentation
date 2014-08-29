@@ -226,7 +226,7 @@ advice:                             Generic advice that this mentor has to offer
 hobbies:                            Relevant hobbies that this mentor listed
 =================================== ==================================================================
 
-* required
+\* required
 
 **Sample Response**
 ::
@@ -274,6 +274,7 @@ Key                        Value
 \*email_address:           Student's email address
 \*username:                Student's username
 =========================  ==================================================================
+
 \*One of email_address or username must be passed in order to find the user to remove
 
 **Sample Response**
@@ -550,8 +551,9 @@ address_two        ..
 description        ..
 assigned_to_id     The id of the user in Handshake that manages this contact
 ================== ==================================================================
-* Required
-** Either employer_id or employer_name may be provided, but employer_id is more accurate
+
+\* Required
+\*\* Either employer_id or employer_name may be provided, but employer_id is more accurate
 
 
 
@@ -675,7 +677,7 @@ contact_email:        The email of the contact to be associated with the job. Mu
 expiration_date:      The date the posting should expire. yyyy-mm-dd
 ===================== ==================================================================
 
-* Required fields
+\* Required fields
 
 **Sample Response**
 ::
