@@ -39,7 +39,7 @@ A quick overview of a few of our features:
 What SSO systems do you support out of the box?
 -----------------------------------------------
 We support SAML (and Shibboleth), LDAP and CAS. We are also more than happy to work with your to support your specific SSO solution if we do not already offer it.
-More information: http://support.joinhandshake.com/hc/en-us/articles/202672934
+More information: `sso`_
 
 
 How do we get student data into the system?
