@@ -33,6 +33,8 @@ cumulative_gpa             Decimal of student’s cumulative GPA
 bio                        A student bio
 major_names                Semi-colon separated list
 minor_names                Semi-colon separated list
+skill_names                Semi-colon separated list of skills
+external_link_urls         Semi-colo separated list of external links for the profile
 time_zone                  The time zone that this user is in. See time zones section for more details.
 disabled                   Pass true if this student should not be able to login
 work_study_eligible        Pass true if this student is eligible for work study jobs
