@@ -14,5 +14,6 @@ Contents:
    api
    csv
    sso
+   faq
    references
 

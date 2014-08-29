@@ -3,7 +3,8 @@
 Single Sign On
 ===================
 
-CAS:
+CAS
+---
 
 =========== ==================================================== ============================================
 Item        Description                                          Example
@@ -11,7 +12,8 @@ Item        Description                                          Example
 Login Path  The path a user should be sent to for authentication https://cashost:8443/cas-server-webapp/login
 =========== ==================================================== ============================================
 
-SAML:
+SAML
+----
 
 ==================== ===================================================== =======================================================
 Item                 Description                                           Example
@@ -28,7 +30,8 @@ identifier           Which field in the user's record should we use to loo
 IDP Cert Fingerprint A certificate of the public key for your IDP          0e82a794ce98b4c0e084fff4fc9514270cdb941a
 ==================== ===================================================== =======================================================
 
-LDAP:
+LDAP
+----
 
 ================ ================================================================================================== =====================================
 Item             Description                                                                                        Example
