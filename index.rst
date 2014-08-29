@@ -13,5 +13,6 @@ Contents:
 
    api
    csv
+   sso
    references
 
