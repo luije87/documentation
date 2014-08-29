@@ -13,7 +13,7 @@ Login Path  The path a user should be sent to for authentication https://cashost
 
 SAML:
 
-==================== ===================================================== ======================================================
+==================== ===================================================== =======================================================
 Item                 Description                                           Example
 ==================== ===================================================== =======================================================
 Login Path           The path that a user should be sent to from our       https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO 
