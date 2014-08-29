@@ -13,19 +13,25 @@ Login Path  The path a user should be sent to for authentication https://cashost
 
 SAML:
 
-==================== ============================================================================================================================================================ ============================================
-Item                 Description                                                                                                                                                  Example
-==================== ============================================================================================================================================================ ============================================
-Login Path           The path that a user should be sent to from our application (the Service Provider) for authentication                                                        https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO
-name_id_format       See this article: http://stackoverflow.com/questions/11693297/what-are-the-different-nameid-format-used-for                                                  urn:oasis:names:tc:SAML:2.0:nameid-format:transient
-identifier           Which field in the user's record should we use to look them up in the database? This field's value should correspond with the username of the Handshake user uid
-IDP Cert Fingerprint A certificate of the public key for your IDP                                                                                                                 0e82a794ce98b4c0e084fff4fc9514270cdb941a
-==================== ============================================================================================================================================================ ============================================
+==================== ===================================================== ======================================================
+Item                 Description                                           Example
+==================== ===================================================== =======================================================
+Login Path           The path that a user should be sent to from our       https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO 
+                     application (the Service Provider) for authentication
+name_id_format       See this article: http://stackoverflow.com/questions/ urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+                     11693297/what-are-the-different-nameid-format-used-fo
+                     r
+identifier           Which field in the user's record should we use to loo
+                     k them up in the database? This field's value should 
+                     correspond with the username of the Handshake user ui
+                     d
+IDP Cert Fingerprint A certificate of the public key for your IDP          0e82a794ce98b4c0e084fff4fc9514270cdb941a
+==================== ===================================================== =======================================================
 
 LDAP:
 
 ================ ================================================================================================== =====================================
-Item             Description Example
+Item             Description                                                                                        Example
 ================ ================================================================================================== =====================================
 Host             The LDAP server host                                                                               https://ldap.myserver.com
 Port             The port that LDAP is using for incoming requests                                                  636
