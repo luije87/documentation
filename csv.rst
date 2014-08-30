@@ -21,8 +21,9 @@ Fields
 =========================  ==================================================================
 Header                     Value
 =========================  ==================================================================
-\*email_address            Student’s email address
-\*username                 Student’s username
+\*email_address            Student’s email address. In general this should be a .edu address
+\*username                 Student’s username. This should be unique and should not be something that changes
+auth_identifier            This is the identifier that should be used if you use Single Sign On
 \*user_type                Defaults to "Students", one of "Students", "Career Services", "Mentors"
 first_name                 Student’s first name
 last_name                  Student’s last name
