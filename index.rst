@@ -13,8 +13,8 @@ Contents:
 
    api
    csv
+   faq
    data_transfer
    sso
-   faq
    references
 

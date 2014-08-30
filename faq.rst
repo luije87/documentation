@@ -58,7 +58,7 @@ There are two primary ways to get student data into the system, depending on you
 #. No student data import
    If you don't want to integrate with your student data, that is fine as well. Students can create their profiles from scratch, and can still parse resumes to help them build robust profiles quickly. 
 
-For more information, see our Data Transfer FAQ 
+For more information, see this document: :doc:`data_transfer`
 
  
 Can we import data into the system?
