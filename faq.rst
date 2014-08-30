@@ -48,14 +48,14 @@ There are two primary ways to get student data into the system, depending on you
 
 1. API 
    If you want to have a stronger degree of control over our data and when it is updated in the system, we have a RESTful API that you may use to update, delete, create and synchronize student/staff/alumni accounts.
-   http://documentation.joinhandshake.com/en/latest/api.html
+   :doc:`api`
 
-2. Simple CSV dump
+#. Simple CSV dump
    With the Simple CSV dump, we ask for an export of data from your student information system (ie Banner, DataTel, etc). We then have you push the data to our secured and sandboxed S3 environment. Pushing data to S3 is simple and over a secure connection with the AWS CLI or our small python script that uses the REST S3 API.
    All of your data that you send us on S3 is not readable by anybody except for a single account that we tightly monitor and control. Even if your own credentials are compromised, an attacker will not be able to access the data.
    Student sync data is encrypted in transit and at reset with AES 256 bit encryption
 
-3. No student data import
+#. No student data import
    If you don't want to integrate with your student data, that is fine as well. Students can create their profiles from scratch, and can still parse resumes to help them build robust profiles quickly. 
 
 For more information, see our Data Transfer FAQ 
