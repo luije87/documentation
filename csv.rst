@@ -80,7 +80,7 @@ Header                Value
 ===================== ==================================================================
 \*title               The jobs's title
 \*job_type_name       The type of job. Must be one of the system job types 
-\*application_medium  The method a student should use to apply. One of handsake, external_link, offline
+\*application_medium  The method a student should use to apply. One of ['handsake', 'external_link', 'offline', 'handshake_and_external']
 division_code         The code corresponding to the division this job belongs to 
 description           Description of the job
 job_function_name     The job function name. Must be one of the system job functions.
