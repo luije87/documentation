@@ -3,6 +3,19 @@
 References
 ==========
 
+School Years
+------------
+
+The following standardized list of school years are supported in Handshake::
+
+   Freshman
+   Sophomore
+   Junior
+   Senior
+   Graduate
+   Post Graduate
+   Alumni
+
 Industries
 ----------
 
