@@ -20,9 +20,8 @@ Item                 Description                                           Examp
 ==================== ===================================================== =======================================================
 Login Path           The path that a user should be sent to from our       https://idp.testshib.org/idp/profile/SAML2/Redirect/SSO 
                      application (the Service Provider) for authentication
-name_id_format       See this article: http://stackoverflow.com/questions/ urn:oasis:names:tc:SAML:2.0:nameid-format:transient
-                     11693297/what-are-the-different-nameid-format-used-fo
-                     r
+name_id_format       See this article:                                     urn:oasis:names:tc:SAML:2.0:nameid-format:transient 
+                     http://stackoverflow.com/questions/11693297
 identifier           Which field in the user's record should we use to loo
                      k them up in the database? This field's value should 
                      correspond with the username of the Handshake user ui
