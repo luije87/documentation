@@ -207,7 +207,6 @@ time_zone:                     The time zone that this user is in. See time zone
 disabled:                      Pass true if this student should not be able to login
 work_study_eligible:           Pass true if this student is eligible for work study jobs
 is_public:                     Pass false if this student's profile should not be viewable by approved employers
-job_function_name:             The user's job function (in industry). See reference list.
 mentor_information_attributes: A nested hash containing mentor-specific attributes. See below table for possible values.
 ============================== ==================================================================
 
