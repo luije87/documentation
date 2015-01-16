@@ -4,7 +4,7 @@ Frequently Asked Questions
 ============================
 How safe, reliable and secure is your application?
 --------------------------------------------------
-We have had a strong focus on reliability and security since the beginning. We’ve worked with the Michigan Tech CTO for the last two years to ensure we are building the application to a very high standard of excellence in security and reliability.
+We have had a strong focus on reliability and security since the beginning. We've worked with industry experts for the last two years to ensure we are building the application to a very high standard of excellence in security and reliability.
 
 A quick overview of a few of our features:
 
