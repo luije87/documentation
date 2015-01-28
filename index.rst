@@ -17,4 +17,5 @@ Contents:
    data_transfer
    sso
    references
+   integration
 
