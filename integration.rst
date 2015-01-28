@@ -1,9 +1,10 @@
 .. _integration:
 
-Integration
+Third Party Integration
 ===========
 
 Handshake can be used as an identity provider for your application. This means that you can let Handshake users sign in to your application via their Handshake Account.
+This documentation page is very early stage, and subject to change at any time.
 
 Overview
 --------
