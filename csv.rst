@@ -27,8 +27,8 @@ auth_identifier               This is the identifier that should be used if you 
 user_type                     Defaults to "Students", one of "Students", "Career Services", "Mentors"
 \*first_name                  Student’s first name
 \*last_name                   Student’s last name
-\*preferred_name              Coming Soon: The student's preferred name
-\*middle_name                 Coming Soon: The student's middle name
+preferred_name                Coming Soon: The student's preferred name
+middle_name                   Coming Soon: The student's middle name
 school_year_name              The name of student’s school year
 work_authorization_name       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
 department_gpa                Decimal of student’s departmental GPA
