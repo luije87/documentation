@@ -24,8 +24,9 @@ Required Fields
 CSV Header Value                  Value Description
 ================================= ======================================================================================
 \*email_address                   Student’s email address. In general this should be a .edu address
-\*username                        Student’s username. This should be unique and should not be something that changes
+\*username                        Student’s username. This MUST be unique and should not be something that changes
 \*user_type                       Defaults to "Students", one of "Students", "Career Services", "Mentors"
+auth_identifier                   This is the identifier that is required if you use Single Sign On.
 ================================= ======================================================================================
 
 For an example file of the required fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8LXo0dURaRTV6ODg&authuser=0)
@@ -35,7 +36,6 @@ Recommended Fields
 ============================= ==========================================================================================
 Header                        Value
 ============================= ==========================================================================================
-auth_identifier               This is the identifier that should be used if you use Single Sign On.
 first_name                    Student’s first name
 last_name                     Student’s last name
 school_year_name              The name of student’s school year. For a list of acceptable values see the references section.
