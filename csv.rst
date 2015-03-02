@@ -55,6 +55,8 @@ Note: these fields generally add value to career services but are not required f
 ============================= ==================================================================
 CSV Header Value              Value Description
 ============================= ==================================================================
+preferred_name                Coming Soon: The student's preferred name
+middle_name                   Coming Soon: The student's middle name
 work_authorization_name       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
 department_gpa                Decimal of student’s departmental GPA
 bio                           A student's bio. Shown on the student profile. Visible to everyone who can see the profile.

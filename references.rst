@@ -3,6 +3,11 @@
 References
 ==========
 
+Dates
+-----
+
+When using dates in the CSV or API, we can accept most common date formats. mm/dd/yy or dd-mm-yy or yyyy-mm-dd or yyyy/mm/dd. Will all work. 
+
 School Years
 ------------
 
