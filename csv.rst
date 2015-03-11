@@ -104,25 +104,25 @@ File name: jobs.csv
 
 The process of bringing in jobs from a legacy system is possible using the legacy job importer. The file below
 
-===================== ==================================================================
-Header                Value
-===================== ==================================================================
-\*title               The jobs's title (string)
-\*job_type_name       The type of job. Must be one of the system job types defined in the references section (String)
-\*application_medium  The method a student should use to apply. One of ['handshake', 'external_link', 'offline', 'handshake_and_external']
-division_code         The code corresponding to the division this job belongs to
-description           Description of the job (String)
-desired_skills        The desired skills for this job. (String)
-responsibilities      The responsibilities for this job. (String)
-job_function_name     The job function name. Must be one of the system job functions described in the references section.
-location_name         The location of the job in the format "City, State" or "Country"
-salary_type_name      The salary type. Must be one of the system salary types described in the references section.
-contact_email         The email of the contact to be associated with the job. Used to match the job to a employer when they register.
-expiration_date       The date the posting should expire. Should be in yyyy-mm-dd format.
-job_function_names    A semicolon separated list of job function names which must be one of the system job functions.
-work_study_job        Boolean. True if this is a work study job
-document_type_ids     Specifies which documents are required. Comma separated numbers, selected based on this list: [[1, "Resume"], [2, "Cover Letter"], [3, "Transcript"], [4, "Work Sample"], [5, "Other Document"]]
-===================== ==================================================================
+======================= ==================================================================
+Header                  Value
+======================= ==================================================================
+\*title                 The jobs's title (string)
+\*job_type_name         The type of job. Must be one of the system job types defined in the references section (String)
+\*employment_type_names The type of job. Must be one of the system job types defined in the references section (String)
+\*application_medium    The method a student should use to apply. One of ['handshake', 'external_link', 'offline', 'handshake_and_external']
+division_code           The code corresponding to the division this job belongs to
+description             Description of the job (String)
+desired_skills          The desired skills for this job. (String)
+responsibilities        The responsibilities for this job. (String)
+location_name           The location of the job in the format "City, State" or "Country"
+salary_type_name        The salary type. Must be one of the system salary types described in the references section.
+contact_email           The email of the contact to be associated with the job. Used to match the job to a employer when they register.
+expiration_date         The date the posting should expire. Should be in yyyy-mm-dd format.
+job_function_names      A semicolon separated list of job function names which must be one of the system job functions.
+work_study_job          Boolean. True if this is a work study job
+document_type_ids       Specifies which documents are required. Comma separated numbers, selected based on this list: [[1, "Resume"], [2, "Cover Letter"], [3, "Transcript"], [4, "Work Sample"], [5, "Other Document"]]
+======================= ==================================================================
 
 * Required fields
 

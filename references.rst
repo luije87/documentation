@@ -3,6 +3,13 @@
 References
 ==========
 
+Booleans
+--------
+
+If specifying a boolean value (true or false) please use all lower case or all upper case letters
+Good: TRUE true FALSE false
+Bad: True False
+
 Dates
 -----
 
@@ -20,6 +27,38 @@ The following standardized list of school years are supported in Handshake::
    Graduate
    Post Graduate
    Alumni
+
+Salary Type Names
+-----------------
+
+The following standardized list of salary types is supported in Handshake::
+
+   Paid
+   Unpaid
+   Commission Only
+   Commission Plus Salaray
+
+Job Type Names
+--------------
+
+The following standardized list of job types is supported in Handshake::
+
+   Job
+   Internship
+   Cooperative Education
+   Experiential Learning
+   On Campus Student Employment
+   Fellowship
+   Graduate School
+
+Employment Type Names
+---------------------
+
+The following standardized list of employment types is supported in Handshake::
+
+   Full Time
+   Part Time
+   Seasonal (Coming soon)
 
 Industries
 ----------
