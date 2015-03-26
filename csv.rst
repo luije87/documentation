@@ -112,33 +112,33 @@ be used to set a display name for the job.
 Employers may import jobs and post them to schools that they have permission to 
 post to using the school_id
 
-================================== ==================================================================
-Header                             Value
-================================== ==================================================================
-\*title                            The jobs's title (string)
-description                        Description of the job (String)
-legacy_employer_name               Schools: Set a display name for imported jobs
-start_date                         When the job begins (Date - see reference section)
-government                         Is this job a government-only job (Boolean)
-remote                             Does this job support remote work (Boolean)
-desired_skills                     The desired skills for this job. (String)
-responsibilities                   The responsibilities for this job. (String)
-\*job_type_name                    The type of job. Must be one of the system job types defined in the references section (String)
-\*employment_type_name             The type of job. Must be one of the system job types defined in the references section (String)
-external_apply_link                An optional link to send the applicants to when they click apply.
-\*application_medium               The method a student should use to apply. One of ['handshake', 'external_link', 'offline', 'handshake_and_external']
-salary_type_name                   The salary type. Must be one of the system salary types described in the references section.
-expiration_date                    The date the posting should expire. Should be in yyyy-mm-dd format.
-division_code                      The code corresponding to the division this job belongs to
-school_id                          Employers: The ID of the school you want to post the job to.
-job_function_names                 A semicolon separated list of job function names which must be one of the system job functions.
-document_notes                     Notes shown to the applicant while they apply
-document_type_names                Specifies which documents are required. Comma separated numbers, selected based on this list: Resume, Cover Letter, Transcript, Work Sample, Other Document
+=================================== ==================================================================
+Header                              Value
+=================================== ==================================================================
+\*title                             The jobs's title (string)
+description                         Description of the job (String)
+legacy_employer_name                Schools: Set a display name for imported jobs
+start_date                          When the job begins (Date - see reference section)
+government                          Is this job a government-only job (Boolean)
+remote                              Does this job support remote work (Boolean)
+desired_skills                      The desired skills for this job. (String)
+responsibilities                    The responsibilities for this job. (String)
+\*job_type_name                     The type of job. Must be one of the system job types defined in the references section (String)
+\*employment_type_name              The type of job. Must be one of the system job types defined in the references section (String)
+external_apply_link                 An optional link to send the applicants to when they click apply.
+\*application_medium                The method a student should use to apply. One of ['handshake', 'external_link', 'offline', 'handshake_and_external']
+salary_type_name                    The salary type. Must be one of the system salary types described in the references section.
+expiration_date                     The date the posting should expire. Should be in yyyy-mm-dd format.
+division_code                       The code corresponding to the division this job belongs to
+school_id                           Employers: The ID of the school you want to post the job to.
+job_function_names                  A semicolon separated list of job function names which must be one of the system job functions.
+document_notes                      Notes shown to the applicant while they apply
+document_type_names                 Specifies which documents are required. Comma separated numbers, selected based on this list: Resume, Cover Letter, Transcript, Work Sample, Other Document
 contacts:display                    What information about the contact should be displayed? One of: name_and_email, name_only, none
 contacts:email_application_packages Should the contact receive an email for each applicant when they apply? (Boolean)
 contacts:send_summary_when_expired  Should the contact receive an email summary when the job expires? (Boolean)
 contacts:email                      The email address of the contact
-================================== ==================================================================
+=================================== ==================================================================
 
 * Required fields
 
