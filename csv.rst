@@ -58,6 +58,9 @@ CSV Header Value              Value Description
 preferred_name                Coming Soon: The student's preferred name
 middle_name                   Coming Soon: The student's middle name
 work_authorization_name       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
+card_identifier               Used for checking in students using a card swipe
+ethnicity                     The ethnicity of the user. See the reference section for options.
+gender                        The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
 department_gpa                Decimal of student’s departmental GPA
 bio                           A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
 minor_names                   Semi-colon separated list

@@ -58,7 +58,14 @@ The following standardized list of employment types is supported in Handshake::
 
    Full Time
    Part Time
-   Seasonal (Coming soon)
+   Seasonal
+
+Ethnicity
+---------------------
+
+The following standardized list of ethnicities is supported in Handshake::
+
+   Coming soon
 
 Industries
 ----------
