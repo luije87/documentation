@@ -65,7 +65,12 @@ Ethnicity
 
 The following standardized list of ethnicities is supported in Handshake::
 
-   Coming soon
+   White
+   Black or African American
+   Asian
+   American Indian or Alaskan Native
+   Native Hawaiian or Other Pacific Islander
+   Two or more races
 
 Industries
 ----------
