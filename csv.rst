@@ -43,6 +43,7 @@ cumulative_gpa                Decimal of student’s cumulative GPA
 major_names                   Semi-colon separated list of major. These match on the majors that have been imported previously.
 education_start_date          The date the student started at the school in any standard date format.
 education_end_date            The date the student finished at the school (can be blank if currently_attending is set)
+override_disabled_field       This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
 ============================= ==========================================================================================
 
 For an example file of the suggested fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8WE9oSVlpN1FGWXc&authuser=0)
@@ -74,6 +75,27 @@ work_study_eligible           Pass true if this student is eligible for work stu
 ============================= ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
+
+Handling Students who Graduate
+--------
+
+Recommended option
+
++ Run a final sync before graduation that updates their school year status to Alumni
+
++ The file should Also include ‘override_disabled_field’ set to true to say don’t auto archive them
+ 
+Alternative Option
+
++ Don’t do anything upon graduation and allow recent graduates to disappear from the sync. 
+
++ When they're no longer included in the sync they will be archived. 
+
++ When they next sign in they will see the ability to request reactivation of their account. 
+
++ Career services will get the request to reactive their account and be able to set them as alumni (or ask them to set themselves to alumni) and send them any info you want. 
+
++ This request will mark them as excluded from sync. Staff can easily filter by grad date and alumni year to email recently converted alumni
 
 
 Contacts
