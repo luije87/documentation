@@ -144,6 +144,7 @@ Header                              Value
 description                         Description of the job (String)
 legacy_employer_name                Schools: Set a display name for imported jobs
 start_date                          When the job begins (Date - see reference section)
+import_identifier                   This is an identifier that can be used later for adding labels or notes. MUST be unique across all jobs.
 government                          Is this job a government-only job (Boolean)
 remote                              Does this job support remote work (Boolean)
 desired_skills                      The desired skills for this job. (String)
