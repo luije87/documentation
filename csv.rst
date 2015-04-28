@@ -165,7 +165,7 @@ contacts:send_summary_when_expired  Should the contact receive an email summary 
 contacts:email                      The email address of the contact
 =================================== ==================================================================
 
-* Required fields
+\* Required fields
 
 
 Notes
@@ -175,6 +175,7 @@ File name: notes.csv
 
 Schools may import notes onto various items in Handshake.
 The items can be a contact, user, job, appointment, or event.
+
 =================================== ==================================================================
 Header                              Value
 =================================== ==================================================================
@@ -184,6 +185,9 @@ Header                              Value
 content                             The note contents
 privacy_preference                  If this is a personal note or shared with staff. [personal, institution]
 reminder_date                       If there should be a reminder associated with the note. See reference section for date formats.
+=================================== ==================================================================
+
+\* Required fields
 
 
 Labels
@@ -194,6 +198,7 @@ File name: labels.csv
 Schools may import labels onto various items in Handshake.
 The items can be a contact, user, job, appointment, or event.
 This will simply apply labels. If a label already exists it will not apply a duplicate. It will not remove labels
+
 =================================== ==================================================================
 Header                              Value
 =================================== ==================================================================
@@ -201,6 +206,9 @@ Header                              Value
 \*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 \*user_type                         If the identifiable_type is a User, the user_type must be specified.
 name                                The label name to apply.
+=================================== ==================================================================
+
+* Required fields
 
 
 Majors/Minors
