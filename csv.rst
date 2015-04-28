@@ -127,6 +127,58 @@ fax              The contact's fax machine number
 
 \* Required
 
+
+Appointments
+------------
+
+You can import historical appointment records from appointments with students.
+
+\*Params**
+
+========================= ==================================================================
+Header                    Value
+========================= ==================================================================
+\*appointment_medium_name The name of the appointment medium. Case sensitive, must be one of the configurable appointment mediums on your school.
+\*appointment_type_name    The name of the appointment type. Case sensitive, must be one of the configurable appointment types on your school.
+\*staff_member_email       The email of the staff member involved. Must be a staff member in the system.
+\*student_email            The email of the student involved. Must be a student in the system.
+\*start_date               The start date and time
+\*end_date                 The end date and time
+description                A description of the appointment (Text)
+status                     [cancelled, requested, approved, rejected, no_show, started, completed] (String)
+walkin                     Was this appointment a walk-in? (Boolean)
+import_identifier          This identifier must be completely unique, used if you are importing notes or labels on this appointment.
+========================= ==================================================================
+
+\* Required
+
+
+Events
+------
+
+You can import historical events
+
+\*Params**
+
+============================ ==================================================================
+Header                       Value
+============================ ==================================================================
+\*student_registration_start When students can register  (DateTime)
+\*student_registration_end   When students can no longer register (DateTime)
+\*name                       The name of the event
+\*start_date                 When the event starts (DateTime)
+\*end_date                   When the event ends (DateTime)
+\*event_type_name            The type of event. [Workshop, Info Session, Other]
+status                       [pending, in_progress, approved, declined]
+description                  The description of the event
+import_identifier            This identifier must be completely unique to the system, used if you are importing notes, attendees or labels on this event.
+invite_only                  Don't show the event to non-invited students? (Boolean)
+attendee_limit               A limit for the number of attendees (Integer)
+============================ ==================================================================
+
+\* Required
+
+
 Jobs
 ----
 
