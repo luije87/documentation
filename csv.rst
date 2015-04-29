@@ -263,6 +263,23 @@ name                                The label name to apply.
 
 * Required fields
 
+Campuses
+--------
+
+File name: campuses.csv
+
+Schools may import campuses into Handshake.
+
+=================================== ==================================================================
+Header                              Value
+=================================== ==================================================================
+\*name                              The name of the campus. This must be unique across your school.
+description                         A description of the campus.
+location_name                       The address of the campus.
+=================================== ==================================================================
+
+* Required fields
+
 
 Majors/Minors
 -------------
