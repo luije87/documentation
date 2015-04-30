@@ -64,6 +64,7 @@ ethnicity                     The ethnicity of the user. See the reference secti
 gender                        The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
 department_gpa                Decimal of student’s departmental GPA
 bio                           A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
+primary_college_name          The college the student belongs to. Must be one of the colleges configured in the school's college list.
 minor_names                   Semi-colon separated list
 skill_names                   Semi-colon separated list of skills
 external_link_urls            Semi-colon separated list of external links for the profile
