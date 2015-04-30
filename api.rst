@@ -191,23 +191,34 @@ Allows administrators to add a student.
 ============================== ==================================================================
 Key                            Value
 ============================== ==================================================================
-\*email_address:               Student's email address
-\*username:                    Student's username
-user_type:                     Defaults to "Students", one of "Students", "Career Services", "Mentors"
-first_name:                    Student's first name
-last_name:                     Student's last name
-school_year_name:              The name of student's school year
-work_authorization_name:       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
-department_gpa:                Decimal of student's departmental GPA
-cumulative_gpa:                Decimal of student's cumulative GPA
-bio:                           A student bio
-major_names:                   An array of major names for this student
-minor_names:                   An array of minor names for this student
-time_zone:                     The time zone that this user is in. See time zones section for more details.
-disabled:                      Pass true if this student should not be able to login
-work_study_eligible:           Pass true if this student is eligible for work study jobs
-is_public:                     Pass false if this student's profile should not be viewable by approved employers
-mentor_information_attributes: A nested hash containing mentor-specific attributes. See below table for possible values.
+\*email_address:               (String) Student's email address
+\*username:                    (String) Student's username
+\*user_type:                   (String) Defaults to "Students", one of "Students", "Career Services", "Mentors"
+auth_identifier                (String) This is the identifier that is required if you use Single Sign On.
+first_name:                    (String) Student's first name
+last_name:                     (String) Student's last name
+school_year_name:              (String) The name of student's school year. See references for possible values.
+cumulative_gpa:                (Decimal) The student's cumulative GPA
+department_gpa:                (Decimal) Decimal of student's departmental GPA
+major_names:                   (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
+minor_names:                   (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
+education_start_date           (Date) The date the student started at the school in any standard date format. See references for date formats.
+education_end_date             (Date) The date the student finished at the school (can be blank if currently_attending is set). See references for date formats.
+education_currently_attending  (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
+override_disabled_field        (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
+preferred_name                 (String) The student's preferred name
+middle_name                    (String) The student's middle name
+work_authorization_name:       (String) One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
+ethnicity                      (String) The ethnicity of the user. See the reference section for options.
+gender                         (String) The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
+bio:                           (String) A student bio
+skill_names                    (String Array) An array of skills to list on the students profile
+external_link_urls             (String Array) An array of external links to list on the students profile
+time_zone:                     (String) The time zone that this user is in. See time zones section for more details.
+disabled:                      (Boolean) Pass true if this student should not be able to login
+work_study_eligible:           (Boolean) Pass true if this student is eligible for work study jobs
+is_public:                     (Boolean) Pass false if this student's profile should not be viewable by approved employers
+mentor_information_attributes: (Hash) A nested hash containing mentor-specific attributes. See below table for possible values.
 ============================== ==================================================================
 
 **Mentor information params**
@@ -216,13 +227,13 @@ These are nested inside of 'mentor_information_attributes' above
 =================================== ==================================================================
 Key                                 Value
 =================================== ==================================================================
-student_contact_preference:         How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
-expertise_names:                    An array of expertise that this mentor has. Will create if not already listed on school administrator page.
-maximum_mentees:                    The maximum number of ongoing mentorships that this mentor is willing to do.
-maximum_student_contacts_per_month: The maximum number of messages that this mentor is willing to receive.
-industry_name:                      The industry that this mentor is in
-advice:                             Generic advice that this mentor has to offer
-hobbies:                            Relevant hobbies that this mentor listed
+student_contact_preference:         (String) How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
+advice:                             (String) Generic advice that this mentor has to offer
+hobbies:                            (String) Relevant hobbies that this mentor listed
+expertise_names:                    (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
+maximum_mentees:                    (Integer) The maximum number of ongoing mentorships that this mentor is willing to do.
+maximum_student_contacts_per_month: (Integer) The maximum number of messages that this mentor is willing to receive.
+industry_name:                      (String) The industry that this mentor is in. See references for possible values
 =================================== ==================================================================
 
 \* required
