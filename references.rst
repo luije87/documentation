@@ -13,7 +13,10 @@ Bad: True False
 Dates
 -----
 
-When using dates in the CSV or API, we can accept most common date formats. mm/dd/yy or dd-mm-yy or yyyy-mm-dd or yyyy/mm/dd. Will all work. 
+When using dates or datetimes in the CSV or API, please provide them in one of the formats: 
+yyyy-mm-dd
+yyyy-mm-dd hh:mm:ss (assumes UTC time)
+yyyy-mm-dd hh:mm:ss offset (where timezone offset is either + or -, and hhmm)
 
 School Years
 ------------
