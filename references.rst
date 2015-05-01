@@ -12,11 +12,10 @@ Bad: True False
 
 Dates
 -----
-
-When using dates or datetimes in the CSV or API, please provide them in one of the formats: 
-yyyy-mm-dd
-yyyy-mm-dd hh:mm:ss (assumes UTC time)
-yyyy-mm-dd hh:mm:ss offset (where timezone offset is either + or -, and hhmm)
+| When using dates or datetimes in the CSV or API, please provide them in one of the following formats:
+| yyyy-mm-dd
+| yyyy-mm-dd hh:mm:ss (assumes UTC time)  
+| yyyy-mm-dd hh:mm:ss offset (where timezone offset is either + or -, and hhmm)  
 
 School Years
 ------------
