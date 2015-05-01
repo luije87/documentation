@@ -74,3 +74,10 @@ Handshake is provided as SaaS, so you do not need to dedicate any infrastructure
 Does Handshake use SSL?
 -----------------------
 Yes, the production application forces SSL / TLS 1.2 to ensure that all interactions with the Handshake application are as secure as possible. The demo version of the application does not force SSL, and only test data should be used on the demo version.
+
+
+Where can I find your terms of service and privacy policy?
+----------------------------------------------------------
+`Terms of Service <https://joinhandshake.com/tos/>`_
+
+`Privacy Policy <https://joinhandshake.com/privacy/>`_
