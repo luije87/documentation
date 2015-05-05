@@ -117,10 +117,7 @@ title            The title of the contact (String)
 description      A description of the contact (Text)
 employer_id      The Handshake id of the employer that you want to list the contacts for (int)
 employer_name    The name of the employer that you want to list the contacts for (String)
-address_city     The city the contact is in
-address_state    The state the contact is in
-address_zip      The zip the contact is in
-address_country  The country the contact is in
+location_name    The name of the location of the contact
 phone            The contact's phone number
 cell_phone       The contact's cell number
 fax              The contact's fax machine number
