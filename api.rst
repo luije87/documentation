@@ -553,12 +553,10 @@ Key                Value
 \*\*employer_id:   The id of the employer that you want to list the contact for
 \*\*employer_name: The name of the employer that the contact represents
 title              The job title of this contact, for example 'University Relations'
-location_id        ..
+location_name      ..
 phone              ..
 cell_phone         ..
 fax                ..
-address_one        ..
-address_two        ..
 description        ..
 assigned_to_id     The id of the user in Handshake that manages this contact
 ================== ==================================================================
