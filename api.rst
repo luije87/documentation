@@ -114,6 +114,7 @@ Key                            Value
 \*username:                    (String) Student's username
 \*user_type:                   (String) Defaults to "Students", one of "Students", "Career Services", "Mentors"
 auth_identifier                (String) This is the identifier that is required if you use Single Sign On.
+card_id                        (String) A card id that can be used for card swipe checkins.
 first_name:                    (String) Student's first name
 last_name:                     (String) Student's last name
 school_year_name:              (String) The name of student's school year. See references for possible values.
