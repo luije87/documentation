@@ -38,7 +38,7 @@ The following standardized list of salary types is supported in Handshake::
    Paid
    Unpaid
    Commission Only
-   Commission Plus Salaray
+   Commission Plus salary
 
 Job Type Names
 --------------
