@@ -73,6 +73,7 @@ disabled                      Pass true if this student should not be able to lo
 is_public                     Pass false if this student's profile should not be viewable by approved employers. Used for students who have set "not contact" as on.
 education_currently_attending Boolean. Should be true if education_end_date is blank, false otherwise
 work_study_eligible           Pass true if this student is eligible for work study jobs
+campus_name                   The name of the campus the student is at. Must be one of the campuses set up in your settings.
 ============================= ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
