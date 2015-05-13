@@ -140,6 +140,7 @@ disabled:                      (Boolean) Pass true if this student should not be
 work_study_eligible:           (Boolean) Pass true if this student is eligible for work study jobs
 is_public:                     (Boolean) Pass false if this student's profile should not be viewable by approved employers
 mentor_information_attributes: (Hash) A nested hash containing mentor-specific attributes. See below table for possible values.
+campus_name                    The name of the campus the student is at. Must be one of the campuses set up in your settings.
 ============================== ==================================================================
 
 **Mentor information params**
