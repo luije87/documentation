@@ -471,60 +471,62 @@ The supported options for time zones in Handshake are::
 Major Groups
 ---------------------
 
-    'Accounting'
-    'Agricultural Business'
-    'Business Adminstration and Management'
-    'Business Commerce General'
-    'Finance and Financial Management'
-    'Hospitality Administration and Management'
-    'Marketing'
-    'Sales and Marketing Operation'
-    'Criminal Justice'
-    'Family and Consumer Science'
-    'Human Development Studies'
-    'Parks, Recreation, and Leisure Studies'
-    'Social Work'
-    'Textiles and Clothing'
-    'Elementary Education'
-    'Health Education'
-    'Health and Physical Education'
-    'Kindergarten and Preschool Education'
-    'Mathematics Education'
-    'Physical Education'
-    'Secondary Education'
-    'Special Education'
-    'Computer and Information Science'
-    'Management Information Systems'
-    'Computer Programming'
-    'Chemical Engineering'
-    'Civil Engineering'
-    'Electrical and Communications Engineering'
-    'Industrial Engineering'
-    'Mechanical Engineering'
-    'Animal Science'
-    'Biology'
-    'Plant Sciences'
-    'Chemistry'
-    'Geography and Cartography'
-    'Mathematics and Statistics'
-    'Science Education'
-    'Communication Disorders Sciences and Services'
-    'Medicine'
-    'Nursing'
-    'Design and Applied Arts'
-    'Drama and Theatre Arts'
-    'English Language and Literature'
-    'Fine and Studio Arts'
-    'Foreign Languages and Literature'
-    'Language Arts Education'
-    'Music and Music Education'
-    'Communication and Media Studies'
-    'Journalism'
-    'Public Relations and Advertising'
-    'Radio, Television, and Digital Communication'
-    'Criminology'
-    'Economics'
-    'History'
-    'Political Science and Government'
-    'Psychology'
-    'Sociology'
+The following list of major grups is supported in Handshake::
+
+    Accounting
+    Agricultural Business
+    Business Adminstration and Management
+    Business Commerce General
+    Finance and Financial Management
+    Hospitality Administration and Management
+    Marketing
+    Sales and Marketing Operation
+    Criminal Justice
+    Family and Consumer Science
+    Human Development Studies
+    Parks, Recreation, and Leisure Studies
+    Social Work
+    Textiles and Clothing
+    Elementary Education
+    Health Education
+    Health and Physical Education
+    Kindergarten and Preschool Education
+    Mathematics Education
+    Physical Education
+    Secondary Education
+    Special Education
+    Computer and Information Science
+    Management Information Systems
+    Computer Programming
+    Chemical Engineering
+    Civil Engineering
+    Electrical and Communications Engineering
+    Industrial Engineering
+    Mechanical Engineering
+    Animal Science
+    Biology
+    Plant Sciences
+    Chemistry
+    Geography and Cartography
+    Mathematics and Statistics
+    Science Education
+    Communication Disorders Sciences and Services
+    Medicine
+    Nursing
+    Design and Applied Arts
+    Drama and Theatre Arts
+    English Language and Literature
+    Fine and Studio Arts
+    Foreign Languages and Literature
+    Language Arts Education
+    Music and Music Education
+    Communication and Media Studies
+    Journalism
+    Public Relations and Advertising
+    Radio, Television, and Digital Communication
+    Criminology
+    Economics
+    History
+    Political Science and Government
+    Psychology
+    Sociology
