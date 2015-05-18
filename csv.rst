@@ -285,6 +285,7 @@ Majors/Minors
 
 File name: majors.csv OR minors.csv
 
-Each row should contain one major/minor name. A header is optional.
+Majors: Each row should contain the name and a semi-colon separated list of major_group_names.
+Minors: Each row should contain the name.
 
 Major and minor files should be separate.
