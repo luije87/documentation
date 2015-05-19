@@ -67,12 +67,13 @@ Ethnicity
 
 The following standardized list of ethnicities is supported in Handshake::
 
-   White
+   Native American/Alaskan Native
    Black or African American
-   Asian
-   American Indian or Alaskan Native
-   Native Hawaiian or Other Pacific Islander
-   Two or more races
+   Asian/Asian American"
+   Native Hawaiian/Pacific Islander
+   Latino(a)
+   White/Caucasian
+   Middle Eastern
 
 Industries
 ----------
