@@ -280,12 +280,25 @@ location_name                       The address of the campus.
 * Required fields
 
 
-Majors/Minors
+Majors
 -------------
 
-File name: majors.csv OR minors.csv
+File name: majors.csv
 
-Majors: Each row should contain the name and a semi-colon separated list of major_group_names.
-Minors: Each row should contain the name.
+Schools may import majors into Handshake. The columns DO matter - name should be column 1, major group names should be column 2.
 
-Major and minor files should be separate.
+=================================== ==================================================================
+Header                              Value
+=================================== ==================================================================
+\*name                              The name of the campus. This must be unique across your school.
+major_group_names                   A semi-colon separated list of major group names that the major belongs to. Leave this blank to leave the major groups as-is.
+=================================== ==================================================================
+
+* Required fields
+
+Minors
+-----------
+
+File name: minors.csv
+
+Each row should contain the name.
