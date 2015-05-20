@@ -24,20 +24,26 @@ Our preferred format is with all users together in one CSV, and a user type fiel
 
 How do I transfer the data to my secure bucket?
 -----------------------------------------------
-The easiest way to transfer data is with the AWS CLI (http://aws.amazon.com/cli/)
+The easiest way to transfer data is with the AWS CLI (http://aws.amazon.com/cli/)  
 
-If you have never set up the AWS CLI before (you should only need to do this once)
-The AWS CLI can be easily installed using pip. Simply type "pip install awscli". See this article for other methods to install the CLI.
-You should have received an 'Access Key ID' and a 'Secret Access Key' from the Handshake team.
-Type "aws configure" and follow the prompts to enter your Key ID and Secret Key mentioned above. Unless otherwise instructed by the Handshake team, you should use "us-east-1" as your region.
-You may choose any default output format you wish.
-For more information see this article.
+Install the AWS CLI
 
-Once you have the CLI set up, uploading your data is as simple as issuing the following command:
-aws s3api put-object --bucket [your_bucket] --key uploads/[yyyymmdd].csv --body [/path/to/your_local_file]
-For example:
-aws s3api put-object --bucket hudson_university --key uploads/20140410.csv --body /tmp/student_dump20140410.csv
+You should have received an 'Access Key ID' and a 'Secret Access Key' from the Handshake team.  
 
-The AWS S3 API will respond with a document ID if the file was successfully transferred, otherwise it will respond with an error.
+Type "aws configure" and follow the prompts to enter your Key ID and Secret Key mentioned above. Unless otherwise instructed by the Handshake team, you should use "us-east-1" as your region.  
 
-If you wish to do a test run, simply change the prefix on the destination file key from uploads/ to test/
+You may choose any default output format you wish.  
+
+For more information see this article.  
+
+Once you have the CLI set up, uploading your data is as simple as issuing the following command:  
+
+aws s3api put-object --bucket [your_bucket] --key uploads/[yyyymmdd].csv --body [/path/to/your_local_file]  
+
+For example:  
+
+aws s3api put-object --bucket hudson_university --key uploads/20140410.csv --body /tmp/student_dump20140410.csv  
+
+The AWS S3 API will respond with a document ID if the file was successfully transferred, otherwise it will respond with an error.  
+
+If you wish to do a test run, simply change the prefix on the destination file key from uploads/ to test/  
