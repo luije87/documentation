@@ -74,6 +74,7 @@ is_public                     Pass false if this student's profile should not be
 education_currently_attending Boolean. Should be true if education_end_date is blank, false otherwise
 work_study_eligible           Pass true if this student is eligible for work study jobs
 campus_name                   The name of the campus the student is at. Must be one of the campuses set up in your settings.
+mobile_number                 The user's mobile phone number
 ============================= ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
@@ -260,7 +261,7 @@ Header                              Value
 name                                The label name to apply.
 =================================== ==================================================================
 
-* Required fields
+\* Required fields
 
 Campuses
 --------
@@ -277,7 +278,7 @@ description                         A description of the campus.
 location_name                       The address of the campus.
 =================================== ==================================================================
 
-* Required fields
+\* Required fields
 
 
 Majors
@@ -294,7 +295,7 @@ Header                              Value
 major_group_names                   A semi-colon separated list of major group names that the major belongs to. Leave this blank to leave the major groups as-is.
 =================================== ==================================================================
 
-* Required fields
+\* Required fields
 
 Minors
 -----------
@@ -302,3 +303,60 @@ Minors
 File name: minors.csv
 
 Each row should contain the name.
+
+Buildings
+---------
+
+File name: buildings.csv
+
+=================================== ==================================================================
+Header                              Value
+=================================== ==================================================================
+name                                The name of the building
+location_attributes:location_name   The location the building is in. This should be a geo-codeable address
+=================================== ==================================================================
+
+Rooms
+-----
+
+File name: rooms.csv
+
+=================================== ==================================================================
+Header                              Value
+=================================== ==================================================================
+name                                The name of the room
+building_name                       The name of the building. Must be a building already existing at the school.
+capacity                            The room's capacity (integer)
+available_start                     When the room becomes available (datetime)
+available_end                       When the room is no longer available (datetime)
+=================================== ==================================================================
+
+Attendees
+---------
+
+File name: attendees.csv
+
+=================================== ==================================================================
+Header                              Value
+=================================== ==================================================================
+student_email_address               The email address of the student to be checked in
+registered                          Boolean - Mark this student as pre registered?
+checked_in                          Boolean - Mark this student as checked in at the event?
+\*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
+\*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
+=================================== ==================================================================
+
+Attendees
+---------
+
+File name: attendees.csv
+
+=================================== ==================================================================
+Header                              Value
+=================================== ==================================================================
+student_email_address               The email address of the student to be checked in
+registered                          Boolean - Mark this student as pre registered?
+checked_in                          Boolean - Mark this student as checked in at the event?
+\*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
+\*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
+=================================== ==================================================================
