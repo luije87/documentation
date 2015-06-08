@@ -345,18 +345,3 @@ checked_in                          Boolean - Mark this student as checked in at
 \*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
 \*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 =================================== ==================================================================
-
-Attendees
----------
-
-File name: attendees.csv
-
-=================================== ==================================================================
-Header                              Value
-=================================== ==================================================================
-student_email_address               The email address of the student to be checked in
-registered                          Boolean - Mark this student as pre registered?
-checked_in                          Boolean - Mark this student as checked in at the event?
-\*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
-\*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
-=================================== ==================================================================
