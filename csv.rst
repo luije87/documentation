@@ -109,21 +109,21 @@ contact is to bring over employer relationships. Contacts can be labeled, sorted
 
 \*Params**
 
-================ ==================================================================
-Header           Value
-================ ==================================================================
-\*first_name     The first name of the contact (String)
-\*last_name      The last name of the contact (String)
-\*email_address  The email of the contact (String)
-title            The title of the contact (String)
-description      A description of the contact (Text)
-employer_id      The Handshake id of the employer that you want to list the contacts for (int)
-employer_name    The name of the employer that you want to list the contacts for (String)
-location_name    The name of the location of the contact
-phone            The contact's phone number
-cell_phone       The contact's cell number
-fax              The contact's fax machine number
-================ ==================================================================
+=================================== ==================================================================
+Header                              Value
+=================================== ==================================================================
+\*first_name                        The first name of the contact (String)
+\*last_name                         The last name of the contact (String)
+\*email_address                     The email of the contact (String)
+title                               The title of the contact (String)
+description                         A description of the contact (Text)
+employer_id                         The Handshake id of the employer that you want to list the contacts for (int)
+employer_name                       The name of the employer that you want to list the contacts for (String)
+location_attributes:location_name   The name of the location of the contact (coming soon)
+phone                               The contact's phone number
+cell_phone                          The contact's cell number
+fax                                 The contact's fax machine number
+=================================== ==================================================================
 
 \* Required
 
