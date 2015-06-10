@@ -206,7 +206,7 @@ responsibilities                    The responsibilities for this job. (String)
 external_apply_link                 An optional link to send the applicants to when they click apply.
 \*application_medium                The method a student should use to apply. One of ['handshake', 'external_link', 'offline', 'handshake_and_external']
 salary_type_name                    The salary type. Must be one of the system salary types described in the references section.
-expiration_date                     The date the posting should expire. Should be in yyyy-mm-dd format.
+default_expiration_date                     The date the posting should expire. Should be in yyyy-mm-dd format.
 division_code                       The code corresponding to the division this job belongs to
 school_id                           Employers: The ID of the school you want to post the job to.
 job_function_names                  A semicolon separated list of job function names which must be one of the system job functions.
