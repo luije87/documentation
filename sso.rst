@@ -2,6 +2,7 @@
 
 Single Sign On
 ===================
+If you are attempting to do single sign on with Handshake, please check your Teamwork account for the form link to submit the Single Sign on Details we need.
 
 CAS
 ---
@@ -14,6 +15,8 @@ Login Path  The path a user should be sent to for authentication https://cashost
 
 SAML
 ----
+
+If you are an Incommon Member you can use our entityID https://app.joinhandshake.com/sp
 
 ==================== ===================================================== =======================================================
 Item                 Description                                           Example
