@@ -506,20 +506,20 @@ Allows administrators to create jobs at your school
 
 **Params**
 
-====================== ==================================================================
-Key                    Value
-====================== ==================================================================
-\*title:               The jobs's title
-\*employer_id:         System ID of the employer associated with this job 
-\*job_type_name:       The type of job. Must be one of the system job types 
-\*application_medium   The method a student should use to apply. One of ['handsake', 'external_link', 'offline', 'handshake_and_external']
-description:           Description of the job
-job_function_names:    An array of job function names which must be one of the system job functions.
-location:              The location of the job
-salary_type:           The salary type. Must be one of the system salary types
-contact_email:         The email of the contact to be associated with the job. Must match with an existing contact
-expiration_date:       The date the posting should expire. yyyy-mm-dd
-====================== ==================================================================
+======================== ==================================================================
+Key                      Value
+======================== ==================================================================
+\*title:                 The jobs's title
+\*employer_id:           System ID of the employer associated with this job 
+\*job_type_name:         The type of job. Must be one of the system job types 
+\*application_medium     The method a student should use to apply. One of ['handsake', 'external_link', 'offline', 'handshake_and_external']
+description:             Description of the job
+job_function_names:      An array of job function names which must be one of the system job functions.
+location:                The location of the job
+salary_type:             The salary type. Must be one of the system salary types
+contact_email:           The email of the contact to be associated with the job. Must match with an existing contact
+default_expiration_date: The date the posting should expire. yyyy-mm-dd
+======================== ====================================================================
 
 \* Required fields
 
