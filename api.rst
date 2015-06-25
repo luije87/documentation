@@ -519,7 +519,7 @@ job_function_names:                 An array of job function names which must be
 location:                           The location of the job
 salary_type:                        The salary type. Must be one of the system salary types
 contact_email:                      The email of the contact to be associated with the job. Must match with an existing contact
-expiration_date:                    The date the posting should expire. yyyy-mm-dd
+default_expiration_date:            The date the posting should expire. yyyy-mm-dd
 =================================== ==================================================================
 
 \* Required fields
