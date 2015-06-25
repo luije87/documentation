@@ -75,6 +75,7 @@ education_currently_attending Boolean. Should be true if education_end_date is b
 work_study_eligible           Pass true if this student is eligible for work study jobs
 campus_name                   The name of the campus the student is at. Must be one of the campuses set up in your settings.
 mobile_number                 The user's mobile phone number
+system_label_names            Semi-colon separated list of label names to apply to the user
 ============================= ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
