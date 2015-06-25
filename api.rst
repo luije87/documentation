@@ -80,9 +80,9 @@ Allows administrators to search for students at their school.
 **Params**
 
 =========  ==================================================================
-Key        Value                                                              
+Key        Value
 =========  ==================================================================
-query      A simple string query to search with                                           
+query      A simple string query to search with
 =========  ==================================================================
 
 **Sample Response**
@@ -482,7 +482,7 @@ Allows managing jobs at your school
 
 [GET] /jobs
 *************
-Allows administrators to list jobs at your school 
+Allows administrators to list jobs at your school
 
 **Params**
 
@@ -502,24 +502,25 @@ None
 
 [POST] /jobs
 **************
-Allows administrators to create jobs at your school 
+Allows administrators to create jobs at your school
 
 **Params**
 
-====================== ==================================================================
-Key                    Value
-====================== ==================================================================
-\*title:               The jobs's title
-\*employer_id:         System ID of the employer associated with this job 
-\*job_type_name:       The type of job. Must be one of the system job types 
-\*application_medium   The method a student should use to apply. One of ['handsake', 'external_link', 'offline', 'handshake_and_external']
-description:           Description of the job
-job_function_names:    An array of job function names which must be one of the system job functions.
-location:              The location of the job
-salary_type:           The salary type. Must be one of the system salary types
-contact_email:         The email of the contact to be associated with the job. Must match with an existing contact
-expiration_date:       The date the posting should expire. yyyy-mm-dd
-====================== ==================================================================
+=================================== ==================================================================
+Key                                 Value
+=================================== ==================================================================
+\*title:                            The jobs's title
+\*employer_id:                      System ID of the employer associated with this job
+\*job_type_name:                    The type of job. Must be one of the system job types
+\*application_medium                The method a student should use to apply. One of ['handsake', 'external_link', 'offline', 'handshake_and_external']
+\*physical_application_instructions Instructions on how a student should submit a physical application. This is required if the application medium is 'offline'
+description:                        Description of the job
+job_function_names:                 An array of job function names which must be one of the system job functions.
+location:                           The location of the job
+salary_type:                        The salary type. Must be one of the system salary types
+contact_email:                      The email of the contact to be associated with the job. Must match with an existing contact
+expiration_date:                    The date the posting should expire. yyyy-mm-dd
+=================================== ==================================================================
 
 \* Required fields
 

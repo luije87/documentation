@@ -87,16 +87,16 @@ Recommended option
 + Run a final sync before graduation that updates their school year status to Alumni
 
 + The file should Also include ‘override_disabled_field’ set to true to say don’t auto archive them
- 
+
 Alternative Option
 
-+ Don’t do anything upon graduation and allow recent graduates to disappear from the sync. 
++ Don’t do anything upon graduation and allow recent graduates to disappear from the sync.
 
-+ When they're no longer included in the sync they will be archived. 
++ When they're no longer included in the sync they will be archived.
 
-+ When they next sign in they will see the ability to request reactivation of their account. 
++ When they next sign in they will see the ability to request reactivation of their account.
 
-+ Career services will get the request to reactive their account and be able to set them as alumni (or ask them to set themselves to alumni) and send them any info you want. 
++ Career services will get the request to reactive their account and be able to set them as alumni (or ask them to set themselves to alumni) and send them any info you want.
 
 + This request will mark them as excluded from sync. Staff can easily filter by grad date and alumni year to email recently converted alumni
 
@@ -186,7 +186,7 @@ File name: jobs.csv
 
 Schools may import jobs using the legacy job bucket. The legacy_employer_name can
 be used to set a display name for the job.
-Employers may import jobs and post them to schools that they have permission to 
+Employers may import jobs and post them to schools that they have permission to
 post to using the school_id
 
 =================================== ==================================================================
@@ -205,6 +205,7 @@ responsibilities                    The responsibilities for this job. (String)
 \*employment_type_name              The type of job. Must be one of the system job types defined in the references section (String)
 external_apply_link                 An optional link to send the applicants to when they click apply.
 \*application_medium                The method a student should use to apply. One of ['handshake', 'external_link', 'offline', 'handshake_and_external']
+\*physical_application_instructions Instructions on how a student should submit a physical application. This is required if the application medium is 'offline'
 salary_type_name                    The salary type. Must be one of the system salary types described in the references section.
 default_expiration_date             The date the posting should expire. Should be in yyyy-mm-dd format.
 division_code                       The code corresponding to the division this job belongs to
