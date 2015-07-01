@@ -211,6 +211,7 @@ location_name                       The location of the job.
 default_expiration_date             The date the posting should expire. Should be in yyyy-mm-dd format.
 division_code                       The code corresponding to the division this job belongs to
 school_id                           Employers: The ID of the school you want to post the job to.
+posting_status                      Status for the posting if posted to a school. Possible values: expired, approved, pending, declined.
 job_function_names                  A semicolon separated list of job function names which must be one of the system job functions.
 document_notes                      Notes shown to the applicant while they apply
 document_type_names                 Specifies which documents are required. Comma separated numbers, selected based on this list: Resume, Cover Letter, Transcript, Work Sample, Other Document
