@@ -138,7 +138,6 @@ external_link_urls             (String Array) An array of external links to list
 time_zone:                     (String) The time zone that this user is in. See time zones section for more details.
 disabled:                      (Boolean) Pass true if this student should not be able to login
 work_study_eligible:           (Boolean) Pass true if this student is eligible for work study jobs
-is_public:                     (Boolean) Pass false if this student's profile should not be viewable by approved employers
 mentor_information_attributes: (Hash) A nested hash containing mentor-specific attributes. See below table for possible values.
 campus_name                    The name of the campus the student is at. Must be one of the campuses set up in your settings.
 mobile_number                  The user's mobile phone number
