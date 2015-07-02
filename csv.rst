@@ -70,7 +70,6 @@ skill_names                   Semi-colon separated list of skills
 external_link_urls            Semi-colon separated list of external links for the profile
 time_zone                     The time zone that this user is in. See time zones section for more details.
 disabled                      Pass true if this student should not be able to login
-is_public                     Pass false if this student's profile should not be viewable by approved employers. Used for students who have set "not contact" as on.
 education_currently_attending Boolean. Should be true if education_end_date is blank, false otherwise
 work_study_eligible           Pass true if this student is eligible for work study jobs
 campus_name                   The name of the campus the student is at. Must be one of the campuses set up in your settings.
