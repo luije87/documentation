@@ -213,7 +213,7 @@ school_id                           Employers: The ID of the school you want to 
 posting_status                      Status for the posting if posted to a school. Possible values: expired, approved, pending, declined.
 job_function_names                  A semicolon separated list of job function names which must be one of the system job functions.
 document_notes                      Notes shown to the applicant while they apply
-document_type_names                 Specifies which documents are required. Comma separated numbers, selected based on this list: Resume, Cover Letter, Transcript, Work Sample, Other Document
+document_type_names                 Specifies which documents are required. Comma separated, selected based on this list: Resume, Cover Letter, Transcript, Work Sample, Other Document
 contacts:display                    What information about the contact should be displayed? One of: name_and_email, name_only, none
 contacts:email_application_packages Should the contact receive an email for each applicant when they apply? (Boolean)
 contacts:send_summary_when_expired  Should the contact receive an email summary when the job expires? (Boolean)
