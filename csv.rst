@@ -64,13 +64,14 @@ gender                        The gender of the user. One of "Male", "Female", "
 department_gpa                Decimal of student’s departmental GPA
 bio                           A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
 minor_names                   Semi-colon separated list
-skill_names                   Semi-colon separated list of skills
+skill_names                   Semi-colon separated list of skills. This generally should not be used in a sync.
 external_link_urls            Semi-colon separated list of external links for the profile
 time_zone                     The time zone that this user is in. See time zones section for more details.
-disabled                      Pass true if this student should not be able to login
-is_public                     Pass false if this student's profile should not be viewable by approved employers. Used for students who have set "not contact" as on.
+disabled                      Pass true if this student should not be able to login.
 education_currently_attending Boolean. Should be true if education_end_date is blank, false otherwise
 work_study_eligible           Pass true if this student is eligible for work study jobs
+profile_review_status         This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not configured for your school)
+document_review_status        This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not configured for your school)
 ============================= ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
@@ -141,6 +142,8 @@ contacts:display                    What information about the contact should be
 contacts:email_application_packages Should the contact receive an email for each applicant when they apply? (Boolean)
 contacts:send_summary_when_expired  Should the contact receive an email summary when the job expires? (Boolean)
 contacts:email                      The email address of the contact
+location_name                       The location for the job. Enter it as an address in one line (Example 123 Example Street, Palo Alto, CA 94306)
+physical_application_instructions   Instrutions to show the student when applying. Only relevant for application_medium = physical.
 =================================== ==================================================================
 
 * Required fields
