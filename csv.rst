@@ -70,8 +70,8 @@ time_zone                     The time zone that this user is in. See time zones
 disabled                      Pass true if this student should not be able to login.
 education_currently_attending Boolean. Should be true if education_end_date is blank, false otherwise
 work_study_eligible           Pass true if this student is eligible for work study jobs
-profile_review_status         This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not configured for your school)
-document_review_status        This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not configured for your school)
+profile_review_status         Coming soon. This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not configured for your school)
+document_review_status        Coming soon. This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not configured for your school)
 ============================= ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
