@@ -12,8 +12,10 @@ Bad: True False
 
 Dates
 -----
-
-When using dates in the CSV or API, we can accept most common date formats. mm/dd/yy or dd-mm-yy or yyyy-mm-dd or yyyy/mm/dd. Will all work. 
+| When using dates or datetimes in the CSV or API, please provide them in one of the following formats:
+| yyyy-mm-dd
+| yyyy-mm-dd hh:mm:ss (assumes UTC time)  
+| yyyy-mm-dd hh:mm:ss offset (where timezone offset is either + or -, and hhmm)  
 
 School Years
 ------------
@@ -65,12 +67,13 @@ Ethnicity
 
 The following standardized list of ethnicities is supported in Handshake::
 
-   White
+   Native American/Alaskan Native
    Black or African American
-   Asian
-   American Indian or Alaskan Native
-   Native Hawaiian or Other Pacific Islander
-   Two or more races
+   Asian/Asian American"
+   Native Hawaiian/Pacific Islander
+   Latino(a)
+   White/Caucasian
+   Middle Eastern
 
 Industries
 ----------
@@ -465,3 +468,66 @@ The supported options for time zones in Handshake are::
     "Nuku'alofa"
     "Samoa"
     "Tokelau Is."
+    
+Major Groups
+---------------------
+
+The following list of major grups is supported in Handshake::
+
+    Accounting
+    Agricultural Business
+    Business Adminstration and Management
+    Business Commerce General
+    Finance and Financial Management
+    Hospitality Administration and Management
+    Marketing
+    Sales and Marketing Operation
+    Criminal Justice
+    Family and Consumer Science
+    Human Development Studies
+    Parks, Recreation, and Leisure Studies
+    Social Work
+    Textiles and Clothing
+    Elementary Education
+    Health Education
+    Health and Physical Education
+    Kindergarten and Preschool Education
+    Mathematics Education
+    Physical Education
+    Secondary Education
+    Special Education
+    Computer and Information Science
+    Management Information Systems
+    Computer Programming
+    Chemical Engineering
+    Civil Engineering
+    Electrical and Communications Engineering
+    Industrial Engineering
+    Mechanical Engineering
+    Animal Science
+    Biology
+    Plant Sciences
+    Chemistry
+    Geography and Cartography
+    Mathematics and Statistics
+    Science Education
+    Communication Disorders Sciences and Services
+    Medicine
+    Nursing
+    Design and Applied Arts
+    Drama and Theatre Arts
+    English Language and Literature
+    Fine and Studio Arts
+    Foreign Languages and Literature
+    Language Arts Education
+    Music and Music Education
+    Communication and Media Studies
+    Journalism
+    Public Relations and Advertising
+    Radio, Television, and Digital Communication
+    Criminology
+    Economics
+    History
+    Political Science and Government
+    Psychology
+    Sociology

@@ -69,87 +69,6 @@ The 'errors' attribute is a hash with attributes as keys and values as arrays of
       }
     }
 
-Batch Requests
---------------
-[POST] /batch
-*************
-All API calls listed in this document can be done in batch calls via the batch API call. A batch call takes a list of http request details (method type, url, params) and runs each request. The response is the result set of all requests. Maximum of 50 ops per call can be included.
-
-**Params**
-
-=========  ===================================================================
-Key        Value
-=========  ===================================================================
-ops        "An array of objects containing details on the request to be made."
-=========  ===================================================================
-
-**Sample Params**
-::
-
-    {
-      ops: [
-        {
-          method: ‘post’,
-          url: ‘/api/v1/users’,
-          params: {
-            user: {
-              email_address: 'sgringwe@mtu.edu',
-              username: 'sgringwe',
-              first_name: 'Scott',
-              …
-            }
-          }
-        },
-        {
-          method: ‘post’,
-          url: ‘/api/v1/users’,
-          params: {
-            user: {
-              email_address: 'bmchrist@mtu.edu',
-              username: 'bmchrist',
-              first_name: 'Ben',
-              …
-            }
-          }
-        }
-      ]
-    }
-
-**Sample Response**
-::
-
-    {
-      results: [
-        {
-          body: {
-            success: true,
-            user: {
-              ...
-            }
-          },
-          headers: {
-            "Content-Type"=>"application/json; charset=utf-8",
-            ...
-          },
-          status: “200”
-        },
-        {
-          body: {
-            success: true,
-            user: {
-              ...
-            }
-          },
-          headers: {
-            "Content-Type"=>"application/json; charset=utf-8",
-            ...
-          },
-          status: “200”
-        }
-
-      ]
-    }
-
 User Management
 ---------------
 Handshake allows users to manage users at their school via the API. This can be useful when integrating with other systems at the university which hold student data in order to keep Handshake up to date.
@@ -161,9 +80,9 @@ Allows administrators to search for students at their school.
 **Params**
 
 =========  ==================================================================
-Key        Value                                                              
+Key        Value
 =========  ==================================================================
-query      A simple string query to search with                                           
+query      A simple string query to search with
 =========  ==================================================================
 
 **Sample Response**
@@ -191,23 +110,37 @@ Allows administrators to add a student.
 ============================== ==================================================================
 Key                            Value
 ============================== ==================================================================
-\*email_address:               Student's email address
-\*username:                    Student's username
-user_type:                     Defaults to "Students", one of "Students", "Career Services", "Mentors"
-first_name:                    Student's first name
-last_name:                     Student's last name
-school_year_name:              The name of student's school year
-work_authorization_name:       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
-department_gpa:                Decimal of student's departmental GPA
-cumulative_gpa:                Decimal of student's cumulative GPA
-bio:                           A student bio
-major_names:                   An array of major names for this student
-minor_names:                   An array of minor names for this student
-time_zone:                     The time zone that this user is in. See time zones section for more details.
-disabled:                      Pass true if this student should not be able to login
-work_study_eligible:           Pass true if this student is eligible for work study jobs
-is_public:                     Pass false if this student's profile should not be viewable by approved employers
-mentor_information_attributes: A nested hash containing mentor-specific attributes. See below table for possible values.
+\*email_address:               (String) Student's email address
+\*username:                    (String) Student's username
+\*user_type:                   (String) Defaults to "Students", one of "Students", "Career Services", "Mentors"
+auth_identifier                (String) This is the identifier that is required if you use Single Sign On.
+card_id                        (String) A card id that can be used for card swipe checkins.
+first_name:                    (String) Student's first name
+last_name:                     (String) Student's last name
+school_year_name:              (String) The name of student's school year. See references for possible values.
+cumulative_gpa:                (Decimal) The student's cumulative GPA
+department_gpa:                (Decimal) Decimal of student's departmental GPA
+major_names:                   (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
+minor_names:                   (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
+primary_college_name           (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
+education_start_date           (Date) The date the student started at the school in any standard date format. See references for date formats.
+education_end_date             (Date) The date the student finished at the school (can be blank if currently_attending is set). See references for date formats.
+education_currently_attending  (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
+override_disabled_field        (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
+preferred_name                 (String) The student's preferred name
+middle_name                    (String) The student's middle name
+work_authorization_name:       (String) One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
+ethnicity                      (String) The ethnicity of the user. See the reference section for options.
+gender                         (String) The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
+bio:                           (String) A student bio
+skill_names                    (String Array) An array of skills to list on the students profile
+external_link_urls             (String Array) An array of external links to list on the students profile
+time_zone:                     (String) The time zone that this user is in. See time zones section for more details.
+disabled:                      (Boolean) Pass true if this student should not be able to login
+work_study_eligible:           (Boolean) Pass true if this student is eligible for work study jobs
+mentor_information_attributes: (Hash) A nested hash containing mentor-specific attributes. See below table for possible values.
+campus_name                    The name of the campus the student is at. Must be one of the campuses set up in your settings.
+mobile_number                  The user's mobile phone number
 ============================== ==================================================================
 
 **Mentor information params**
@@ -216,13 +149,13 @@ These are nested inside of 'mentor_information_attributes' above
 =================================== ==================================================================
 Key                                 Value
 =================================== ==================================================================
-student_contact_preference:         How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
-expertise_names:                    An array of expertise that this mentor has. Will create if not already listed on school administrator page.
-maximum_mentees:                    The maximum number of ongoing mentorships that this mentor is willing to do.
-maximum_student_contacts_per_month: The maximum number of messages that this mentor is willing to receive.
-industry_name:                      The industry that this mentor is in
-advice:                             Generic advice that this mentor has to offer
-hobbies:                            Relevant hobbies that this mentor listed
+student_contact_preference:         (String) How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
+advice:                             (String) Generic advice that this mentor has to offer
+hobbies:                            (String) Relevant hobbies that this mentor listed
+expertise_names:                    (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
+maximum_mentees:                    (Integer) The maximum number of ongoing mentorships that this mentor is willing to do.
+maximum_student_contacts_per_month: (Integer) The maximum number of messages that this mentor is willing to receive.
+industry_name:                      (String) The industry that this mentor is in. See references for possible values
 =================================== ==================================================================
 
 \* required
@@ -399,11 +332,12 @@ Allows administrators to add a major to their school. Returns false if major is 
 
 **Params**
 
-==========  ==================================================================
-Key         Value
-==========  ==================================================================
-name:       Name of major
-==========  ==================================================================
+==================  ==================================================================
+Key                 Value
+==================  ==================================================================
+name:               Name of major
+major_group_names:  Array of major group names to allocate this major into
+==================  ==================================================================
 
 **Sample Response**
 ::
@@ -433,94 +367,6 @@ name:       Name of major
       major: 'Major name that was removed'
     }
 
-Employers
----------
-Allows managing employers in your school's list of approved employers.
-
-[GET] /employers
-****************
-Allows administrators to list employers that are approved at your school.
-
-**Params**
-
-None
-
-**Sample Response**
-::
-
-    {
-      success: true,
-      employers: [
-        {
-          name: 'Acme Corp.',
-          email_domain: 'careers@acmecorp.com'
-        }
-      ],
-      { ... }
-    }
-
-[POST] /employers
-*****************
-Allows administrators to approve an employer at their school. Returns false if major is already at the school.
-
-**Params**
-
-====================== ==================================================================
-Key                    Value
-====================== ==================================================================
-\*name:                Name of employer
-email_domain:          Email domain of the company. For example, 'acmecorp.com'.
-industry_name:         The name of the company's industry.
-institution_type_name: The type of employer.
-institution_size_name: The size of the employer.
-description:           The description of the employer.
-website:               A url directing to the employer's website.
-email:                 A general email address for contacting the employer.
-phone:                 A geenral phone number for contacting the employer.
-blog_rss:              A url directing to the employer's career blog feed.
-location_name:         The name of the city of the employer headquarters.
-address:               The address of the employer headquarters.
-zipcode:               The zipcode of the employer headquarters.
-====================== ==================================================================
-
-\* Required fields
-
-**Sample Response**
-::
-
-    {
-      success: true,
-      employer: {
-        name: 'Acme Corp.',
-        email_domain: 'careers@acmecorp.com'
-      }
-    }
-
-[DELETE] /employers/destroy
-***************************
-Allows administrators to remove an employer from their school. Returns false if employer is not at the school.
-
-**Params**
-
-====================== ==================================================================
-Key                    Value
-====================== ==================================================================
-\*name:                Name of employer
-\*email_domain:        Email domain of the company. For example, 'acmecorp.com'.
-====================== ==================================================================
-
-**Sample Response**
-::
-
-    {
-      success: true,
-      employer: {
-        name: 'Acme Corp.',
-        email_domain: 'careers@acmecorp.com',
-        ...
-      },
-      { ... }
-    }
 
 Contacts
 --------
@@ -541,12 +387,10 @@ Key                Value
 \*\*employer_id:   The id of the employer that you want to list the contact for
 \*\*employer_name: The name of the employer that the contact represents
 title              The job title of this contact, for example 'University Relations'
-location_id        ..
+location_name      ..
 phone              ..
 cell_phone         ..
 fax                ..
-address_one        ..
-address_two        ..
 description        ..
 assigned_to_id     The id of the user in Handshake that manages this contact
 ================== ==================================================================
@@ -637,7 +481,7 @@ Allows managing jobs at your school
 
 [GET] /jobs
 *************
-Allows administrators to list jobs at your school 
+Allows administrators to list jobs at your school
 
 **Params**
 
@@ -657,24 +501,26 @@ None
 
 [POST] /jobs
 **************
-Allows administrators to create jobs at your school 
+Allows administrators to create jobs at your school
 
 **Params**
 
-====================== ==================================================================
-Key                    Value
-====================== ==================================================================
-\*title:               The jobs's title
-\*employer_id:         System ID of the employer associated with this job 
-\*job_type_name:       The type of job. Must be one of the system job types 
-\*application_medium   The method a student should use to apply. One of ['handsake', 'external_link', 'offline', 'handshake_and_external']
-description:           Description of the job
-job_function_names:    An array of job function names which must be one of the system job functions.
-location:              The location of the job
-salary_type:           The salary type. Must be one of the system salary types
-contact_email:         The email of the contact to be associated with the job. Must match with an existing contact
-expiration_date:       The date the posting should expire. yyyy-mm-dd
-====================== ==================================================================
+=================================== ==================================================================
+Key                                 Value
+=================================== ==================================================================
+\*title:                            The jobs's title
+\*employer_id:                      System ID of the employer associated with this job
+\*job_type_name:                    The type of job. Must be one of the system job types
+\*application_medium                The method a student should use to apply. One of ['handsake', 'external_link', 'offline', 'handshake_and_external']
+\*physical_application_instructions Instructions on how a student should submit a physical application. This is required if the application medium is 'offline'
+description:                        Description of the job
+job_function_names:                 An array of job function names which must be one of the system job functions.
+location_name:                      The location of the job
+salary_type:                        The salary type. Must be one of the system salary types
+contact_email:                      The email of the contact to be associated with the job. Must match with an existing contact
+default_expiration_date:            The date the posting should expire. yyyy-mm-dd
+posting_status:                     The status of the posting, if being posted to a school. Possible values: expired, approved, pending, declined.
+=================================== ==================================================================
 
 \* Required fields
 
