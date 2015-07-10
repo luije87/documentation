@@ -297,7 +297,7 @@ Schools may import majors into Handshake. The columns DO matter - name should be
 =================================== ==================================================================
 Header                              Value
 =================================== ==================================================================
-\*name                              The name of the campus. This must be unique across your school.
+\*name                              The name of the major. This must be unique across your school.
 major_group_names                   A semi-colon separated list of major group names that the major belongs to. Leave this blank to leave the major groups as-is.
 =================================== ==================================================================
 
