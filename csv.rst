@@ -120,7 +120,7 @@ title                               The title of the contact (String)
 description                         A description of the contact (Text)
 employer_id                         The Handshake id of the employer that you want to list the contacts for (int)
 employer_name                       The name of the employer that you want to list the contacts for (String)
-location_attributes:location_name   The name of the location of the contact (coming soon)
+location_attributes:name            The name of the location of the contact. NOTE: creates only.
 phone                               The contact's phone number
 cell_phone                          The contact's cell number
 fax                                 The contact's fax machine number
