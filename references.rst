@@ -470,64 +470,179 @@ The supported options for time zones in Handshake are::
     "Tokelau Is."
     
 Major Groups
----------------------
+------------
 
-The following list of major grups is supported in Handshake::
+The following list of major groups is supported in Handshake. The categories are listed at the top level, with the major groups themselves underneath.
 
-    Accounting
-    Agricultural Business
-    Business Adminstration and Management
-    Business Commerce General
-    Finance and Financial Management
-    Hospitality Administration and Management
-    Marketing
-    Sales and Marketing Operation
-    Criminal Justice
-    Family and Consumer Science
-    Human Development Studies
-    Parks, Recreation, and Leisure Studies
-    Social Work
-    Textiles and Clothing
-    Elementary Education
-    Health Education
-    Health and Physical Education
-    Kindergarten and Preschool Education
-    Mathematics Education
-    Physical Education
-    Secondary Education
-    Special Education
-    Computer and Information Science
-    Management Information Systems
-    Computer Programming
-    Chemical Engineering
-    Civil Engineering
-    Electrical and Communications Engineering
-    Industrial Engineering
-    Mechanical Engineering
-    Animal Science
-    Biology
-    Plant Sciences
-    Chemistry
-    Geography and Cartography
-    Mathematics and Statistics
-    Science Education
-    Communication Disorders Sciences and Services
-    Medicine
-    Nursing
+Arts and Design::
+
+    Architecture
+    Art History
     Design and Applied Arts
     Drama and Theatre Arts
-    English Language and Literature
     Fine and Studio Arts
-    Foreign Languages and Literature
-    Language Arts Education
+    Graphic Design
+    Industrial Design
+    Interior Design
+    Museum Studies
     Music and Music Education
-    Communication and Media Studies
-    Journalism
-    Public Relations and Advertising
-    Radio, Television, and Digital Communication
-    Criminology
+    Photography
+    Product Design/Packaging
+    Textiles and Clothing
+
+Business and Entrepreneurship::
+
+    Accounting
+    Actuarial/Risk Analysis
+    Business Administration and Management
+    Business Analytics
+    Consulting
     Economics
-    History
-    Political Science and Government
+    Entrepreneurship
+    Finance and Financial Management
+    Food Industry Management
+    Human Resources
+    Marketing
+    Operations Management
+    Parks, Recreation, and Leisure Studies
+    Real Estate
+    Retail and Hospitality Administration
+    Sales
+    Sport Business and Marketing
+    Supply Chain Management
+
+Communications::
+
+    Advertising
+    Communication and Media Studies
+    Digital Communication
+    Documentary/Film
+    Journalism
+    Public Relations
+    Radio, Television, Media
+
+Computer Science, Information Systems, and Technology::
+
+    Computer Programming
+    Computer Science
+    Cyber Security
+    Data Mining
+    Information Systems Management
+    Library Sciences
+    Software Design
+    User Experience/Social Computing
+
+Education::
+
+    Early Childhood Education
+    Education Administration
+    Elementary Education
+    Health and Physical Education
+    Language Arts Education
+    Mathematics Education
+    Secondary Education
+    Special Education
+
+Engineering::
+
+    Aerospace Engineering
+    Agriculture and Biological Engineering
+    Biomedical Engineering
+    Chemical Engineering
+    Civil/Environmental Engineering
+    Computer Engineering
+    Construction Engineering & Management
+    Electrical Engineering
+    General Engineering
+    Industrial Engineering
+    Materials Science & Engineering
+    Mechanical Engineering
+    Nautical/Naval Engineering
+    Network Engineering
+    Nuclear Engineering
+
+Health Professions::
+    Athletic Training
+    Communication Disorders Sciences and Services
+    Dentistry
+    Health/Exercise Science
+    Health/Hospital Administration
+    Kinesiology
+    Medicine
+    Movement Science
+    Nursing
+    Nutrition
+    Pharmacy
+    Physical/Occupational Therapy
+    Public Health
+    Speech Pathology
+
+Social Sciences::
+
+    Anthropology
+    Cognition & Neuroscience/Biopsychology
+    Counseling
+    Family and Consumer Science
+    Human and Child Development
     Psychology
+    Social Work/Human Services
     Sociology
+
+Civics and Government::
+
+    Criminal Justice/Criminology
+    Emergency Management/Homeland Security
+    Forensics
+    International Studies/Comparative Politics
+    Law
+    Political Science and Government
+    Public Administration
+    Public Policy
+    Urban Planning
+
+Humanities and Languages::
+
+    Classical Studies
+    Comparative Literature
+    Creative Writing
+    Cultural and Ethnic Studies
+    English
+    Foreign Languages and Literature
+    Gender Studies
+    History
+    Linguistics
+    Philosophy/Ethics
+    Religious Studies/Divinity/Theology
+
+Life Science::
+
+    Animal Science
+    Anthropology/Zoology
+    Biology
+    Ecology
+    Epidemiology
+    Genetics
+    Immunology
+    Marine Biology
+    Microbiology
+    Physiological Science
+
+Math and Physical Sciences::
+
+    Chemistry
+    Physics
+    Mathematics
+    Statistics
+
+Natural Resources, Sustainability and Environmental Science::
+
+    Agriculture
+    Cartography
+    Conservation
+    Earth Sciences
+    Fisheries and Wildlife
+    Forestry
+    Geology/Mining
+    Natural Resource Management
+    Oceanography
+    Plant Sciences/Horticulture
