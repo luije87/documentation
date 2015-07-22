@@ -74,8 +74,9 @@ education_currently_attending Boolean. Should be true if education_end_date is b
 work_study_eligible           Pass true if this student is eligible for work study jobs
 campus_name                   The name of the campus the student is at. Must be one of the campuses set up in your settings.
 mobile_number                 The user's mobile phone number
-profile_review_status         Coming soon. This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not configured for your school)
-document_review_status        Coming soon. This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not configured for your school)
+system_label_names            Semi-colon separated list of label names to apply to the user
+profile_review_status         This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not turned on for your school). All options: ['unsubmitted', 'pending', 'approved'].
+document_review_status        This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
 ============================= ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
