@@ -144,7 +144,7 @@ mobile_number                  The user's mobile phone number
 system_label_names             (String Array) An array of label names to apply to the user
 profile_review_status          This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not turned on for your school). All options: ['unsubmitted', 'pending', 'approved'].
 document_review_status         This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
-=============================== ==================================================================
+============================== ==================================================================
 
 **Mentor information params**
 These are nested inside of 'mentor_information_attributes' above
