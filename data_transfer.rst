@@ -36,9 +36,9 @@ You may choose any default output format you wish.
 
 For more information see this article.  
 
-Once you have the CLI set up, uploading your data is as simple as issuing the following command:  
+Once you have the CLI set up, uploading your data is as simple as issuing the following command::
 
-aws s3api put-object --bucket [your_bucket] --key uploads/[yyyymmdd].csv --body [/path/to/your_local_file]  
+  aws s3api put-object --bucket [your_bucket] --key uploads/users_[yyyymmdd].csv --body [/path/to/your_local_file]  
 
 For example::
 
