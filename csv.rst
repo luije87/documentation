@@ -66,16 +66,17 @@ department_gpa                Decimal of student’s departmental GPA
 bio                           A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
 primary_college_name          The college the student belongs to. Must be one of the colleges configured in the school's college list.
 minor_names                   Semi-colon separated list
-skill_names                   Semi-colon separated list of skills
+skill_names                   Semi-colon separated list of skills. This generally should not be used in a sync.
 external_link_urls            Semi-colon separated list of external links for the profile
 time_zone                     The time zone that this user is in. See time zones section for more details.
 disabled                      Pass true if this student should not be able to login
-is_public                     Pass false if this student's profile should not be viewable by approved employers. Used for students who have set "not contact" as on.
 education_currently_attending Boolean. Should be true if education_end_date is blank, false otherwise
 work_study_eligible           Pass true if this student is eligible for work study jobs
 campus_name                   The name of the campus the student is at. Must be one of the campuses set up in your settings.
 mobile_number                 The user's mobile phone number
 system_label_names            Semi-colon separated list of label names to apply to the user
+profile_review_status         This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not turned on for your school). All options: ['unsubmitted', 'pending', 'approved'].
+document_review_status        This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
 ============================= ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
@@ -120,7 +121,7 @@ title                               The title of the contact (String)
 description                         A description of the contact (Text)
 employer_id                         The Handshake id of the employer that you want to list the contacts for (int)
 employer_name                       The name of the employer that you want to list the contacts for (String)
-location_attributes:location_name   The name of the location of the contact (coming soon)
+location_attributes:name            The name of the location of the contact. NOTE: creates only.
 phone                               The contact's phone number
 cell_phone                          The contact's cell number
 fax                                 The contact's fax machine number
@@ -208,16 +209,20 @@ external_apply_link                 An optional link to send the applicants to w
 \*application_medium                The method a student should use to apply. One of ['handshake', 'external_link', 'offline', 'handshake_and_external']
 \*physical_application_instructions Instructions on how a student should submit a physical application. This is required if the application medium is 'offline'
 salary_type_name                    The salary type. Must be one of the system salary types described in the references section.
+location_name                       The location of the job.
 default_expiration_date             The date the posting should expire. Should be in yyyy-mm-dd format.
 division_code                       The code corresponding to the division this job belongs to
 school_id                           Employers: The ID of the school you want to post the job to.
+posting_status                      Status for the posting if posted to a school. Possible values: expired, approved, pending, declined.
 job_function_names                  A semicolon separated list of job function names which must be one of the system job functions.
 document_notes                      Notes shown to the applicant while they apply
-document_type_names                 Specifies which documents are required. Comma separated numbers, selected based on this list: Resume, Cover Letter, Transcript, Work Sample, Other Document
+document_type_names                 Specifies which documents are required. Comma separated, selected based on this list: Resume, Cover Letter, Transcript, Work Sample, Other Document
 contacts:display                    What information about the contact should be displayed? One of: name_and_email, name_only, none
 contacts:email_application_packages Should the contact receive an email for each applicant when they apply? (Boolean)
 contacts:send_summary_when_expired  Should the contact receive an email summary when the job expires? (Boolean)
 contacts:email                      The email address of the contact
+location_name                       The location for the job. Enter it as an address in one line (Example 123 Example Street, Palo Alto, CA 94306)
+physical_application_instructions   Instrutions to show the student when applying. Only relevant for application_medium = physical.
 =================================== ==================================================================
 
 \* Required fields
@@ -293,7 +298,7 @@ Schools may import majors into Handshake. The columns DO matter - name should be
 =================================== ==================================================================
 Header                              Value
 =================================== ==================================================================
-\*name                              The name of the campus. This must be unique across your school.
+\*name                              The name of the major. This must be unique across your school.
 major_group_names                   A semi-colon separated list of major group names that the major belongs to. Leave this blank to leave the major groups as-is.
 =================================== ==================================================================
 
@@ -344,6 +349,6 @@ Header                              Value
 student_email_address               The email address of the student to be checked in
 registered                          Boolean - Mark this student as pre registered?
 checked_in                          Boolean - Mark this student as checked in at the event?
-\*identifiable_type                 Must be 'User'. Case sensitive.
+\*identifiable_type                 Must be one of: Event or CareerFair (no space between words). Case sensitive.
 \*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 =================================== ==================================================================

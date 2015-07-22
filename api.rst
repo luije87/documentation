@@ -138,7 +138,6 @@ external_link_urls             (String Array) An array of external links to list
 time_zone:                     (String) The time zone that this user is in. See time zones section for more details.
 disabled:                      (Boolean) Pass true if this student should not be able to login
 work_study_eligible:           (Boolean) Pass true if this student is eligible for work study jobs
-is_public:                     (Boolean) Pass false if this student's profile should not be viewable by approved employers
 mentor_information_attributes: (Hash) A nested hash containing mentor-specific attributes. See below table for possible values.
 campus_name                    The name of the campus the student is at. Must be one of the campuses set up in your settings.
 mobile_number                  The user's mobile phone number
@@ -517,10 +516,11 @@ Key                                 Value
 \*physical_application_instructions Instructions on how a student should submit a physical application. This is required if the application medium is 'offline'
 description:                        Description of the job
 job_function_names:                 An array of job function names which must be one of the system job functions.
-location:                           The location of the job
+location_name:                      The location of the job
 salary_type:                        The salary type. Must be one of the system salary types
 contact_email:                      The email of the contact to be associated with the job. Must match with an existing contact
 default_expiration_date:            The date the posting should expire. yyyy-mm-dd
+posting_status:                     The status of the posting, if being posted to a school. Possible values: expired, approved, pending, declined.
 =================================== ==================================================================
 
 \* Required fields
