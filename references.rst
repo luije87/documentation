@@ -562,6 +562,7 @@ Engineering::
     Nuclear Engineering
 
 Health Professions::
+
     Athletic Training
     Communication Disorders Sciences and Services
     Dentistry
