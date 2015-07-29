@@ -39,6 +39,7 @@ Header                        Value
 first_name                    Student’s first name
 last_name                     Student’s last name
 school_year_name              The name of student’s school year. For a list of acceptable values see the references section.
+education_level_name          Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
 cumulative_gpa                Decimal of student’s cumulative GPA
 major_names                   Semi-colon separated list of major. These match on the majors that have been imported previously.
 education_start_date          The date the student started at the school in any standard date format.
