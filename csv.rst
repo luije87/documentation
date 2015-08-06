@@ -106,23 +106,19 @@ industry_name:                      (String) The industry that this mentor is in
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
 
-"Disabling Syncs"
------------------
-
+**Disabling Syncs**
 As mentioned above, the user sync process can be used to automatically disable users who should no longer have access to Handshake. This process is called a "Disabling Sync" and can be done upon request with any new user file. By default, user syncs are *not* "Disabling Sync"'s and will leave user accounts enabled, even if not found in the file. This is to ensure that active and current students are not unexpectedly disabled because of a glitch or accidental removal from the CSV file.
 
 When a "Disabling Sync" is run, all students in Handshake that are not included in the sync and do not have "override_disabled_field" set to true will be disabled. Those students will be able to request reactivation and the Career Services staff will be able to re-enable them upon request or proactively.
 
 For a normal, "Non-disabling Sync", users listed in the CSV will be created or updated, but no users will be disabled.
 
-Handling Students who Graduate
-------------------------------
-
+**Handling Students who Graduate**
 Recommended option
 
 + Run a final sync before graduation that updates their school year status to Alumni
 
-+ The file should Also include ‘override_disabled_field’ set to true to say don’t auto archive them
++ The file should Also include ‘override_disabled_field’ set to true to say don’t auto archive them during Disabling Syncs
 
 Alternative Option
 
