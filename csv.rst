@@ -80,7 +80,9 @@ profile_review_status         This can be used to manage a students review statu
 document_review_status        This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
 ============================= ==================================================================
 
-**Training configuration fields**
+Training configuration fields
+******************************************************************************************************
+
 These are used only for trainings and demo setups.
 
 ============================== ==================================================================
@@ -89,7 +91,9 @@ password                       Only used in demo environment for setting up trai
 password_confirmation          Only used in demo environment for setting up trainings. Must match confirmation.
 ============================== ==================================================================
 
-**Mentor information params**
+Mentor information params
+******************************************************************************************************
+
 These are nested inside of 'mentor_information_attributes' above
 
 =================================== ==================================================================
@@ -106,25 +110,29 @@ industry_name:                      (String) The industry that this mentor is in
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
 
-**Disabling Syncs**
+Disabling Syncs
+******************************************************************************************************
+
 As mentioned above, the user sync process can be used to automatically disable users who should no longer have access to Handshake. This process is called a "Disabling Sync" and can be done upon request with any new user file. By default, user syncs are *not* "Disabling Sync"'s and will leave user accounts enabled, even if not found in the file. This is to ensure that active and current students are not unexpectedly disabled because of a glitch or accidental removal from the CSV file.
 
 When a "Disabling Sync" is run, all students in Handshake that are not included in the sync and do not have "override_disabled_field" set to true will be disabled. Those students will be able to request reactivation and the Career Services staff will be able to re-enable them upon request or proactively.
 
 For a normal, "Non-disabling Sync", users listed in the CSV will be created or updated, but no users will be disabled.
 
-**Handling Students who Graduate**
-Recommended option
+Handling Students who Graduate
+******************************************************************************************************
+
+**Recommended option**
 
 + Run a final sync before graduation that updates their school year status to Alumni
 
-+ The file should Also include ‘override_disabled_field’ set to true to say don’t auto archive them during Disabling Syncs
++ The file should Also include ‘override_disabled_field’ set to true so that the alumni are not disabling during future Disabling Syncs.
 
-Alternative Option
+**Alternative Option**
 
 + Don’t do anything upon graduation and allow recent graduates to disappear from the sync.
 
-+ When they're no longer included in the sync they will be archived.
++ When they're no longer included in the sync they will be disabled.
 
 + When they next sign in they will see the ability to request reactivation of their account.
 
