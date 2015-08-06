@@ -127,7 +127,6 @@ primary_college_name           (String) The college the student belongs to. Must
 education_start_date           (Date) The date the student started at the school in any standard date format. See references for date formats.
 education_end_date             (Date) The date the student finished at the school (can be blank if currently_attending is set). See references for date formats.
 education_currently_attending  (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
-override_disabled_field        (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
 preferred_name                 (String) The student's preferred name
 middle_name                    (String) The student's middle name
 work_authorization_name:       (String) One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
@@ -138,6 +137,7 @@ skill_names                    (String Array) An array of skills to list on the 
 external_link_urls             (String Array) An array of external links to list on the students profile
 time_zone:                     (String) The time zone that this user is in. See time zones section for more details.
 disabled:                      (Boolean) Pass true if this student should not be able to login
+override_disabled_field        (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
 work_study_eligible:           (Boolean) Pass true if this student is eligible for work study jobs
 mentor_information_attributes: (Hash) A nested hash containing mentor-specific attributes. See below table for possible values.
 campus_name                    The name of the campus the student is at. Must be one of the campuses set up in your settings.

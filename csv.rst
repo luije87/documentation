@@ -44,7 +44,6 @@ cumulative_gpa                Decimal of student’s cumulative GPA
 major_names                   Semi-colon separated list of major. These match on the majors that have been imported previously.
 education_start_date          The date the student started at the school in any standard date format.
 education_end_date            The date the student finished at the school (can be blank if currently_attending is set)
-override_disabled_field       This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
 ============================= ==========================================================================================
 
 For an example file of the suggested fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8WE9oSVlpN1FGWXc&authuser=0)
@@ -70,7 +69,8 @@ minor_names                   Semi-colon separated list
 skill_names                   Semi-colon separated list of skills. This generally should not be used in a sync.
 external_link_urls            Semi-colon separated list of external links for the profile
 time_zone                     The time zone that this user is in. See time zones section for more details.
-disabled                      Pass true if this student should not be able to login
+disabled                      Pass true if this student should not be able to login and access Handshake.
+override_disabled_field       (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
 education_currently_attending Boolean. Should be true if education_end_date is blank, false otherwise
 work_study_eligible           Pass true if this student is eligible for work study jobs
 campus_name                   The name of the campus the student is at. Must be one of the campuses set up in your settings.
@@ -106,8 +106,17 @@ industry_name:                      (String) The industry that this mentor is in
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
 
+"Disabling Syncs"
+-----------------
+
+As mentioned above, the user sync process can be used to automatically disable users who should no longer have access to Handshake. This process is called a "Disabling Sync" and can be done upon request with any new user file. By default, user syncs are *not* "Disabling Sync"'s and will leave user accounts enabled, even if not found in the file. This is to ensure that active and current students are not unexpectedly disabled because of a glitch or accidental removal from the CSV file.
+
+When a "Disabling Sync" is run, all students in Handshake that are not included in the sync and do not have "override_disabled_field" set to true will be disabled. Those students will be able to request reactivation and the Career Services staff will be able to re-enable them upon request or proactively.
+
+For a normal, "Non-disabling Sync", users listed in the CSV will be created or updated, but no users will be disabled.
+
 Handling Students who Graduate
---------
+------------------------------
 
 Recommended option
 
