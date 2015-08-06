@@ -147,6 +147,15 @@ profile_review_status          This can be used to manage a students review stat
 document_review_status         This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
 ============================== ==================================================================
 
+**Training configuration fields**
+These are used only for trainings and demo setups.
+
+============================== ==================================================================
+role_names                     A semi colon separated list of roles to give to this user.
+password                       Only used in demo environment for setting up trainings. Must match confirmation.
+password_confirmation          Only used in demo environment for setting up trainings. Must match confirmation.
+============================== ==================================================================
+
 **Mentor information params**
 These are nested inside of 'mentor_information_attributes' above
 

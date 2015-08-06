@@ -80,6 +80,30 @@ profile_review_status         This can be used to manage a students review statu
 document_review_status        This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
 ============================= ==================================================================
 
+**Training configuration fields**
+These are used only for trainings and demo setups.
+
+============================== ==================================================================
+role_names                     A semi colon separated list of roles to give to this user.
+password                       Only used in demo environment for setting up trainings. Must match confirmation.
+password_confirmation          Only used in demo environment for setting up trainings. Must match confirmation.
+============================== ==================================================================
+
+**Mentor information params**
+These are nested inside of 'mentor_information_attributes' above
+
+=================================== ==================================================================
+Key                                 Value
+=================================== ==================================================================
+student_contact_preference:         (String) How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
+advice:                             (String) Generic advice that this mentor has to offer
+hobbies:                            (String) Relevant hobbies that this mentor listed
+expertise_names:                    (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
+maximum_mentees:                    (Integer) The maximum number of ongoing mentorships that this mentor is willing to do.
+maximum_student_contacts_per_month: (Integer) The maximum number of messages that this mentor is willing to receive.
+industry_name:                      (String) The industry that this mentor is in. See references for possible values
+=================================== ==================================================================
+
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
 
 Handling Students who Graduate
