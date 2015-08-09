@@ -31,7 +31,6 @@ High level documentation for the various features in Handshake
    application_mentorships
    application_notifications
    application_payments
-   application_profiles
    application_posts
    application_qualifications
    application_registrations
@@ -42,5 +41,6 @@ High level documentation for the various features in Handshake
    application_students
    application_terms
    application_user_links
+   application_users
    application_users_contacts
 
