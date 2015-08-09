@@ -1,6 +1,7 @@
 .. _application:
 
-Contents:
+Application
+###########
 
 .. toctree::
    :maxdepth: 2
