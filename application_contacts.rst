@@ -1,3 +1,6 @@
 .. _application_contacts:
 
-This is an article about contacts
+What are contacts
+=================
+
+blah blah blah
