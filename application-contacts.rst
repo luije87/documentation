@@ -1,3 +1,3 @@
-.. _contacts:
+.. _application-contacts:
 
 This is an article about contacts

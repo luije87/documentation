@@ -5,4 +5,4 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   contacts
+   application-contacts
