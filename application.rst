@@ -21,5 +21,26 @@ High level documentation for the various features in Handshake
    application_employers
    application_documents
    application_events
-
+   application_labels
+   application_mass_emails
+   application_notes
+   application_interview_schedules
+   application_invitations
+   application_invoicing
+   application_jobs
+   application_mentorships
+   application_notifications
+   application_payments
+   application_profiles
+   application_posts
+   application_qualifications
+   application_registrations
+   application_resume_and_profile_review
+   application_rss_feeds
+   application_school_settings
+   application_stripe
+   application_students
+   application_terms
+   application_user_links
+   application_users_contacts
 
