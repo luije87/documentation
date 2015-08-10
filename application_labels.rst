@@ -3,8 +3,8 @@
 Labels
 ======
 
-- hig hlevel
-- what can be labelled
+- high level
+- what can be labeled
 
 How to Label
 ------------
