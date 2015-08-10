@@ -10,10 +10,12 @@ Statuses of Attendees
 
 There are multiple ways an attendee status may be changed.
 
-Registering
-###########
+Registered
+##########
 
 To register for an event, click the 'Register' button when viewing an attendable. By registering, the attendee record is now 'registered'.
+
+By registering for the attendable, the student will receive updates about it.
 
 Checking In
 ###########
@@ -36,3 +38,10 @@ All attendables have a user interface for reviewing the attendee list. On the at
 * survey question responses
 
 In addition to the interface option, attendee lists can be downloaded for further processing.
+
+Inviting Attendees
+------------------
+
+For invite only attendables, students can be invited directly. The simplest way to do this is by attaching the event as a card to a :ref:`mass email <application_mass_emails>` to take advantage of the auto invite feature.
+
+In addition to mass emails, you may use the "Invite Attendees" page which provides a simple breakdown of the student demographic being invited.
