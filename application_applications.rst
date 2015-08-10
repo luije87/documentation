@@ -3,7 +3,13 @@
 Applications
 ============
 
-Applications are how students to apply to jobs and interview schedules. Applications can have multiple statuses throughout their lifecycle, have documents attached as part of the application package, and are associated with the student's profile. Jobs and interview schedules may be sometimes referred to as "applicables".
+Applications are how students to apply to :ref:`jobs <application_jobs>` and :ref:`interview schedules <application_interview_schedules>`. Applications can have multiple statuses throughout their lifecycle, have documents attached as part of the application package, and are associated with the student's profile. :ref:`Jobs <application_jobs>` and :ref:`interview schedules <application_interview_schedules>` may be sometimes referred to as "applicables".
+
+Settings
+--------
+
+Administrators can limit the maximum number of open applications per student. In addition, you can ensure that only approved documents are used to apply to applicables by using :ref:`document and profile review <application_resume_and_profile_review>`.
+
 
 Requirements
 ------------
