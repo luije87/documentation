@@ -18,12 +18,12 @@ To register for an event, click the 'Register' button when viewing an attendable
 Checking In
 ###########
 
-Students can checkin to attendables using the :ref:`checkin kiosk<application_checkin_kiosk>`. Once checked in, the attendee record will be denoted as such.
+Students can checkin to attendables using the :ref:`checkin kiosk <application_checkin_kiosk>`. Once checked in, the attendee record will be denoted as such.
 
 Paid
 ########
 
-If an attendable requires payment, attendees have a payment status. Payment will be prompted for during the registration process and students will not be allowed to register without paying. Payment is done using our :ref:`integration with Stripe<application_stripe>`.
+If an attendable requires payment, attendees have a payment status. Payment will be prompted for during the registration process and students will not be allowed to register without paying. Payment is done using our :ref:`integration with Stripe <application_stripe>`.
 
 Viewing Attendee List
 ---------------------
