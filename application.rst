@@ -10,8 +10,8 @@ High level documentation for the various features in Handshake
 
    application_applications
    application_appointments
-   application_authentication
    application_attendees
+   application_authentication
    application_bulk_actions
    application_career_fairs
    application_checkin_kiosk
