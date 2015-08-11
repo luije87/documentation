@@ -73,6 +73,8 @@ User Management
 ---------------
 Handshake allows users to manage users at their school via the API. This can be useful when integrating with other systems at the university which hold student data in order to keep Handshake up to date.
 
+This can also be used to add system labels to students. System labels are labels that can only be applied during a sync, and can't be edited or removed on the UI. System labels are like private labels, and can only be seen by other staff members at the institution. System labels should be passed in as an array of label names. If a label exists with the same name, it will be converted to a system label. If the system labels key is passed in but no label names are passed, it will remove all labels from the student. Similarly, if a student has a system label applied, but it is not present in the current sync, it will be removed from the student. If the system labels key is not passed, no existing labels will be removed from the student.
+
 [GET] /users
 ************
 Allows administrators to search for students at their school.

@@ -140,6 +140,10 @@ Handling Students who Graduate
 
 + This request will mark them as excluded from sync. Staff can easily filter by grad date and alumni year to email recently converted alumni
 
+System Labels
+******************************************************************************************************
+
+System labels are labels that can only be applied during a sync, and can't be edited or removed on the UI. System labels are like private labels, and can only be seen by other staff members at the institution. System labels should be passed in as a semi-colon separated list of label names. If a label exists with the same name, it will be converted to a system label. If the system labels key is passed in but no label names are passed, it will remove all labels from the student. Similarly, if a student has a system label applied, but it is not present in the current sync, it will be removed from the student. If the system labels key is not passed, no existing labels will be removed from the student.
 
 Contacts
 --------
