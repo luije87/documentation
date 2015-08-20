@@ -3,53 +3,39 @@
 Jobs
 ====
 
-- how it's setup (postings)
-- high level overview
+Handshake has a full featured job creation, posting, sharing and applicant management interface. With Handshake's unique :ref:`employer model <application_employers>`, jobs have many job postings which allow jobs to easily be posted to multiple schools. Each job posting has an approval status. Jobs can have only one unexpired posting per school.
 
 Posting a Job
 -------------
 
-- lots of details are important for better traffic/applicants
+Posting jobs is broken up into a few separate sections. There are basic details such as title, job type and employment type, details such as location, contacts, pay rate, description fields, qualifications and postings management.
+
+Engaging Applicants
+###################
+
+In order to engage applicants, it is recommended to include high levels of detail in job postings. Make sure that your job is reaching a desired amount of students through the qualifications breakdown, and make sure that your employer profile is fully built out.
 
 Setting Qualifications
 ######################
 
-- see qualifications section
-- applies to all postings
+Jobs allow for qualifications to determine what students are allowed to apply. See the :ref:`Qualifications Page <application_qualifications>` for more information. When qualifications are specified for a job, they are applied to every school that the job is applied to. The one exception to this rule is majors; only the majors relevant to the school will be considered.
 
 Work Study Permissions
 ######################
 
-- student config permissions
-- employer approval permission
-
-Expiration Dates
-################
-
-- defaults vs. posting expiration date
+Jobs may be marked as work study jobs. A special role is required for an employer to be post work study jobs. Work study jobs will only be shown to students who are work study eligible if work study elibibility is enforced. The option to enforce work study eligibility can be changed in the School Settings.
 
 Renewing a Job Posting
 ######################
 
-- how to
+Coming soon.
 
 Job Contacts
 ------------
 
-- different options
-
-Receiving Application Packages
-##############################
-
-- how to enable
-- what it contains
-
-Display Options
-###############
-
-- explain each
+Jobs may have points of contact be listed. The points of contacts are used for sending new applicant packages and applicant summaries when jobs expire. The contacts may also have details shown to students, if desired.
 
 Applying for Jobs
 -----------------
 
-- see applications section
+For details on applying to jobs, see the :ref:`Applications Page <application_applications>`.
