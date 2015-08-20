@@ -3,79 +3,91 @@
 Interview Schedules
 ===================
 
-- special events, separate
-- high level overview
+Interview Scheduling is a core feature in Handshake and a special tyep of Event. Interview scheduling in Handshake supports Room Conflict Management, setting qualifications, slot management, timelines, automated slot swapping, and applicant management.
 
 Interview Schedule Preferences
 ------------------------------
 
+There are many configuration and templating options available for interview scheduling. Configurations allow you to customize interview scheduling for your school and templating makes the interview schedule administration easier and automated.
+
 Interview Seasons
 #################
 
-- what each field means
-- who and how it is enforced for
+Use interview seasons for establishing when interview schedules can be requested and for what dates interviews can take place. These seasons are enforced for employers requesting interviews at your school, but can be overriden by career services staff.
 
 Interview Schedule Templates
 ############################
 
-- building out slots easily
+Interview Schedule templates allow slots to be built in one click using pre-determined slots. Templates can be hidden from employers to limit the options available to them. As long as templates are available to the interview schedule requester, a template must be chosen.
 
 Interview Schedule Timelines
 ############################
 
-- building dates in timeline easily
+While templates are used to easily build out slots for an interview schedule request, timelines are used for establishing the dates of the interview schedule. The dates included in the timeline are application periods, signup periods, and reminder dates.
+
+Because the relevant dates for an interview schedule depend on the type of schedule, timeliens also have an Interview Schedule Type associated with them. Specifically, the signup period is only relevant to Preselect interview schedules.
+
+As long as a timeline is available to the interview schedule requester, a timeline must be chosen. In addition, employers will not be allowed to manually choose their Interview Schedule Type or dates if timelines are available to be chosen.
 
 Room Conflict Management
 ########################
 
-- room costs
-- configuring rooms to be used or not
-- it's based on room count, not rooms associated count
+Room Conflict Managmenet can be set up to enforce limitations on the number of interviews that can take place per day. To use room confict management, you must first choose which rooms are available for interviews. Once you have established which rooms are available, the Handshake System will automatically ensure that there are never more interviews that available rooms for a given day. Career Services Staff can override room conflict management limits.
+
+Additional Configuration
+########################
+
+In addition to the above, there are options for the following
+
+**Room Costs** Specify a room cost to charge employers for their rooms. This cost is based on the price for a room for one day.
+**Maximum Rooms per Request** To limit the number of rooms an employer can request per schedule, use this option.
 
 Building an Interview Schedule
 ------------------------------
 
-- options available
+Building an interview schedule requires entering basic details such as the employer and description, timeline details such as interview dates and timelines, and an application method such as qualifications or associated jobs.
 
 Application Methods
 ###################
 
-- directly vs. through jobs
-- see applications page for more information
-- associating jobs, the behavior of creating applications for existing
+Interviews can be configured to receive applicants through two methods. The default and recommended option is to apply through jobs. When applicants apply through jobs, they will be asked which associated job they want to apply to. The other option is to aply directly without having to associate any jobs. For this option, you will specify the qualifications for the interview schedule.
+
+For more information about managing applicants, see the :ref:`Applications Page <application_applications>`.
+
+Associating Jobs
+################
+
+By associating jobs to an interview schedule, you are allowing students to apply to the interview schedule through those jobs. The applicants will be shown on the interview schedule's applicants page like normal.
+
+When a job is associated with an interview, all applicants for the associated job will also be applied to the interview as long as the interview schedule is 1) approved and 2) not yet finished with the application period. If those two conditions are not met, the applicants will be drawn in as soon as they are met.
 
 Qualifications
 ##############
 
-- only for direct method
-- same as other qualifications pages: see qualificatiosn page
+If you choose to have students apply directly, you will be prompted to specify the qualificatiosn for the interview schedule. For more information on setting qualifications see the :ref:`Qualifications <application_qualifications>` page.
 
 Approval Process
 ################
 
+Once an interview schedule is requested, it will take one of two routes.
+
+1) If the interview schedule is being requested by/for an employer that has automatic interview schedule approval turned on, it will automatically be approved.
+2) If the interview schedule is being requested by/for an employer that and they do not have automatic approval, it will be listed as pending for your approval.
+
 Interview Dates
 ###############
 
-- room count importance
-- conflict management on will show remaining
+Each interview schedule must have at least one interview schedule date specified. Interview schedule dates specify the dates in which interviews will take place. If room conflict management is enabled, the remaining room counts will be shown and automatically updated as the counts change.
 
 Managing Interview Slots
 ------------------------
 
-Editing Slot Details
-####################
-
-- bulk editing and single editing, fields available
+Interview slots represent the time, student, room, and interviewer of an interview. Interview schedules have multiple interview schedule dates, each of which has multiple interview slots. Interview slots can be edited individually or in bulk.
 
 Adding Breaks
 #############
 
-Interview Swap Requests
-#######################
-
-- how they work for students
-- when they are possible (timeline status)
-- knowing they exist, viewing them
+To add a break to an interview slot, mark the slot as "Unavailable".
 
 Building Slots Automatically
 ############################
@@ -83,14 +95,24 @@ Building Slots Automatically
 - use action on sidebar
 - choosing rooms, it's based on room count even if none chosen
 
+Interview Swap Requests
+-----------------------
+
+Interview slot swap requests are an automated, controlled system for letting students request slot swaps with other students. The swaps only take place if both students agree to the swap, and happen as one single transaction to ensure no student will lose their slot during the swap. Interview slot swaps may only occur during the sign up period; once signup end is reached, slot swaps are cancelled and unavailable.
+
+As an administrator, you may view existing slot swap requests and their status.
+
 Timeline Status
 ---------------
 
-- system automatically works through each status and sends email notifications
-- different options
+Interview schedules have a series of dates, as specified by the interview schedule timeline. These dates are automatic triggers for system events as the interview schedule moves through each 'Timeline Status'. When a schedule moves into the next timeline status, relevant email notifications and reminders are sent to the appropriate parties.
 
 Interview Schedule Types
 ------------------------
 
-- each option and how it works
-- room only: can only apply
+There are four types of interviews in Handshake.
+
+**Room Only**: Interview slots in a room will be reserved. Handshake will not be used for signing up students.
+**Open**: Specify an application period in which students that pass the specified qualifications are allowed to take slots.
+**Preselect Continuous**: Specify an application period in which students that pass both the specified qualifications as well as are manually approved are allowed to take slots.
+**Preselect**: Specify both an application period and a signup period. Primary and alternate student choices are selected after the application period. Primaries are allowed to sign up before alternates.
