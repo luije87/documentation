@@ -23,7 +23,7 @@ To label an individual item, simply open that item and label using the sidebar. 
 Bulk Labelling
 ##############
 
-Bulk labelling is an efficient way to label multiple items at once. The bulk labelling option is available as a bulk action. For more information on bulk actions, please see the :ref:`bulk actions page <application_bulk_actions>`
+Bulk labelling is an efficient way to label multiple items at once. The bulk labelling option is available as a bulk action. For more information on bulk actions, please see the :ref:`bulk actions page <application_bulk_actions>`.
 
 Label Types
 -----------

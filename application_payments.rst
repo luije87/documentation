@@ -3,34 +3,32 @@
 Payments
 ========
 
-- payments can be made for anything that can be invoiced for
-- see invoicing section
-- stripe must be setup for credit card payments, see bottom of page
+Payments for all types of events can be processed and managed through Handshake. Payments can be either required upfront or paid after approval and an invoice being sent. See the :ref:`invoicing page <application_invoicing>` for more information on sending invoices. Handshake uses Stripe as it's payment processor.
 
 Receiving Payments
------------------
+------------------
+
+There are two ways to receive payments.
 
 Credit Card Payments
 ####################
 
-- students and employers can pay for xx, xx and xx automatically
+The simplest and most automated way to receive payments is through Credit Card payments. For some scenarios, this is the only option available, including scenarios where payment is required immediately.
 
 Manual Payments
 ###############
 
-- can receive checks and manually record a pyament as received
+In some scenarios you may want to receive a manual payment and record that payment in Handshake. This option is currently only available for career fair registrations and interview schedules.
 
 Integration with Stripe
 -----------------------
 
-- why, what they provide
-- using your dashboard
-- setting up stripe, contact us
+Handshake uses Stripe for all Credit Card processing. Stripe is a highly trusted payment processor used by some of the world's most trusted companies. Before accepting Credit Card payments on Handshake, you will have to set up and configure Stripe. For help with this process, simply reach out to the Handshake team.
 
 Issuing Refunds
 ###############
 
-- use stripe dashboard, see page
+If you need to issue a refund you may use the Stripe dashboard.
 
 PCI Compliance
 ##############
