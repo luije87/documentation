@@ -36,10 +36,7 @@ High level documentation for the various features in Handshake
    application_registrations
    application_resume_and_profile_review
    application_rss_feeds
-   application_school_settings
-   application_stripe
    application_students
-   application_terms
    application_user_links
    application_users
    application_users_contacts
