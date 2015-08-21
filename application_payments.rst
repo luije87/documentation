@@ -29,11 +29,3 @@ Issuing Refunds
 ###############
 
 If you need to issue a refund you may use the Stripe dashboard.
-
-PCI Compliance
-##############
-
-- we take it seriously
-- we are certified, link to more documentation
-- stripe is certified, link
--

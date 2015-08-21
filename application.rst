@@ -25,7 +25,6 @@ High level documentation for the various features in Handshake
    application_mass_emails
    application_notes
    application_interview_schedules
-   application_invitations
    application_invoicing
    application_jobs
    application_mentorships
@@ -33,10 +32,8 @@ High level documentation for the various features in Handshake
    application_payments
    application_posts
    application_qualifications
-   application_registrations
    application_resume_and_profile_review
    application_rss_feeds
-   application_students
    application_user_links
    application_users
    application_users_contacts

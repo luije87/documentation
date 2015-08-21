@@ -3,6 +3,4 @@
 User Links
 ==========
 
-- have different user types for one email address
-- easily switch using the switcher (link to authentication page)
-- login using primary still ^
+There are four different types of users in Handshake: administrators, employers, students and mentors. You may build an account for each type of user using the same email address. When you do this, each of your accounts will be shown in your user dropdown button which you can easily switch to at any time.

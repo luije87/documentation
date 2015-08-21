@@ -3,63 +3,65 @@
 Employers
 =========
 
-- we are unique with our model
-- what an employer represents
-- advantages to our model (branding, clarity for students)
+Employers in Handshake represent a single company with a collection of users from that company. Each recruiter in Handshake belongs to an employer, and must join an employer before using the Handshake interface. Employers request access to schools as a whole, are given permissions, and build a single brand for students.
 
 Employer Model
 --------------
 
-- employer has many users
-- employers may be distributed
-- employers can have divisions within it
-- how divisions can be used
+Handshake's employer model is based around a single employer with multiple users (people) at that company joining the employer. This model is made possible by the fact that Handshake is a single platform of which employers only need to create one account to recruit at multiple schools.
+
+When deciding what companies are unique or the same, email domain is taken into account. In some cases a parent company needs to be broken into multiple employer accounts on Handshake. This often happens with franchises which span multiple geographic locations and are high separated, even though they share a common email domain. These sorts of companies are referred to as 'Distributed Employers' and are allowed to share a single email domain. The Handshake team monitors for distributed employers and merges distributed employers that are not meant to be.
+
+Within a single employer exists multiple divisions. Divisions allow a separation of content within a single employer. Divisions can be specified for jobs and career fair registrations.
 
 Employer Approvals
 ------------------
 
-- why
+Before an employer's users can post jobs, request interviews, search students and request events the employer must first gain approval. Employer approvals have a status, roles, and individual preferences around automatic approvals. The employer approval process is the first step in an employers goal of recruiting on a campus.
+
+Employers can be assigned to a staff member once an approval request is submitted. The 'Assigned To' field can then be filtered on.
 
 Roles
 #####
 
-- roles available, explain each one
+**Post Jobs**: Determines if the employer is allowed to post jobs.
+**Post Work Study Jobs**: Determines if the employer is allowed to post, specifically, work study jobs. They must also have the base 'Post Jobs' role.
+**Post Events**: Determines if the employer is allowed to post events such as info sessions.
+**Post Interview Schedules**: Determines if the employer is allowed to request interview schedules.
+**Search Students**: Determines if the employer is allowed to search students. Only students who have logged in and marked their profile as public will be searchable.
+**Message Students**: Determines if the employer is allowed to message students directly.
 
 Automatic Approval Options
 ##########################
 
+In addition to the roles, employers can be approved for automatic job approval and automatic interview schedule approval.
+
 Helping Employers be Successful
 -------------------------------
 
-- staff have permissions to manage and help employers
+As an administrator, you have the ability to help your employers be successful on Handshake.
 
 Inviting Employers
 ##################
 
-- special link token
-- automatically added
+Your contacts can be invited to Handshake using a special link to streamline the process. See the :ref:`contacts page <application_contacts>` for more information on bulk inviting.
 
 Creating Employer Users
 #######################
 
-- account is tied already
-- user simply receives link to set password and they are in
+One of the easiest ways to add a new user account to an employer is to create the user account yourself. By viewing the staff management page for an employer and creating a new user for that employer, they will automatically be associated with that employer and receive an invitation email. From that email they can click a link to set their password and login.
 
 Adding Existing Users by Email
 ##############################
 
-- if user is already in system
-- staff manage page, add existing
+In some cases an employer user may already have a user account created but is not able to join the employer they want to. In this scenario, you can add the existing user to the employer account from the staff management page.
 
 Leaving an Employer
 ###################
 
-- can move to a different employer on their own
-- data will be properly retained to the right owner
+If an employer user accidentally joins the wrong employer, they can leave that employer to join another. Their data will be properly retained with either the employer they are leaving or their personal account, depending on the data (for example jobs and interviews will stay with the employer while profile information will stay with the user). The employer can leave their institution from their Account Settings page.
 
 Duplicate Employers
 -------------------
 
-- we monitor closely and act on duplicates
-- week warning, then run
-- both parties must agree
+In some cases, duplicate employers are created in Handshake. We closely monitor for these situations and run an automated merger process if the accounts should be merged. This process involves a sufficient warning to interested parties and the ability to back out of the merge. Once the merge goes through, all data will be preserved and merged to the new account.
