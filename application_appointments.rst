@@ -13,7 +13,9 @@ Categories and Types
 
 As an administrator you can configure the categories and types of appointments. Categories are the first level of categorization of appointments. If you have no categories, the option will be removed in the interface. Otherwise students will be prompted to choose a category before choosing a type.
 
-Each appointment is associated with a type. Common examples of appointment types are 'Resume Review', 'Mock Interview' or 'Career Exploration'. Appointment types can belong to many categories.
+Each appointment is associated with an appointment type. Appointment types can belong to many categories.
+
+.. note::  Common examples of appointment types are 'Resume Review', 'Mock Interview' or 'Career Exploration'
 
 Advisors each are required to specify the type of appointments that they are able to schedule appointments for.
 
