@@ -124,3 +124,10 @@ There are four types of interviews in Handshake.
 **Preselect**: Specify both an application period and a signup period. Primary and alternate student choices are selected after the application period. Primaries are allowed to sign up before alternates.
 
 .. note::  Preselect interview schedules are the only schedules that have a signup period. The other types of interview schedules have students apply and sign up in the same time period.
+
+Sharing with Schools
+---------------------
+
+Interview schedules can be shared with specific schools. When sharing your interview schedule with other schools, the students at those schools will be able to find, view and register for the schedule. Administrators at those schools will also be able to view, but will not have access to configure or edit the interview schedule.
+
+.. note:: In addition to sharing with schools, you may also share with any consortiums you are a part of.

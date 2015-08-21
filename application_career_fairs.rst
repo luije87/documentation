@@ -73,6 +73,7 @@ Sharing With Schools
 
 In addition to being public to all schools, career fairs can be shared with specific schools. When sharing your career fair with other schools, the students at those schools will be able to find, view and register for the fair. Administrators at those schools will also be able to view, but will not have access to configure or edit the fair.
 
+.. note:: In addition to sharing with schools, you may also share with any consortiums you are a part of.
 
 Registrations
 -------------

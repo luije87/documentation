@@ -10,9 +10,9 @@ Attendee Management
 
 Just like with Career Fairs, Events can have attendees. Attendees are records of users invited, registered, or checked in to an event. For more information about attendees, please view the :ref:`Attendees <application_attendees>` page.
 
-Institution Attendees
+Sharing with Schools
 ---------------------
 
-- TODO
-- see other page
-- can be used to invite emploeyrs and other schools
+Events can be shared with specific schools. When sharing your event with other schools, the students at those schools will be able to find, view and register for the event. Administrators at those schools will also be able to view, but will not have access to configure or edit the event.
+
+.. note:: In addition to sharing with schools, you may also share with any consortiums you are a part of.
