@@ -26,6 +26,8 @@ Card Swipe Configuration
 Checkin Kiosks can be configured to read in card swipe data. Setting up card swipes is considered advanced configuration and may require contacting the Handshake team.
 
 **Salting the Card Data** We allow card data to be salted before hashing and doing the lookup.
+
 **Card Regex** In order to know which input is a card swipe and which is a normal username or email lookup, specify a regex for matching card swipes. If the input at a checkin kiosk matches this regex we will assume it is a card and only send the card data.
+
 **Card Substring Regex** An optional second regex used to determine what data to send to the server for matching. If specified, only the first string match of the swiped card data will be sent.
 

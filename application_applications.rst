@@ -10,7 +10,6 @@ Settings
 
 Administrators can limit the maximum number of open applications per student. In addition, you can ensure that only approved documents are used to apply to applicables by using :ref:`document and profile review <application_resume_and_profile_review>`.
 
-
 Requirements
 ------------
 

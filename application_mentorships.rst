@@ -31,9 +31,13 @@ Mentor Options
 There are additional fields available to mentor profiles.
 
 **Student Contact Preference**: Determines how students allowed to communicate with this mentor.
+
 **Maximum student contacts per Month**: Determines how many students may contact this employer, per month.
+
 **Maximum mentees**: The maximum number of ongoing mentorships this mentor is willing to accomodate.
+
 **Industry**: Specifies what industry this mentor is in, for better matching of students.
+
 **Advice and Hobbies**: Quick blurbs for the mentors to provide to help students find good matches.
 
 Setting up a Mentorship

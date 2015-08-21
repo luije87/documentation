@@ -89,11 +89,14 @@ Adding Breaks
 
 To add a break to an interview slot, mark the slot as "Unavailable".
 
+.. note::  You may also enter the reason for the break in place of the 'Interviewer Name' field.
+
 Building Slots Automatically
 ############################
 
-- use action on sidebar
-- choosing rooms, it's based on room count even if none chosen
+Slots can be built automatically using the template specified for the interview schedule. When automatically building slots, you can also specify a room to use for each room requested.
+
+.. note::  As an administrator you can override the template used at any time.
 
 Interview Swap Requests
 -----------------------
@@ -113,6 +116,11 @@ Interview Schedule Types
 There are four types of interviews in Handshake.
 
 **Room Only**: Interview slots in a room will be reserved. Handshake will not be used for signing up students.
+
 **Open**: Specify an application period in which students that pass the specified qualifications are allowed to take slots.
+
 **Preselect Continuous**: Specify an application period in which students that pass both the specified qualifications as well as are manually approved are allowed to take slots.
+
 **Preselect**: Specify both an application period and a signup period. Primary and alternate student choices are selected after the application period. Primaries are allowed to sign up before alternates.
+
+.. note::  Preselect interview schedules are the only schedules that have a signup period. The other types of interview schedules have students apply and sign up in the same time period.

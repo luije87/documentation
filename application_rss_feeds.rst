@@ -13,4 +13,6 @@ RSS Feeds include two steps. The first step is specifying the name and category,
 Using RSS Feed
 --------------
 
-RSS Feeds can be used for different integrations. Examples may include a list of upcoming events, "hot jobs" using labelling, or newly posted jobs. You may want to consult IT to help set up and make use of your feed. Note that through the nature of RSS Feeds, data is made public without requiring authentication, and care should be given in handling the external facing RSS Feed links.
+RSS Feeds can be used for different integrations. You may want to consult IT to help set up and make use of your feed. Note that through the nature of RSS Feeds, data is made public without requiring authentication, and care should be given in handling the external facing RSS Feed links.
+
+.. note::  Examples may include a list of upcoming events, "hot jobs" using labelling, or newly posted jobs.

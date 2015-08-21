@@ -23,6 +23,4 @@ An option for quickly building an initial profile is through the Resume Parser. 
 Archived Users
 --------------
 
-Users are not deleted in Handshake; instead, they are archived. Archiving is a safer
-- see other documentation page
-- full explanation
+Users are not deleted in Handshake; instead, they are archived. Archiving is a safer solution, and behaves the same as if they were deleted.

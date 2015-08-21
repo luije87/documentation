@@ -15,4 +15,4 @@ Sharing Job Postings
 
 Job postings can also be shared with a whole consortia in the same way that jobs can be posted to many schools. To post a job to a whole consortium, the employer must choose each school they'd like to share with.
 
-NOTE: Simpler consortium job sharing is in progress.
+.. note:: Simpler consortium job sharing is in progress.

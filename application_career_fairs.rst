@@ -21,8 +21,11 @@ Visibility
 ##########
 
 * **Status**: Drafting career fairs are not viewable by any users other than administrators.
+
 * **Public**: Public career fairs can be searched for and found by students at other schools.
+
 * **Hidden**: For employers only, career fairs that are hidden require a special invitation in order to view.
+
 * **Invite only**: For students only, career fairs that are invite only require an invitation to attend. Students can be invited using :ref:`mass emails <application_mass_emails>` or the attendee invitation page.
 
 Dates and Times
@@ -36,9 +39,13 @@ Payment Options
 ###############
 
 * **Allowed Methods**: You may choose to allow credit card, manual or both payment methods.
+
 * **Student cost**: Students can be charged a flat rate for attending. For more details, see the :ref:`attendees <application_attendees>` page.
+
 * **Employer refund policy**: A refund policy that all employer registrations must accept.
+
 * **Payment instructions**: Instructions shown to employers when they are asked to pay.
+
 * **Invoice after approving**: As a convenience, administrators will be prompted to send an invoice after approving a registration.
 
 Additional Questions

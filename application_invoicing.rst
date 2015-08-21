@@ -17,8 +17,11 @@ Options
 #######
 
 **Invoice Number**: Each invoice has an associated number. This is a readonly field for your reference.
+
 **Amount**: The amount will be automatically filled to the correct amount, but this can be changed for unique scenarios.
+
 **Subject**: This will be the subject of the email recieved.
+
 **Custom Message**: If you have any extra details to send, specify them here. A default message will be filled for career fair registrations.
 
 Invoice Email Contents

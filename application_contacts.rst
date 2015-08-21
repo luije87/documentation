@@ -32,9 +32,35 @@ In order to easily invite employers to use Handshake, contacts can be bulk invit
 Behavior of Invitation Email Links
 ##################################
 
-Depending on the scenario, the behavior of a contact invite has differnet behavior. Below are the potential scenarios
+Depending on the scenario, the behavior of a contact invite has differnet behavior. Below are the potential scenarios for a given contact.
 
-**See confluence**
+**Contact's company does not exist yet**
+
+#. Visit register page
+#. Fill in details
+#. Confirm your email address
+#. Connect with schools and get an intro to Handshake, how it works
+#. Don't find company on search page -> create a new company
+#. If you registered with a unique email domain then that email domain is set on the employer
+
+**Contact's company does exist, their email domain matches their company's**
+
+#. Visit register page
+#. Fill in details
+#. Confirm your email address
+#. Connect with schools and get an intro to Handshake, how it works
+#. Find company and click on 'Join'
+  #. If the company is distributed, your request must be approved
+  #. If company is not distributed (only one with email domain) you are auto approved since domain matches
+
+**Contact's company does exist, their email domain does not match or company does not have email domain or their email address is a generic one**
+
+#. Visit register page
+#. Fill in details
+#. Confirm your email address
+#. Connect with schools and get an intro to Handshake, how it works
+#. Find company and click on 'Join'
+#. Request is sent to company to be approved
 
 Statistics
 ##########

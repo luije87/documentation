@@ -25,10 +25,15 @@ Roles
 #####
 
 **Post Jobs**: Determines if the employer is allowed to post jobs.
+
 **Post Work Study Jobs**: Determines if the employer is allowed to post, specifically, work study jobs. They must also have the base 'Post Jobs' role.
+
 **Post Events**: Determines if the employer is allowed to post events such as info sessions.
+
 **Post Interview Schedules**: Determines if the employer is allowed to request interview schedules.
+
 **Search Students**: Determines if the employer is allowed to search students. Only students who have logged in and marked their profile as public will be searchable.
+
 **Message Students**: Determines if the employer is allowed to message students directly.
 
 Automatic Approval Options
