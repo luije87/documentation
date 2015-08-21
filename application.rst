@@ -34,6 +34,7 @@ High level documentation for the various features in Handshake
    application_qualifications
    application_resume_and_profile_review
    application_rss_feeds
+   application_student_permissions
    application_user_links
    application_users
    application_users_contacts

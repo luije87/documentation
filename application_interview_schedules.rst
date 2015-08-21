@@ -3,7 +3,7 @@
 Interview Schedules
 ===================
 
-Interview Scheduling is a core feature in Handshake and a special tyep of Event. Interview scheduling in Handshake supports Room Conflict Management, setting qualifications, slot management, timelines, automated slot swapping, and applicant management.
+Interview Scheduling is a core feature in Handshake and a special tyep of Event. Interview scheduling in Handshake supports Room Conflict Management, setting qualifications, slot management, timelines, automated slot swapping, and applicant management. Interview Schedules can be restricted to a subset of students using :ref:`student permissions <application_student_permissions>`.
 
 Interview Schedule Preferences
 ------------------------------

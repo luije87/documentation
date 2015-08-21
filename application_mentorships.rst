@@ -3,7 +3,7 @@
 Mentorships
 ===========
 
-Handshake can facilitate an array of mentoring programs. Mentorships provide a connection between students and mentors, and can be managed by administrators.
+Handshake can facilitate an array of mentoring programs. Mentorships provide a connection between students and mentors, and can be managed by administrators. Mentorships can be restricted to a subset of students using :ref:`student permissions <application_student_permissions>`.
 
 Configuration Preferences
 -------------------------
