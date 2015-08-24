@@ -19,10 +19,10 @@ Each appointment is associated with an appointment type. Appointment types can b
 
 Advisors each are required to specify the type of appointments that they are able to schedule appointments for.
 
-Mediums
-#######
+Media
+#####
 
-Appointment mediums specify how the appointment takes place. Examples may be 'Face to Face' or 'Phone Call'.
+Appointment media specify how the appointment takes place. Examples may be 'Face to Face' or 'Phone Call'.
 
 Scheduled vs. Drop-in Appointments
 ----------------------------------
@@ -41,7 +41,7 @@ When setting up appointment blocks, options include:
 
 **Day of Week** What day of week is this block for?
 **Start and End Time** For the day of week picked, what is the start and end time for this block?
-**Drop-in** Is this a drop-in appointment? Walk-in appointments cannot be scheduled ahead of time.
+**Drop-in** Is this a drop-in appointment? Drop-in appointments cannot be scheduled ahead of time.
 **Repeating** Is this a repeating (weekly) block?
 **Start and End Date** If it is repeating, specify when the repeating starts and ends. The block will not be repeated outside of those dates.
 

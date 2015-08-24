@@ -8,7 +8,7 @@ Handshake implements a Contact Relationship Management feature through 'Contacts
 Managing your Contacts
 ----------------------
 
-You can manage your contacts on the 'Contacts' page. Contacts are private to only your institution and are not vieable by other institutions or employers. The notes and labels on contacts are also private. The sort of details that you can record and track with contacts includes email address, name, employer, contact information, and description.
+You can manage your contacts on the 'Contacts' page. Contacts are private to only your institution and are not viewable by other institutions or employers. The notes and labels on contacts are also private. The sort of details that you can record and track with contacts includes email address, name, employer, contact information, and description.
 
 Assigning Contacts
 ##################
@@ -23,9 +23,9 @@ In addition to manually created contacts, contact records will automatically be 
 Bulk Inviting Contacts
 ----------------------
 
-In order to easily invite employers to use Handshake, contacts can be bulk invited through a bulk action on the management page. Bulk inviting contacts are especially convenient in that it allows you to:
+In order to easily invite employers to use Handshake, contacts can be bulk invited through a bulk action on the management page. Bulk inviting contacts is especially convenient in that it allows you to:
 
-- Automatically add the invited user to the equivelant contact's assigned employer
+- Automatically add the invited user to the equivalent contact's assigned employer
 - Create pending employer approval requests for the contact's employer account once they join.
 - Automatically approve any existing user's employer in the Handshake system that you invite.
 

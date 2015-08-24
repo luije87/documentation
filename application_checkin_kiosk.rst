@@ -13,7 +13,7 @@ When starting a checkin kiosk you will be prompted to either log out or stay log
 Drop-in Appointments
 --------------------
 
-In addition to normally scheduled appointments, walk-in appointments can and must be claimed and checked into using the checkin kiosk. For more information on drop-in appointments, see the :ref:`appointments <application_appointments>` page.
+In addition to normally scheduled appointments, drop-in appointments can and must be claimed and checked into using the checkin kiosk. For more information on drop-in appointments, see the :ref:`appointments <application_appointments>` page.
 
 Waiting Room
 ------------
