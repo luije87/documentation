@@ -3,21 +3,21 @@
 Employers
 =========
 
-Employers in Handshake represent a single company with a collection of users from that company. Each recruiter in Handshake belongs to an employer, and must join an employer before using the Handshake interface. Employers request access to schools as a whole, are given permissions, and build a single brand for students.
+An employer in Handshake represents a single company with a collection of users from that company. Each recruiter in Handshake belongs to an employer, and must join an employer before using the Handshake interface. Employers request access to schools as a whole, are given permissions, and build a single brand for students.
 
 Employer Model
 --------------
 
 Handshake's employer model is based around a single employer with multiple users (people) at that company joining the employer. This model is made possible by the fact that Handshake is a single platform of which employers only need to create one account to recruit at multiple schools.
 
-When deciding what companies are unique or the same, email domain is taken into account. In some cases a parent company needs to be broken into multiple employer accounts on Handshake. This often happens with franchises which span multiple geographic locations and are high separated, even though they share a common email domain. These sorts of companies are referred to as 'Distributed Employers' and are allowed to share a single email domain. The Handshake team monitors for distributed employers and merges distributed employers that are not meant to be.
+When deciding what companies are unique or the same, email domain is taken into account. In some cases a parent company needs to be broken into multiple employer accounts on Handshake. This often happens with franchises which span multiple geographic locations and are highly separated, even though they share a common email domain. These sorts of companies are referred to as 'Distributed Employers' and are allowed to share a single email domain. The Handshake team monitors for distributed employers and merges distributed employers that are not meant to be.
 
 Within a single employer exists multiple divisions. Divisions allow a separation of content within a single employer. Divisions can be specified for jobs and career fair registrations.
 
 Employer Approvals
 ------------------
 
-Before an employer's users can post jobs, request interviews, search students and request events the employer must first gain approval. Employer approvals have a status, roles, and individual preferences around automatic approvals. The employer approval process is the first step in an employers goal of recruiting on a campus.
+Before an employer's users can post jobs, request interviews, search students and request events the employer must first gain approval. Employer approvals have a status, roles, and individual preferences around automatic approvals. The employer approval process is the first step in an employer's goal of recruiting on a campus.
 
 Employers can be assigned to a staff member once an approval request is submitted. The 'Assigned To' field can then be filtered on.
 
@@ -59,7 +59,7 @@ One of the easiest ways to add a new user account to an employer is to create th
 Adding Existing Users by Email
 ##############################
 
-In some cases an employer user may already have a user account created but is not able to join the employer they want to. In this scenario, you can add the existing user to the employer account from the staff management page.
+In some cases an employer user may already have a user account created but not be able to join the employer they want to. In this scenario, you can add the existing user to the employer account from the staff management page.
 
 Leaving an Employer
 ###################
