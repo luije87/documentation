@@ -13,7 +13,7 @@ When vieiwng your messages you can browse each user you are having a conversatio
 Messaging Permissions
 ---------------------
 
-There are different permissions about who is allowed to message who.
+There are different permissions about who is allowed to message whom.
 
 Messages from Employers
 #######################
@@ -23,7 +23,7 @@ Employers are only allowed to message students if they have been given the 'Mess
 Messages from Students
 ######################
 
-Students are allowed to message career services staff and mentors at their school. They may only messag employers if that option is turned on in the School Settings.
+Students are allowed to message career services staff and mentors at their school. They may only message employers if that option is turned on in the School Settings.
 
 Messages from Staff
 ###################
