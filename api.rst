@@ -574,7 +574,9 @@ page:                 The page of results that you want, 0-based.
       success: true,
       attendees: [
         {
-          user_id: 'Engineering Intern'
+          user_id: 1,
+          user_name: 'John Doe',
+          ...
         }
       ]
     }
