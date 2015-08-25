@@ -560,7 +560,7 @@ Allows pulling for attendees of an attendable event. The results can be paginate
 **Params**
 
 ===================== ==================================================================
-Key              Value
+Key                   Value
 ===================== ==================================================================
 \*identifier :        The import identifier of the attendable.
 \*identifiable_type:  The type of the event, either 'CareerFair' or 'Event'.
