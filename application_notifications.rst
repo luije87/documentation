@@ -13,4 +13,4 @@ To edit your notification preferences, visit the 'Notification Preferences' page
 Following
 ---------
 
-In addition to being able to track desired items, following plays a role in deciding what you are notified about. To denote you want to receive notifications about specific items, follow that item.
+In addition to being able to track desired items, following plays a role in deciding what you are notified about. To denote you want to receive notifications about a specific item, follow that item.

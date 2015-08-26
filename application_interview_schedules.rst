@@ -3,7 +3,7 @@
 Interview Schedules
 ===================
 
-Interview Scheduling is a core feature in Handshake and a special tyep of Event. Interview scheduling in Handshake supports Room Conflict Management, setting qualifications, slot management, timelines, automated slot swapping, and applicant management. Interview Schedules can be restricted to a subset of students using :ref:`student permissions <application_student_permissions>`.
+Interview Scheduling is a core feature in Handshake and a special type of Event. Interview scheduling in Handshake supports Room Conflict Management, setting qualifications, slot management, timelines, automated slot swapping, and applicant management. Interview Schedules can be restricted to a subset of students using :ref:`student permissions <application_student_permissions>`.
 
 Interview Schedule Preferences
 ------------------------------
@@ -13,7 +13,7 @@ There are many configuration and templating options available for interview sche
 Interview Seasons
 #################
 
-Use interview seasons for establishing when interview schedules can be requested and for what dates interviews can take place. These seasons are enforced for employers requesting interviews at your school, but can be overriden by career services staff.
+Use interview seasons for establishing when interview schedules can be requested and for what dates interviews can take place. These seasons are enforced for employers requesting interviews at your school, but can be overridden by career services staff.
 
 Interview Schedule Templates
 ############################
@@ -25,14 +25,14 @@ Interview Schedule Timelines
 
 While templates are used to easily build out slots for an interview schedule request, timelines are used for establishing the dates of the interview schedule. The dates included in the timeline are application periods, signup periods, and reminder dates.
 
-Because the relevant dates for an interview schedule depend on the type of schedule, timeliens also have an Interview Schedule Type associated with them. Specifically, the signup period is only relevant to Preselect interview schedules.
+Because the relevant dates for an interview schedule depend on the type of schedule, timelines also have an Interview Schedule Type associated with them. Specifically, the signup period is only relevant to Preselect interview schedules.
 
 As long as a timeline is available to the interview schedule requester, a timeline must be chosen. In addition, employers will not be allowed to manually choose their Interview Schedule Type or dates if timelines are available to be chosen.
 
 Room Conflict Management
 ########################
 
-Room Conflict Managmenet can be set up to enforce limitations on the number of interviews that can take place per day. To use room confict management, you must first choose which rooms are available for interviews. Once you have established which rooms are available, the Handshake System will automatically ensure that there are never more interviews that available rooms for a given day. Career Services Staff can override room conflict management limits.
+Room Conflict Managmenet can be set up to enforce limitations on the number of interviews that can take place per day. To use room confict management, you must first choose which rooms are available for interviews. Once you have established which rooms are available, the Handshake System will automatically ensure that there are never more interviews than available rooms for a given day. Career Services Staff can override room conflict management limits.
 
 Additional Configuration
 ########################
@@ -50,7 +50,7 @@ Building an interview schedule requires entering basic details such as the emplo
 Application Methods
 ###################
 
-Interviews can be configured to receive applicants through two methods. The default and recommended option is to apply through jobs. When applicants apply through jobs, they will be asked which associated job they want to apply to. The other option is to aply directly without having to associate any jobs. For this option, you will specify the qualifications for the interview schedule.
+Interviews can be configured to receive applicants through two methods. The default and recommended option is to apply through jobs. When applicants apply through jobs, they will be asked which associated job they want to apply to. The other option is to apply directly without having to associate any jobs. For this option, you will specify the qualifications for the interview schedule.
 
 For more information about managing applicants, see the :ref:`Applications Page <application_applications>`.
 
@@ -64,7 +64,7 @@ When a job is associated with an interview, all applicants for the associated jo
 Qualifications
 ##############
 
-If you choose to have students apply directly, you will be prompted to specify the qualificatiosn for the interview schedule. For more information on setting qualifications see the :ref:`Qualifications <application_qualifications>` page.
+If you choose to have students apply directly, you will be prompted to specify the qualifications for the interview schedule. For more information on setting qualifications see the :ref:`Qualifications <application_qualifications>` page.
 
 Approval Process
 ################
@@ -72,12 +72,12 @@ Approval Process
 Once an interview schedule is requested, it will take one of two routes.
 
 1) If the interview schedule is being requested by/for an employer that has automatic interview schedule approval turned on, it will automatically be approved.
-2) If the interview schedule is being requested by/for an employer that and they do not have automatic approval, it will be listed as pending for your approval.
+2) If the interview schedule is being requested by/for an employer that does not have automatic approval, it will be listed as pending for your approval.
 
 Interview Dates
 ###############
 
-Each interview schedule must have at least one interview schedule date specified. Interview schedule dates specify the dates in which interviews will take place. If room conflict management is enabled, the remaining room counts will be shown and automatically updated as the counts change.
+Each interview schedule must have at least one interview schedule date specified. Interview schedule dates specify the dates on which interviews will take place. If room conflict management is enabled, the remaining room counts will be shown and automatically updated as the counts change.
 
 Managing Interview Slots
 ------------------------

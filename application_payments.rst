@@ -3,7 +3,7 @@
 Payments
 ========
 
-Payments for all types of events can be processed and managed through Handshake. Payments can be either required upfront or paid after approval and an invoice being sent. See the :ref:`invoicing page <application_invoicing>` for more information on sending invoices. Handshake uses Stripe as it's payment processor.
+Payments for all types of events can be processed and managed through Handshake. Payments can be either required upfront or paid after approval and an invoice being sent. See the :ref:`invoicing page <application_invoicing>` for more information on sending invoices. Handshake uses Stripe as its payment processor.
 
 Receiving Payments
 ------------------

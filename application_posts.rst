@@ -3,14 +3,14 @@
 Posts
 =====
 
-Posts are a simple, quick way to share text and web sites links with students, employers or both. Posts appear on the student's dashboard.
+Posts are a simple, quick way to share text and web site links with students, employers or both. Posts appear on the student's dashboard.
 
 Writing a Post
 --------------
 
 When writing a post you will have the ability to target the post and include a link.
 
-Targetting Posts
+Targeting Posts
 ################
 
 Posts can be targeted to either your students, employers or both. For employers, they may choose to target either students or schools.
