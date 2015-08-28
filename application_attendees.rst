@@ -37,7 +37,7 @@ All attendables have a user interface for reviewing the attendee list. On the at
 * registration, checked in, and payment status
 * survey question responses
 
-..note:: Attendees have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
+.. note:: Attendees have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
 
 Inviting Attendees
 ------------------

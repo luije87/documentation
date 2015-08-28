@@ -80,7 +80,7 @@ Registrations
 
 Employers register to career fairs through 'Registration' records. Registrations have multiple details associated with them including the approval and payment status, and are managed by administrators.
 
-..note:: Registrations have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
+.. note:: Registrations have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
 
 Approval Status
 ###############
