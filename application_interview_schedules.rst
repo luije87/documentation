@@ -5,6 +5,8 @@ Interview Schedules
 
 Interview Scheduling is a core feature in Handshake and a special tyep of Event. Interview scheduling in Handshake supports Room Conflict Management, setting qualifications, slot management, timelines, automated slot swapping, and applicant management. Interview Schedules can be restricted to a subset of students using :ref:`student permissions <application_student_permissions>`.
 
+..note:: Registrations have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
+
 Interview Schedule Preferences
 ------------------------------
 
@@ -83,6 +85,11 @@ Managing Interview Slots
 ------------------------
 
 Interview slots represent the time, student, room, and interviewer of an interview. Interview schedules have multiple interview schedule dates, each of which has multiple interview slots. Interview slots can be edited individually or in bulk.
+
+Associating a Job
+#################
+
+Interview Slots with an associated Job are reserved for applicants who applied to the interview through that job. Other applicants will not be able to take that slot. If there is no associated slot, it is open to all applicants.
 
 Adding Breaks
 #############

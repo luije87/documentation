@@ -8,8 +8,6 @@ Handshake can facilitate an array of mentoring programs. Mentorships provide a c
 Configuration Preferences
 -------------------------
 
-TODO: Enabled, same as all
-
 Mentors Mange Mentorships
 #########################
 
@@ -24,6 +22,8 @@ Mentor User Types
 -----------------
 
 The mentor user type is separate from student, employer and staff accounts and is generally limited in what they have access to. Mentor registration can be done like normal on the registration page. If the mentor registers on your school's domain, a request will automatically be submitted.
+
+..note:: Mentors have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
 
 Mentor Options
 ##############

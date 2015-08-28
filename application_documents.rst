@@ -22,6 +22,11 @@ School Approval
 
 As determined in the School Settings page, documents and profiles can be required to be approved by a Career Services Staff member. For more information on this please see the :ref:`Resume and Profile Review <application_resume_and_profile_review>` page.
 
+Changing Documents
+##################
+
+Students may change the file of a document in only certain scenarios. If the document has been approved during document review, for example, it is not allowed.
+
 Limitations
 -----------
 

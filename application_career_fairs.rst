@@ -80,6 +80,8 @@ Registrations
 
 Employers register to career fairs through 'Registration' records. Registrations have multiple details associated with them including the approval and payment status, and are managed by administrators.
 
+..note:: Registrations have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
+
 Approval Status
 ###############
 
@@ -106,6 +108,11 @@ Representatives
 ###############
 
 Employers are asked to list the number of representatives attending the career fair and to add details about any known representatives in the form of :ref:`contact records <application_contacts>`.
+
+Employers Editing Registrations
+###############################
+
+As long as the career fair registration period is still open, employers may edit a subset of fields on their reigstration. This includes 'Looking For' information, job titles and company description.
 
 Booth Assignments
 -----------------
