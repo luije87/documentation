@@ -18,7 +18,7 @@ Contacts may be assigned to a member of your institution. Assigning contacts can
 Contact Sources
 ###############
 
-In addition to manually created contacts, contact records will automatically be created for you during special events. These events include job postings, employer approval requests, interviews, career fair registrations and more. When these contacts are automatically created the 'Contact Source' will also be recorded. This allows you to easily filter contacts by their source.
+In addition to manually created contacts, contact records will automatically be created for you during special events. These events include approvals of job postings, employer approval requests, interviews, career fair registrations and more. When these contacts are automatically created the 'Contact Source' will also be recorded. This allows you to easily filter contacts by their source.
 
 Bulk Inviting Contacts
 ----------------------
