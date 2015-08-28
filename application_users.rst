@@ -18,7 +18,7 @@ Users can add education, work experience, projects, extra curriculars, courses, 
 Parsing Resume to Auto Build
 ############################
 
-An option for quickly building an initial profile is through the Resume Parser. The Resume Parser will upload an uploaded resume and automatically allow you to add them to your profile.
+An option for quickly building an initial profile is through the Resume Parser. The Resume Parser will parse an uploaded resume and automatically allow you to add the information to your profile.
 
 Archived Users
 --------------

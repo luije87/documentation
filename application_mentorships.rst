@@ -11,7 +11,7 @@ Configuration Preferences
 Mentors Mange Mentorships
 #########################
 
-If this option is turned on, mentors at your school can respond to mentorship requests and view pending and decliend mentorships. With this option turned off, mentors will only be able to view their ongoing and completed mentorships.
+If this option is turned on, mentors at your school can respond to mentorship requests and view pending and declined mentorships. With this option turned off, mentors will only be able to view their ongoing and completed mentorships.
 
 Mentor Survey
 #############
@@ -30,15 +30,15 @@ Mentor Options
 
 There are additional fields available to mentor profiles.
 
-**Student Contact Preference**: Determines how students allowed to communicate with this mentor.
+**Student Contact Preference**: Determines how students are allowed to communicate with this mentor.
 
-**Maximum student contacts per Month**: Determines how many students may contact this employer, per month.
+**Maximum student contacts per Month**: Determines how many students may contact this mentor, per month.
 
 **Maximum mentees**: The maximum number of ongoing mentorships this mentor is willing to accomodate.
 
 **Industry**: Specifies what industry this mentor is in, for better matching of students.
 
-**Advice and Hobbies**: Quick blurbs for the mentors to provide to help students find good matches.
+**Advice and Hobbies**: Quick blurbs for the mentors to provide, to help students find good matches.
 
 Setting up a Mentorship
 -----------------------

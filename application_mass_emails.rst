@@ -3,7 +3,7 @@
 Mass Emails
 ===========
 
-Mass Emailing allows staff to send targeted emails to large numbers of recipients. They give full control over who receives the mass email, the content in the email, and has additional functionality such as attaching cards.
+Mass Emailing allows staff to send targeted emails to large numbers of recipients. It gives full control over who receives the mass email, the content in the email, and has additional functionality such as attaching cards.
 
 Setting the Recipients
 ----------------------
@@ -47,7 +47,7 @@ Once your mass email is ready to go, a review page is shown before moving on. On
 Sending Test Emails
 ###################
 
-Once a mass email is finalized, it cannot be edited by you or other staff. From this page can review the content of the mass email and send yourself a test email for review. As long as the email is correct, the mass email can then be sent.
+Once a mass email is finalized, it cannot be edited by you or other staff. From this page you can review the content of the mass email and send yourself a test email for review. As long as the email is correct, the mass email can then be sent.
 
 Variables in Mass Email
 -----------------------

@@ -8,7 +8,7 @@ Labels are a highly configurable way to tag entities in any way unique to your i
 Managing labels
 ---------------
 
-Labels can be managed in School Settings. From the management page you can view each label, the number of items using that label, what tyep of label it is, and what sort of items are allowed to use that label.
+Labels can be managed in School Settings. From the management page you can view each label, the number of items using that label, what type of label it is, and what sort of items are allowed to use that label.
 
 How to Label
 ------------

@@ -8,7 +8,7 @@ Numerous features in Handshake can be limited to a subset of students using :ref
 Using Labels for Permissions
 ----------------------------
 
-When setting up the student permissions you will be presented to choose a label that students either *must* or *must not* have in order to access the feature. There is no restrictions on the type of label you choose.
+When setting up the student permissions you will be asked to choose a label that students either *must* or *must not* have in order to access the feature. There are no restrictions on the type of label you choose.
 
 Student Reception
 -----------------
