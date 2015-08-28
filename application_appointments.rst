@@ -5,6 +5,8 @@ Appointments
 
 Appointments can be scheduled, tracked, and reported on in Handshake. We provide an interface for students to request appointments within constraints specified by advisors. Advisors can override constraints and manage appointments with students. Appointments can be restricted to a subset of students using :ref:`student permissions <application_student_permissions>`.
 
+.. note:: Appointments have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
+
 Settings
 --------
 

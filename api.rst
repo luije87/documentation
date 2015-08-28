@@ -291,7 +291,7 @@ Reports
 
 [GET] /report/{id}
 ******************
-Allows administrators to output custom data
+Allows administrators to output customized data feeds. Because of the highly customizable nature of these reports, the responses are not guaranteed to be performant and are rate limited.
 
 **Params**
 None
@@ -547,4 +547,36 @@ posting_status:                     The status of the posting, if being posted t
       job: {
         title: 'Engineering Intern'
       }
+    }
+
+Attendees
+-----------------
+Allows for creation and indexing of attendee records.
+
+[GET] /attendees
+*************
+Allows pulling for attendees of an attendable event. The results can be paginated and are ordered by most recently updated first.
+
+**Params**
+
+===================== ==================================================================
+Key                   Value
+===================== ==================================================================
+\*identifier :        The import identifier of the attendable.
+\*identifiable_type:  The type of the event, either 'CareerFair' or 'Event'.
+page:                 The page of results that you want, 0-based.
+===================== ==================================================================
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      attendees: [
+        {
+          user_id: 1,
+          user_name: 'John Doe',
+          ...
+        }
+      ]
     }
