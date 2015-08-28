@@ -5,7 +5,7 @@ Job Postings
 
 Handshake has a full featured job creation, posting, sharing and applicant management interface. With Handshake's unique :ref:`employer model <application_employers>`, jobs have many job postings which allow jobs to easily be posted to multiple schools. Each job posting has an approval status. Jobs can have only one unexpired posting per school. Jobs can be restricted to a subset of students using :ref:`student permissions <application_student_permissions>`.
 
-..note:: Postings have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
+.. note:: Postings have a one-click report download option. Filter down to the relevant items and click the download button to quickly generate a report.
 
 Posting a Job
 -------------
