@@ -26,6 +26,16 @@ Media
 
 Appointment media specify how the appointment takes place. Examples may be 'Face to Face' or 'Phone Call'.
 
+Scheduling an Appointment
+-------------------------
+
+Both students and staff can schedule an appointment. Appointment availability is determined using appointment blocks and determine when appointments can be booked. Staff have the ability to override and schedule appointments for any start and end time.
+
+Student Appointment Requests
+############################
+
+When requesting an appointment, students will be walked through steps to filter and find the appointment that they are interested in. Students may filter by appointment category, appointment type and staff advisor. When filtering by advisor, a full week of appointment options will be shown to the student rather than the default of one day of options.
+
 Scheduled vs. Drop-in Appointments
 ----------------------------------
 

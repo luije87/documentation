@@ -13,6 +13,8 @@ Handshake allows users to share events, career fairs and interview schedules wit
 Sharing Job Postings
 ####################
 
-Job postings can also be shared with a whole consortium in the same way that jobs can be posted to many schools. To post a job to a whole consortium, the employer must choose each school they'd like to share with.
+Job postings can always be posted to individual members of a consortium in the same way that jobs can be posted to many schools. In addition, consortium members can be configured to have automatic distribution or automatic approval on a per-member basis.
 
-.. note:: Simpler consortium job sharing is in progress.
+**Automatic Distribution**: Members with this option will automatically have any postings they approve shared with the rest of their consortium.
+
+**Automatic Approval of Distributions**: Members with this option on will automatically approve any postings shared to them from their consortium.

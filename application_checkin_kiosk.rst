@@ -3,7 +3,7 @@
 Checkin Kiosk
 =============
 
-The Checkin Kiosk allows for students and attendees to checkin to events, career fairs, interviews, and appointments. Checkins are recorded in the system and can be reported on.
+The Checkin Kiosk allows for students and attendees to checkin to events, career fairs, interviews, and appointments. Checkins are recorded in the system and can be reported on. Using the Checkin Kiosk requires the 'Launch Kiosk' permission.
 
 Logging Out
 -----------
