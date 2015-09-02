@@ -228,10 +228,7 @@ Jobs
 
 File name: jobs.csv
 
-Schools may import jobs using the legacy job bucket. The legacy_employer_name can
-be used to set a display name for the job.
-Employers may import jobs and post them to schools that they have permission to
-post to using the school_id
+Schools may import jobs using the legacy job bucket. The legacy_employer_name can be used to set a display name for the job. Employers may import jobs and post them to schools that they have permission to post to using the school_id. Note that contacts must exist in the system before they can be used in a jobs import. If the contact does not exist then the contact will not be added to the job.
 
 =================================== ==================================================================
 Header                              Value

@@ -28,7 +28,7 @@ Bulk labelling is an efficient way to label multiple items at once. The bulk lab
 Label Types
 -----------
 
-There are three types of labels in Handshake: 'normal', 'public' and 'system'.
+There are three types of labels in Handshake: 'normal', 'public' and 'system'. Although each label type is different from the other, label options (which are configured in the settings page) cannot be created with the same name even if they are different types of labels.
 
 Normal Labels
 #############
@@ -44,6 +44,10 @@ System Labels
 #############
 
 System labels are private like normal labels, but are not manageable on the Handshake interface. Instead they are automatically synced in through the data recieved by the registrar office. When user syncs happen, any labels specified will be added to the student as a system label. Note that if that label already existed as a normal label it will be converted to a system label.
+
+**Applying or Removing System Labels**
+
+System labels are meant to be added and removed only during student data syncs. This ensures that the system labels are accurate and consistent. For this reason, they cannot be added or removed through the user interface.
 
 Searching with Labels
 ---------------------
