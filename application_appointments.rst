@@ -29,7 +29,7 @@ Appointment media specify how the appointment takes place. Examples may be 'Face
 Scheduling an Appointment
 -------------------------
 
-Both students and staff can schedule an appointment. Appointment availability is determined using appointment blocks and determine when appointments can be booked. Staff have the ability to override and schedule appointments for any start and end time.
+Both students and staff can schedule an appointment. Appointment availability is determined using appointment blocks and enforce when appointments are allowed be booked. Staff have the ability to override and schedule appointments for any start and end time.
 
 Student Appointment Requests
 ############################

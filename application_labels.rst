@@ -28,7 +28,7 @@ Bulk labelling is an efficient way to label multiple items at once. The bulk lab
 Label Types
 -----------
 
-There are three types of labels in Handshake: 'normal', 'public' and 'system'. Although each label type is different from the other, label options (configured in the settings page) cannot be created with the same name even if they are different types of labels.
+There are three types of labels in Handshake: 'normal', 'public' and 'system'. Although each label type is different from the other, label options (which are configured in the settings page) cannot be created with the same name even if they are different types of labels.
 
 Normal Labels
 #############
