@@ -21,14 +21,39 @@ School Years
 ------------
 
 The following standardized list of school years are supported in Handshake::
-
+   
    Freshman
    Sophomore
    Junior
    Senior
-   Graduate
-   Post Graduate
+   Masters
+   Doctorate
+   Postdoctoral Studies
    Alumni
+   
+The fields below are deprecated. They are still supported on the api, but will map to the value in parentheses::
+
+   Graduate (Masters)
+   Post Graduate (Doctorate)
+
+Education Levels
+----------------
+
+The following standardized list of school years are supported in Handshake::
+
+   High School
+   Associates
+   Certificate
+   Advanced Certificate
+   Bachelors
+   Masters
+   Doctorate
+   Postdoctoral Studies
+
+The fields below are deprecated. They are still supported on the api, but will map to the value in parentheses::
+
+   Graduate (Masters)
+   Postgraduate (Doctorate)
 
 Salary Type Names
 -----------------
