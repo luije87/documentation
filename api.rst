@@ -120,7 +120,7 @@ card_id                        (String) A card id that can be used for card swip
 first_name:                    (String) Student's first name
 last_name:                     (String) Student's last name
 school_year_name:              (String) The name of student's school year. See references for possible values.
-education_level_name           (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
+education_level_name           (String) The students degree level they are pursuing. For a list of acceptable values see the references section
 cumulative_gpa:                (Decimal) The student's cumulative GPA
 department_gpa:                (Decimal) Decimal of student's departmental GPA
 major_names:                   (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
