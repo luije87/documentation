@@ -20,6 +20,11 @@ Parsing Resume to Auto Build
 
 An option for quickly building an initial profile is through the Resume Parser. The Resume Parser will parse an uploaded resume and automatically allow you to add the information to your profile.
 
+Primary Educations
+------------------
+
+In order to determine what jobs, interviews, events, career fairs, articles, career plans and pins that a student qualifies for we look to their Primary Education. Every student has one Primary Education on their profile which is denoted with a label. Handshake will use the GPA's, majors, minors, and colleges from this education for screening criteria.
+
 Archived Users
 --------------
 
