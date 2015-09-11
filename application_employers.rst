@@ -41,6 +41,11 @@ Automatic Approval Options
 
 In addition to the roles, employers can be approved for automatic job approval and automatic interview schedule approval.
 
+Approve and View Next
+#####################
+
+To easily approve employers one by one, use the 'Approve and View Next' feature. This feature allows you to review an employer and set it's status, roles, 'Assigned To' and other fields. When finished, choosing 'Approve and View Next' will take you to the next pending employer approval automatically.
+
 Helping Employers be Successful
 -------------------------------
 
