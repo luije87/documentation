@@ -67,3 +67,5 @@ Throughout the appointment scheduling process and leading up to the appointment,
 * A 24 hour warning
 * A one hour warning
 * If the appointment is recorded as a 'no show'.
+
+.. note:: When the appointment is first scheduled and the student is notified, a calendar attachment will be included.

@@ -8,6 +8,8 @@ Handshake can facilitate an array of mentoring programs. Mentorships provide a c
 Configuration Preferences
 -------------------------
 
+Mentoring will only show to students if there is at least one active mentor at your school.
+
 Mentors Mange Mentorships
 #########################
 

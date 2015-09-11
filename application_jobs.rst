@@ -41,3 +41,8 @@ Applying for Jobs
 -----------------
 
 For details on applying to jobs, see the :ref:`Applications Page <application_applications>`.
+
+Approve and View Next
+---------------------
+
+To easily approve postings one by one, use the 'Approve and View Next' feature. Similar to :ref:`Employer Approvals <application_employers>`, this feature allows you to review a posting and set it's status, expiration date, 'Assigned To' and other fields. When finished, choosing 'Approve and View Next' will take you to the next pending posting automatically.

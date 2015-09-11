@@ -23,4 +23,9 @@ An option for quickly building an initial profile is through the Resume Parser. 
 Archived Users
 --------------
 
-Users are not deleted in Handshake; instead, they are archived. Archiving is a safer solution, and behaves the same as if they were deleted.
+Users are not deleted in Handshake; instead, they are archived. Archiving is a safer solution, and behaves the same as if they were deleted. Archived users are still searchable and viewable, but will be denoted as 'Archived'.
+
+Student Record
+--------------
+
+A basic student record is available from the user profile page. The student record shows appointment history with notes from each appointment.

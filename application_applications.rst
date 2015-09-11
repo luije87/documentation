@@ -35,6 +35,8 @@ Students Apply through Associated Jobs
 
 When this mode is picked, the student must apply to one of the associated jobs. While applying to that job, they will be given the choice if they want to also apply for the interview it is associated with. This option is on by default.
 
+When the 'Students Apply through Associated Jobs' application method is chosen, the student is allowed to apply as long as they qualify for one of the associated jobs. Document requirements are also determined based on the job they apply through. The qualifications and document requirements for the interview schedule itself are not considered.
+
 Students Apply Directly
 #######################
 
