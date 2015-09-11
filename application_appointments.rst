@@ -57,7 +57,6 @@ When setting up appointment blocks, options include:
 **Repeating** Is this a repeating (weekly) block?
 **Start and End Date** If it is repeating, specify when the repeating starts and ends. The block will not be repeated outside of those dates.
 
-
 Notifications
 -------------
 
