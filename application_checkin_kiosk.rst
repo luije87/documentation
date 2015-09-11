@@ -36,4 +36,4 @@ Nametag Printing
 
 Checking into an attendable allows for nametag printing and can be configured on a per-attendable basis. To use nametag printing for an attendable, enable name tag printing and specify the XML layout you'd like to use on the edit page. Label fields named 'Name', 'FirstName', 'LastName', 'Major', 'GradDate', and 'MajorGradDate' are supported. When the student checks in a nametag will automatically be printed.
 
-..info:: Nametag printing integrates with Dymo printers only at this time. For more information about Dymo printers please visit http://dymo.com.
+.. note:: Nametag printing integrates with Dymo printers only at this time. For more information about Dymo printers please visit http://dymo.com.
