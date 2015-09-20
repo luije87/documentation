@@ -249,7 +249,7 @@ external_apply_link                 An optional link to send the applicants to w
 \*physical_application_instructions Instructions on how a student should submit a physical application. This is required if the application medium is 'offline'
 salary_type_name                    The salary type. Must be one of the system salary types described in the references section.
 location_name                       The location of the job.
-default_expiration_date             The date the posting should expire. Should be in yyyy-mm-dd format.
+expiration_date                     The date the posting should expire. Should be in yyyy-mm-dd format.
 division_code                       The code corresponding to the division this job belongs to
 school_id                           Employers: The ID of the school you want to post the job to.
 posting_status                      Status for the posting if posted to a school. Possible values: expired, approved, pending, declined.
