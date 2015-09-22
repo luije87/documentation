@@ -46,3 +46,10 @@ Approve and View Next
 ---------------------
 
 To easily approve postings one by one, use the 'Approve and View Next' feature. Similar to :ref:`Employer Approvals <application_employers>`, this feature allows you to review a posting and set it's status, expiration date, 'Assigned To' and other fields. When finished, choosing 'Approve and View Next' will take you to the next pending posting automatically.
+
+Job Search Relevancy
+####################
+
+In order to provide relevant jobs to students, the most relevant jobs are pushed to the top of the search results and less relevant jobs are pushed to the end of the results. Relevancy is based on numerous factors including whether or not they qualify, the student's major, what employers the student follows, popularity and more.
+
+.. note:: Although often the jobs that the student qualifies for are pushed to the top, sometimes jobs that the student does not qualify will be more relevant then ones they do qualify for. Students may opt to filter out jobs they do not qualify for using the search interface.
