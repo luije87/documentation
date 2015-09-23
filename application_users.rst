@@ -3,7 +3,19 @@
 Users
 =====
 
-Users in Handshake represent an account that can be logged into and used to access the interface.
+Users in Handshake represent an account that can be logged into and used to access the interface. In most cases, student accounts will be imported and ready for students to claim. In some cases students must request access to join their school, such as with alumni accounts. There are a few ways for students to connect with their school.
+
+Register Using School Domain
+############################
+
+If the student registers for an account using the correct domain (for example, schoolname.joinhandshake.com) and their .edu email address, they will be automatically connected with their school upon confirming their email.
+
+If they register on the correct domain, but don't use their .edu email address, a 'Student Request' will be created for approval by school administrators with the correct permissions. Only administrators with the permission to approve at time of request will see the request.
+
+Add an Existing Student
+#######################
+
+Existing students can be added directly by email address from the 'Manage Students' page as long as the student hasn't already joined a school.
 
 Profiles
 --------
