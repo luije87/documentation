@@ -53,32 +53,54 @@ Optional Fields
 
 Note: these fields generally add value to career services but are not required for normal operation.
 
-============================= ==================================================================
-CSV Header Value              Value Description
-============================= ==================================================================
-preferred_name                The student's preferred name
-middle_name                   Coming Soon: The student's middle name
-work_authorization_name       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa"
-card_id                       Used for checking in students using a card swipe
-ethnicity                     The ethnicity of the user. See the reference section for options.
-gender                        The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
-department_gpa                Decimal of student’s departmental GPA
-bio                           A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
-primary_college_name          The college the student belongs to. Must be one of the colleges configured in the school's college list.
-minor_names                   Semi-colon separated list
-skill_names                   Semi-colon separated list of skills. This generally should not be used in a sync.
-external_link_urls            Semi-colon separated list of external links for the profile
-time_zone                     The time zone that this user is in. See time zones section for more details.
-disabled                      Pass true if this student should not be able to login and access Handshake.
-override_disabled_field       (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
-education_currently_attending Boolean. Should be true if education_end_date is blank, false otherwise
-work_study_eligible           Pass true if this student is eligible for work study jobs
-campus_name                   The name of the campus the student is at. Must be one of the campuses set up in your settings.
-mobile_number                 The user's mobile phone number
-system_label_names            Semi-colon separated list of label names to apply to the user
-profile_review_status         This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not turned on for your school). All options: ['unsubmitted', 'pending', 'approved'].
-document_review_status        This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
-============================= ==================================================================
+========================================= ==================================================================
+CSV Header Value                          Value Description
+========================================= ==================================================================
+preferred_name                            The student's preferred name
+middle_name                               Coming Soon: The student's middle name
+work_authorization_name                   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa"
+card_id                                   Used for checking in students using a card swipe
+ethnicity                                 The ethnicity of the user. See the reference section for options.
+gender                                    The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
+bio                                       A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
+primary_education:education_level_name    (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
+primary_education:cumulative_gpa          (Decimal) The student's cumulative GPA
+primary_education:department_gpa          (Decimal) Decimal of student's departmental GPA
+primary_education:major_names             (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
+primary_education:minor_names             (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
+primary_education:college_name            (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
+primary_education:start_date              (Date) The date the student started at the school in any standard date format. See references for date formats.
+primary_education:end_date                (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). See references for date formats.
+primary_education:currently_attending     (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
+skill_names                               Semi-colon separated list of skills. This generally should not be used in a sync.
+external_link_urls                        Semi-colon separated list of external links for the profile
+time_zone                                 The time zone that this user is in. See time zones section for more details.
+disabled                                  Pass true if this student should not be able to login and access Handshake.
+override_disabled_field                   (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
+work_study_eligible                       Pass true if this student is eligible for work study jobs
+campus_name                               The name of the campus the student is at. Must be one of the campuses set up in your settings.
+mobile_number                             The user's mobile phone number
+system_label_names                        Semi-colon separated list of label names to apply to the user
+profile_review_status                     This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not turned on for your school). All options: ['unsubmitted', 'pending', 'approved'].
+document_review_status                    This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
+========================================= ==================================================================
+
+Deprecated Fields
+******************************************************************************************************
+
+These fields are currently deprecated and support for them will be removed soon.
+
+============================== ==================================================================
+education_level_name           (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
+cumulative_gpa:                (Decimal) The student's cumulative GPA
+department_gpa:                (Decimal) Decimal of student's departmental GPA
+major_names:                   (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
+minor_names:                   (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
+primary_college_name           (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
+education_start_date           (Date) The date the student started at the school in any standard date format. See references for date formats.
+education_end_date             (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). See references for date formats.
+education_currently_attending  (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
+============================== ==================================================================
 
 Training configuration fields
 ******************************************************************************************************
@@ -99,13 +121,13 @@ These are nested inside of 'mentor_information_attributes' above
 =================================== ==================================================================
 Key                                 Value
 =================================== ==================================================================
-student_contact_preference:         (String) How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
-advice:                             (String) Generic advice that this mentor has to offer
-hobbies:                            (String) Relevant hobbies that this mentor listed
-expertise_names:                    (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
-maximum_mentees:                    (Integer) The maximum number of ongoing mentorships that this mentor is willing to do.
-maximum_student_contacts_per_month: (Integer) The maximum number of messages that this mentor is willing to receive.
-industry_name:                      (String) The industry that this mentor is in. See references for possible values
+student_contact_preference          (String) How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
+advice                              (String) Generic advice that this mentor has to offer
+hobbies                             (String) Relevant hobbies that this mentor listed
+expertise_names                     (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
+maximum_mentees                     (Integer) The maximum number of ongoing mentorships that this mentor is willing to do.
+maximum_student_contacts_per_month  (Integer) The maximum number of messages that this mentor is willing to receive.
+industry_name                       (String) The industry that this mentor is in. See references for possible values
 =================================== ==================================================================
 
 For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)

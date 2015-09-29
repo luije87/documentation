@@ -120,15 +120,6 @@ card_id                        (String) A card id that can be used for card swip
 first_name:                    (String) Student's first name
 last_name:                     (String) Student's last name
 school_year_name:              (String) The name of student's school year. See references for possible values.
-education_level_name           (String) The students degree level they are pursuing. For a list of acceptable values see the references section
-cumulative_gpa:                (Decimal) The student's cumulative GPA
-department_gpa:                (Decimal) Decimal of student's departmental GPA
-major_names:                   (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
-minor_names:                   (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
-primary_college_name           (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
-education_start_date           (Date) The date the student started at the school in any standard date format. See references for date formats.
-education_end_date             (Date) The date the student finished at the school (can be blank if currently_attending is set). See references for date formats.
-education_currently_attending  (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
 preferred_name                 (String) The student's preferred name
 middle_name                    (String) The student's middle name
 work_authorization_name:       (String) One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
@@ -147,6 +138,22 @@ mobile_number                  The user's mobile phone number
 system_label_names             (String Array) An array of label names to apply to the user
 profile_review_status          This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not turned on for your school). All options: ['unsubmitted', 'pending', 'approved'].
 document_review_status         This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
+primary_education_attributes   (Hash) A nested hash containing the primary education attributes. See below table for possible values.
+============================== ==================================================================
+
+**Deprecated Fields**
+These fields are currently deprecated and support for them will be removed soon.
+
+============================== ==================================================================
+education_level_name           (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
+cumulative_gpa                 (Decimal) The student's cumulative GPA
+department_gpa                 (Decimal) Decimal of student's departmental GPA
+major_names                    (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
+minor_names                    (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
+primary_college_name           (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
+education_start_date           (Date) The date the student started at the school in any standard date format. See references for date formats.
+education_end_date             (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). See references for date formats.
+education_currently_attending  (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
 ============================== ==================================================================
 
 **Training configuration fields**
@@ -157,6 +164,23 @@ role_names                     A semi colon separated list of roles to give to t
 password                       Only used in demo environment for setting up trainings. Must match confirmation.
 password_confirmation          Only used in demo environment for setting up trainings. Must match confirmation.
 ============================== ==================================================================
+
+**Primary education params**
+These are nested inside of 'primary_education_attributes' above. These values will be assigned to the student's primary education, which is the education determined as the record to respect when determining job and interview schedule qualifications.
+
+=================================== ==================================================================
+Key                                 Value
+=================================== ==================================================================
+education_level_name                (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
+cumulative_gpa                      (Decimal) The student's cumulative GPA
+department_gpa                      (Decimal) Decimal of student's departmental GPA
+major_names                         (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
+minor_names                         (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
+college_name                        (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
+start_date                          (Date) The date the student started at the school in any standard date format. See references for date formats.
+end_date                            (Date) The date the student finished at the school (can be blank if currently_attending is set). See references for date formats.
+currently_attending                 (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
+=================================== ==================================================================
 
 **Mentor information params**
 These are nested inside of 'mentor_information_attributes' above
