@@ -3,7 +3,7 @@
 Email Delivery
 ==============
 
-Email delivery can sometimes fail due to the various systems in between handshake and students which are designed to prevent email abuse. Handshake maintains highly reputable emailing domains to ensure that emails are delivered. In order to maintain high deliverability, Handshake monitors and acts on spam scores, blacklisting, IP throttling and more.
+Handshake maintains highly reputable emailing domains to ensure that emails are delivered. However, email delivery can sometimes fail due to the various systems in between Handshake and students which are designed to prevent email abuse. In order to maintain high deliverability, Handshake monitors and acts on spam scores, blacklisting, IP throttling and more.
 
 Whitelisting
 ------------
