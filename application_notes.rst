@@ -34,3 +34,9 @@ Activities
 ----------
 
 For your information, important activities are included in the notes list. These activities provide valuable information about the noteable item and its history.
+
+Notes from Email
+----------------
+
+If you would like to send student notes from your email to Handshake you can do so by forwarding the messages to the email address provided in your User Settings.
+
