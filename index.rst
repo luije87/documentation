@@ -11,6 +11,7 @@ Contents:
    faq
    data_transfer
    sso
+   email_delivery
    references
    integration
    application
