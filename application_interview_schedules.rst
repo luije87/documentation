@@ -138,3 +138,10 @@ Sharing with Schools
 Interview schedules can be shared with specific schools. When sharing your interview schedule with other schools, the students at those schools will be able to find, view and register for the schedule. Administrators at those schools will also be able to view, but will not have access to configure or edit the interview schedule.
 
 .. note:: In addition to sharing with schools, you may also share with any consortia you are a part of.
+
+Print Packets
+-------------
+
+Interview schedule details can be printed by room, employer or employer and room. To print these packets you will need to include the date of the interview, how you would like the interview packet grouped and the items you would like included in the interview packet. 
+
+

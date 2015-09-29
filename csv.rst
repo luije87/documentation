@@ -56,9 +56,9 @@ Note: these fields generally add value to career services but are not required f
 ============================= ==================================================================
 CSV Header Value              Value Description
 ============================= ==================================================================
-preferred_name                Coming Soon: The student's preferred name
+preferred_name                The student's preferred name
 middle_name                   Coming Soon: The student's middle name
-work_authorization_name       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa"
+work_authorization_name       One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa"
 card_id                       Used for checking in students using a card swipe
 ethnicity                     The ethnicity of the user. See the reference section for options.
 gender                        The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
