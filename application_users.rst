@@ -43,7 +43,7 @@ Primary Educations
 In order to determine what jobs, interviews, events, career fairs, articles, career plans and pins that a student qualifies for we look to their Primary Education. Every student has one Primary Education on their profile which is denoted with a label. Handshake will use the GPA's, majors, minors, and colleges from this education for screening criteria.
 
 Locking fields on students profile
-##################################
+----------------------------------
 
 Student profile fields may be locked which will disallow edits by students. This is helpful when you are importing data from your student information center and would like those fields to remain locked until the next student sync. Fields that can be locked are located in the school settings under Student Preferences. Locked fields may still be edited by staff.
 
