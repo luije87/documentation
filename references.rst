@@ -55,6 +55,38 @@ The fields below are deprecated. They are still supported on the api, but will m
    Graduate (Masters)
    Postgraduate (Doctorate)
 
+Available Administrative Roles
+----------
+
+   Experiences
+   Articles
+   Manage Own Appointments
+   Manage All Appointments
+   External Feeds
+   Jobs
+   Employer Approvals
+   Manage Students
+   View as Student
+   Events
+   Surveys
+   Interview Schedules
+   Reports
+   Manage Staff
+   Upload Attachments
+   Career Plans
+   Rooms
+   Mass Emails
+   Mentorships
+   Outcomes
+   Posts
+   Student Reviews
+   Applications
+   Career Fairs
+   Pins
+   View Shared Notes
+   Manage Labels
+   Launch Check-in Kiosk"
+
 Salary Type Names
 -----------------
 
@@ -99,6 +131,7 @@ The following standardized list of ethnicities is supported in Handshake::
    Latino(a)
    White/Caucasian
    Middle Eastern
+
 
 Industries
 ----------
