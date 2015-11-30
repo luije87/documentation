@@ -55,8 +55,9 @@ The fields below are deprecated. They are still supported on the api, but will m
    Graduate (Masters)
    Postgraduate (Doctorate)
 
-Available Administrative Roles
+Administrative Roles
 ----------
+The following roles are supported in Handshake::
 
    Experiences
    Articles
