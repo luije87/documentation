@@ -58,7 +58,7 @@ CSV Header Value                          Value Description
 ========================================= ==================================================================
 preferred_name                            The student's preferred name
 middle_name                               Coming Soon: The student's middle name
-work_authorization_name                   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa"
+work_authorization_name                   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa", "L1 Visa", "Work Card"
 card_id                                   Used for checking in students using a card swipe
 ethnicity                                 The ethnicity of the user. See the reference section for options.
 gender                                    The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
@@ -150,17 +150,6 @@ Handling Students who Graduate
 
 + The file should Also include ‘override_disabled_field’ set to true so that the alumni are not disabling during future Disabling Syncs.
 
-**Alternative Option**
-
-+ Don’t do anything upon graduation and allow recent graduates to disappear from the sync.
-
-+ When they're no longer included in the sync they will be disabled.
-
-+ When they next sign in they will see the ability to request reactivation of their account.
-
-+ Career services will get the request to reactive their account and be able to set them as alumni (or ask them to set themselves to alumni) and send them any info you want.
-
-+ This request will mark them as excluded from sync. Staff can easily filter by grad date and alumni year to email recently converted alumni
 
 System Labels
 ******************************************************************************************************
@@ -243,50 +232,6 @@ attendee_limit               A limit for the number of attendees (Integer)
 ============================ ==================================================================
 
 \* Required
-
-
-Jobs
-----
-
-File name: jobs.csv
-
-Schools may import jobs using the legacy job bucket. The legacy_employer_name can be used to set a display name for the job. Employers may import jobs and post them to schools that they have permission to post to using the school_id. Note that contacts must exist in the system before they can be used in a jobs import. If the contact does not exist then the contact will not be added to the job.
-
-=================================== ==================================================================
-Header                              Value
-=================================== ==================================================================
-\*title                             The jobs's title (string)
-description                         Description of the job (String)
-legacy_employer_name                Schools: Set a display name for imported jobs
-start_date                          When the job begins (Date - see reference section)
-import_identifier                   This is an identifier that can be used later for adding labels or notes. MUST be unique across all jobs.
-government                          Is this job a government-only job (Boolean)
-remote                              Does this job support remote work (Boolean)
-desired_skills                      The desired skills for this job. (String)
-responsibilities                    The responsibilities for this job. (String)
-\*job_type_name                     The type of job. Must be one of the system job types defined in the references section (String)
-\*employment_type_name              The type of job. Must be one of the system job types defined in the references section (String)
-external_apply_link                 An optional link to send the applicants to when they click apply.
-\*application_medium                The method a student should use to apply. One of ['handshake', 'external_link', 'offline', 'handshake_and_external']
-\*physical_application_instructions Instructions on how a student should submit a physical application. This is required if the application medium is 'offline'
-salary_type_name                    The salary type. Must be one of the system salary types described in the references section.
-location_name                       The location of the job.
-expiration_date                     The date the posting should expire. Should be in yyyy-mm-dd format.
-division_code                       The code corresponding to the division this job belongs to
-school_id                           Employers: The ID of the school you want to post the job to.
-posting_status                      Status for the posting if posted to a school. Possible values: expired, approved, pending, declined.
-job_function_names                  A semicolon separated list of job function names which must be one of the system job functions.
-document_notes                      Notes shown to the applicant while they apply
-document_type_names                 Specifies which documents are required. Comma separated, selected based on this list: Resume, Cover Letter, Transcript, Work Sample, Other Document
-contacts:display                    What information about the contact should be displayed? One of: name_and_email, name_only, none
-contacts:email_application_packages Should the contact receive an email for each applicant when they apply? (Boolean)
-contacts:send_summary_when_expired  Should the contact receive an email summary when the job expires? (Boolean)
-contacts:email                      The email address of the contact
-location_name                       The location for the job. Enter it as an address in one line (Example 123 Example Street, Palo Alto, CA 94306)
-physical_application_instructions   Instrutions to show the student when applying. Only relevant for application_medium = physical.
-=================================== ==================================================================
-
-\* Required fields
 
 
 Notes
