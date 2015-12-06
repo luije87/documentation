@@ -46,4 +46,4 @@ For example::
 
 The AWS S3 API will respond with a document ID if the file was successfully transferred, otherwise it will respond with an error.  
 
-If you wish to do a test run, simply change the prefix on the destination file key from uploads/ to test/  
+If you wish to do a test run, simply send a file and our data team will verify that it is recieived and ready for production.
