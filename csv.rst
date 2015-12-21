@@ -5,7 +5,39 @@ CSV Upload
 
 The easiest way to get data into Handshake is using the CSV upload. Below you will find an explanation of the different files.
 
-Users
+Staff
+-----
+
+
+Required Fields
+******************
+================================= ======================================================================================
+CSV Header Value                  Value Description
+================================= ======================================================================================
+\*email_address                   Staff member's email address. In general this should be a .edu address
+\*username                        Staff member's username. This MUST be unique and should not be something that changes
+\*user_type                       Should be "Career Services"
+auth_identifier                   This is the identifier that is required if you use Single Sign On.
+================================= ======================================================================================
+
+Recommended Fields
+******************
+============================= ==========================================================================================
+Header                        Value
+============================= ==========================================================================================
+preferred_name                The staff member's preferred name
+middle_name                   The staff member's middle name
+gender                        The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
+bio                           The staff member's bio
+mobile_number                 The staff member's bio
+role_names                    Applications;Applications and Outcomes;Articles;Career Fair;Career Fairs;Career Plans;Employer Approvals;Events;Experiences;External Feeds;Interview Schedules;Jobs;Launch Check-in Kiosk;Manage All Appointments;Manage Labels;Manage Own Appointments;Manage Staff;Manage Students;Mass Emails;Mentorships;Outcomes;Pins;Posts;Reports;Request Access to Schools;Rooms;Student Reviews;Surveys;Upload Attachments;View as Student;View Shared Notes
+============================= ==========================================================================================
+
+
+For an example file of the required fields `[Click Here] <https://docs.google.com/spreadsheets/d/14zOpFGwVc69mfVCscUsVwT_a1fX9Q9o_Lq_hsZPA3IQ/edit#gid=0>`_
+
+
+Students
 -----
 
 Note: Users are synced, not added.  The user list that is provided will replace your schools current users entirely.
@@ -29,8 +61,6 @@ CSV Header Value                  Value Description
 auth_identifier                   This is the identifier that is required if you use Single Sign On.
 ================================= ======================================================================================
 
-For an example file of the required fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8LXo0dURaRTV6ODg&authuser=0)
-
 Recommended Fields
 ******************
 ============================= ==========================================================================================
@@ -39,14 +69,16 @@ Header                        Value
 first_name                    Student’s first name
 last_name                     Student’s last name
 school_year_name              The name of student’s school year. For a list of acceptable values see the references section.
-education_level_name          The students degree level they are pursuing. For a list of acceptable values see the references section
-cumulative_gpa                Decimal of student’s cumulative GPA
-major_names                   Semi-colon separated list of major. These match on the majors that have been imported previously.
-education_start_date          The date the student started at the school in any standard date format.
-education_end_date            The date the student finished at the school (can be blank if currently_attending is set)
+primary_education:education_level_name    (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
+primary_education:cumulative_gpa          (Decimal) The student's cumulative GPA
+primary_education:department_gpa          (Decimal) Decimal of student's departmental GPA
+primary_education:major_names             (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
+primary_education:minor_names             (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
+primary_education:college_name            (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
+primary_education:start_date              (Date) The date the student started at the school in any standard date format. See references for date formats.
+primary_education:end_date                (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). See references for date formats.
+primary_education:currently_attending     (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
 ============================= ==========================================================================================
-
-For an example file of the suggested fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8WE9oSVlpN1FGWXc&authuser=0)
 
 Optional Fields
 ******************************************************************************************************
@@ -57,21 +89,12 @@ Note: these fields generally add value to career services but are not required f
 CSV Header Value                          Value Description
 ========================================= ==================================================================
 preferred_name                            The student's preferred name
-middle_name                               Coming Soon: The student's middle name
+middle_name                               The student's middle name
 work_authorization_name                   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa", "L1 Visa", "Work Card"
 card_id                                   Used for checking in students using a card swipe
 ethnicity                                 The ethnicity of the user. See the reference section for options.
 gender                                    The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
 bio                                       A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
-primary_education:education_level_name    (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
-primary_education:cumulative_gpa          (Decimal) The student's cumulative GPA
-primary_education:department_gpa          (Decimal) Decimal of student's departmental GPA
-primary_education:major_names             (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
-primary_education:minor_names             (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
-primary_education:college_name            (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
-primary_education:start_date              (Date) The date the student started at the school in any standard date format. See references for date formats.
-primary_education:end_date                (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). See references for date formats.
-primary_education:currently_attending     (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
 skill_names                               Semi-colon separated list of skills. This generally should not be used in a sync.
 external_link_urls                        Semi-colon separated list of external links for the profile
 time_zone                                 The time zone that this user is in. See time zones section for more details.
@@ -84,6 +107,8 @@ system_label_names                        Semi-colon separated list of label nam
 profile_review_status                     This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not turned on for your school). All options: ['unsubmitted', 'pending', 'approved'].
 document_review_status                    This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
 ========================================= ==================================================================
+
+For an example file of the suggested fields `[Click Here] <https://docs.google.com/spreadsheets/d/12jCXVRVE6hyPKVT69uuQ1z7rqSJXzjXmkr0Lj2UPaUw/edit#gid=0>`_
 
 Deprecated Fields
 ******************************************************************************************************
@@ -130,7 +155,6 @@ maximum_student_contacts_per_month  (Integer) The maximum number of messages tha
 industry_name                       (String) The industry that this mentor is in. See references for possible values
 =================================== ==================================================================
 
-For an example file with all possible fields [Click Here](https://drive.google.com/open?id=0B-F3sE2DoFa8eWFkMDBxcXNlUVE&authuser=0)
 
 Disabling Syncs
 ******************************************************************************************************
@@ -182,6 +206,7 @@ fax                                 The contact's fax machine number
 
 \* Required
 
+For an example file of the suggested fields `[Click Here] <https://docs.google.com/spreadsheets/d/1cBeVJg9SEuFqpUImho_gLi2DrEiBCI-OYwcglFpumTc/edit#gid=664140494>`_
 
 Appointments
 ------------
@@ -276,6 +301,7 @@ name                                The label name to apply.
 
 \* Required fields
 
+
 Campuses
 --------
 
@@ -293,6 +319,7 @@ location_name                       The address of the campus.
 
 \* Required fields
 
+For an example file of the suggested fields `[Click Here] <https://docs.google.com/spreadsheets/d/1XWknxaJg38mJ3W9yZ4WcSIfzVIRhXifBdztzWVIctj0/edit#gid=0>`_
 
 Majors
 -------------
@@ -310,12 +337,16 @@ major_group_names                   A semi-colon separated list of major group n
 
 \* Required fields
 
+For an example file of the suggested fields `[Click Here] <https://docs.google.com/spreadsheets/d/19xT5IszvZtazVNlAe9mJI2xIMfclDT2LnjzJmgZyu40/edit#gid=0>`_
+
 Minors
 -----------
 
 File name: minors.csv
 
 Each row should contain the name.
+
+For an example file of the suggested fields `[Click Here] <https://docs.google.com/spreadsheets/d/1jLmG5jYxA5_HDCtVPl5KpU6zBCkDUPh2if_d-pVbXOM/edit#gid=0>`_
 
 Buildings
 ---------
