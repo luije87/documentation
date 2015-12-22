@@ -63,12 +63,12 @@ auth_identifier                   This is the identifier that is required if you
 
 Recommended Fields
 ******************
-============================= ==========================================================================================
-Header                        Value
-============================= ==========================================================================================
-first_name                    Student’s first name
-last_name                     Student’s last name
-school_year_name              The name of student’s school year. For a list of acceptable values see the references section.
+========================================= ==========================================================================================
+Header                                    Value
+========================================= ==========================================================================================
+first_name                                Student’s first name
+last_name                                 Student’s last name
+school_year_name                          The name of student’s school year. For a list of acceptable values see the references section.
 primary_education:education_level_name    (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
 primary_education:cumulative_gpa          (Decimal) The student's cumulative GPA
 primary_education:department_gpa          (Decimal) Decimal of student's departmental GPA
@@ -78,7 +78,7 @@ primary_education:college_name            (String) The college the student belon
 primary_education:start_date              (Date) The date the student started at the school in any standard date format. See references for date formats.
 primary_education:end_date                (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). See references for date formats.
 primary_education:currently_attending     (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
-============================= ==========================================================================================
+========================================= ==========================================================================================
 
 Optional Fields
 ******************************************************************************************************
