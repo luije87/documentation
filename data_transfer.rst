@@ -38,11 +38,11 @@ For more information see this article.
 
 Once you have the CLI set up, uploading your data is as simple as issuing the following command::
 
-  aws s3api put-object --bucket [your_bucket] --key uploads/users_[yyyymmdd].csv --body [/path/to/your_local_file]  
+  aws s3api put-object --bucket [your_bucket] --key uploads/[yyyymmdd]_users.csv --body [/path/to/your_local_file]  
 
 For example::
 
-  aws s3api put-object --bucket hudson_university --key uploads/users_20140410.csv --body /tmp/student_dump20140410.csv
+  aws s3api put-object --bucket hudson_university --key uploads/20140410_users.csv --body /tmp/student_dump20140410.csv
 
 The AWS S3 API will respond with a document ID if the file was successfully transferred, otherwise it will respond with an error.  
 
