@@ -13,6 +13,13 @@ Item        Description                                          Example
 Login Path  The path a user should be sent to for authentication https://cashost:8443/cas-server-webapp/login
 =========== ==================================================== ============================================
 
+If you need to whitelist our 'service' or 'system', please whitelist:
+
+*  ``*app.joinhandshake.com/*``
+*  ``*yourschoolname.joinhandshake.com/*``
+
+If you can not whitelist our domains and require a static IP address, please reach out and we can get this setup for you but this configuration is very rare.
+
 SAML
 ----
 
@@ -46,3 +53,9 @@ Base DN          The DN we should search in for the user that is logging in     
 Filter           Which field should correspond with the login name they use                                         (uid={{login}})
 Firewall?        Is your system behind a firewall that will need us to provide a static IP for whitelisting?        yes/no
 ================ ================================================================================================== =====================================
+
+You may need to whitelist Handshake's IP addresses to access your ldap server please allow the following IPs:
+
+*  ``54.88.136.216``
+*  ``54.84.188.199``
+
