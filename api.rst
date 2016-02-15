@@ -189,7 +189,7 @@ These are nested inside of 'mentor_information_attributes' above
 =================================== ==================================================================
 Key                                 Value
 =================================== ==================================================================
-student_contact_preference:         (String) How this mentor wants to be contacted. One of 'not_allowed', 'anonymous', 'allowed'
+student_contact_preference:         (String) Whether or not this mentor can be contacted by students. Either 'allowed' or 'not_allowed'
 advice:                             (String) Generic advice that this mentor has to offer
 hobbies:                            (String) Relevant hobbies that this mentor listed
 expertise_names:                    (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
