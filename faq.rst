@@ -31,10 +31,10 @@ A quick overview of a few of our features:
   * FISMA Moderate
   * Sarbanes-Oxley (SOX)
 
-* The data centers we use are ISO 27001 and FISMA certified 
+* The data centers we use are ISO 27001 and FISMA certified
 * Firewalls, port scanning protection, DDoS mitigation, etc is in place
 * We offer at-rest encryption for all data in the system for an additional fee if this is required.
- 
+
 
 What SSO systems do you support out of the box?
 -----------------------------------------------
@@ -46,7 +46,7 @@ How do we get student data into the system?
 -------------------------------------------
 There are two primary ways to get student data into the system, depending on your needs.
 
-1. API 
+1. API
 
    If you want to have a stronger degree of control over our data and when it is updated in the system, we have a RESTful API that you may use to update, delete, create and synchronize student/staff/alumni accounts.
    :doc:`api`
@@ -54,24 +54,24 @@ There are two primary ways to get student data into the system, depending on you
 #. Simple CSV dump
 
    With the Simple CSV dump, we ask for an export of data from your student information system (ie Banner, DataTel, etc). We then have you push the data to our secured and sandboxed S3 environment. Pushing data to S3 is simple and over a secure connection with the AWS CLI or our small python script that uses the REST S3 API.
-   
+
    All of your data that you send us on S3 is not readable by anybody except for a single account that we tightly monitor and control. Even if your own credentials are compromised, an attacker will not be able to access the data.
-   
+
    Student sync data is encrypted in transit and at reset with AES 256 bit encryption
 
 For more information, see this document: :doc:`data_transfer`
 
- 
+
 Can we import data into the system?
 -----------------------------------
 We can work with you to help you export your data into a CSV format, and we can consume data from a CSV format into our system.
 
- 
+
 Do I need to dedicate any of my infrastructure for Handshake?
 -------------------------------------------------------------
 Handshake is provided as SaaS, so you do not need to dedicate any infrastructure to the application, besides what you need to send us up-to-date student data.
 
- 
+
 Does Handshake use SSL?
 -----------------------
 Yes, the production application forces SSL / TLS 1.2 to ensure that all interactions with the Handshake application are as secure as possible. The demo version of the application does not force SSL, and only test data should be used on the demo version.
@@ -81,4 +81,4 @@ Where can I find your terms of service and privacy policy?
 ----------------------------------------------------------
 `Terms of Service <https://joinhandshake.com/tos/>`_
 
-`Privacy Policy <https://joinhandshake.com/privacy/>`_
+`Privacy Policy <https://joinhandshake.com/privacy-policy/>`_
