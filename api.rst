@@ -217,7 +217,17 @@ industry_name                       (String) The industry that this mentor is in
 *******************
 Allows administrators to update a student's details.
 
-See `POST to /users<#post-users>`_
+Updating sensitive fields (username, email_address, and auth_identifier) require setting top-level param 'change_sensitive_fields' to true. The request would fail otherwise.
+
+**Top Level Params**
+
+============================== ==================================================================
+Key                            Value
+============================== ==================================================================
+change_sensitive_fields        (Boolean) Pass true to force update sensitive user fields.
+============================== ==================================================================
+
+See `POST /users<#post-users>`_ for user params.
 
 **Sample Response**
 ::
@@ -276,11 +286,11 @@ Tells the Handshake API that you are beginning a student data sync and moves the
 
 [POST] /users/create_or_update
 ******************************
-Takes in normal user params (See `POST to /users<#post-users>`_). If user does not yet exists, creates them. If user already exists, updates with given fields.
+Takes in normal user params (see `POST /users<#post-users>`_). If user does not yet exists, creates them. If user already exists, updates with given fields.
 
 **Sample Response**
 
-See `POST to /users<#post-users>`_
+See `POST /users<#post-users>`_ for user params.
 
 [POST] /users/sync_details
 **************************
