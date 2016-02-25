@@ -112,28 +112,28 @@ Allows administrators to add a student.
 ============================== ==================================================================
 Key                            Value
 ============================== ==================================================================
-\*email_address:               (String) Student's email address
-\*username:                    (String) Student's username
-\*user_type:                   (String) Defaults to "Students", one of "Students", "Career Services", "Mentors"
+\*email_address                (String) Student's email address
+\*username                     (String) Student's username
+\*user_type                    (String) Defaults to "Students", one of "Students", "Career Services", "Mentors"
 auth_identifier                (String) This is the identifier that is required if you use Single Sign On.
 recommended_authentication     (String) One of "sso" or "standard". Allows you to suggest what type of authentication the user should use when logging in.
 card_id                        (String) A card id that can be used for card swipe checkins.
-first_name:                    (String) Student's first name
-last_name:                     (String) Student's last name
-school_year_name:              (String) The name of student's school year. See references for possible values.
+first_name                     (String) Student's first name
+last_name                      (String) Student's last name
+school_year_name               (String) The name of student's school year. See references for possible values.
 preferred_name                 (String) The student's preferred name
 middle_name                    (String) The student's middle name
-work_authorization_name:       (String) One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa"
+work_authorization_name        (String) One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa"
 ethnicity                      (String) The ethnicity of the user. See the reference section for options.
 gender                         (String) The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
-bio:                           (String) A student bio
+bio                            (String) A student bio
 skill_names                    (String Array) An array of skills to list on the students profile
 external_link_urls             (String Array) An array of external links to list on the students profile
-time_zone:                     (String) The time zone that this user is in. See time zones section for more details.
-disabled:                      (Boolean) Pass true if this student should not be able to login
+time_zone                      (String) The time zone that this user is in. See time zones section for more details.
+disabled                       (Boolean) Pass true if this student should not be able to login
 override_disabled_field        (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
-work_study_eligible:           (Boolean) Pass true if this student is eligible for work study jobs
-mentor_information_attributes: (Hash) A nested hash containing mentor-specific attributes. See below table for possible values.
+work_study_eligible            (Boolean) Pass true if this student is eligible for work study jobs
+mentor_information_attributes  (Hash) A nested hash containing mentor-specific attributes. See below table for possible values.
 campus_name                    The name of the campus the student is at. Must be one of the campuses set up in your settings.
 mobile_number                  The user's mobile phone number
 system_label_names             (String Array) An array of label names to apply to the user
@@ -189,13 +189,13 @@ These are nested inside of 'mentor_information_attributes' above
 =================================== ==================================================================
 Key                                 Value
 =================================== ==================================================================
-student_contact_preference:         (String) Whether or not this mentor can be contacted by students. Either 'allowed' or 'not_allowed'
-advice:                             (String) Generic advice that this mentor has to offer
-hobbies:                            (String) Relevant hobbies that this mentor listed
-expertise_names:                    (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
-maximum_mentees:                    (Integer) The maximum number of ongoing mentorships that this mentor is willing to do.
-maximum_student_contacts_per_month: (Integer) The maximum number of messages that this mentor is willing to receive.
-industry_name:                      (String) The industry that this mentor is in. See references for possible values
+student_contact_preference          (String) Whether or not this mentor can be contacted by students. Either 'allowed' or 'not_allowed'
+advice                              (String) Generic advice that this mentor has to offer
+hobbies                             (String) Relevant hobbies that this mentor listed
+expertise_names                     (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
+maximum_mentees                     (Integer) The maximum number of ongoing mentorships that this mentor is willing to do.
+maximum_student_contacts_per_month  (Integer) The maximum number of messages that this mentor is willing to receive.
+industry_name                       (String) The industry that this mentor is in. See references for possible values
 =================================== ==================================================================
 
 \* required
@@ -215,11 +215,19 @@ industry_name:                      (String) The industry that this mentor is in
 
 [PUT] /users/update
 *******************
-Allows administrators to update a student's details
+Allows administrators to update a student's details.
 
-**Params**
+Updating sensitive fields (username, email_address, and auth_identifier) require setting top-level param 'change_sensitive_fields' to true. The request would fail otherwise.
 
-See POST params
+**Top Level Params**
+
+============================== ==================================================================
+Key                            Value
+============================== ==================================================================
+change_sensitive_fields        (Boolean) Pass true to force update sensitive user fields.
+============================== ==================================================================
+
+See `POST /users<#post-users>`_ for user params.
 
 **Sample Response**
 ::
@@ -243,8 +251,8 @@ Allows administrators to remove a student from handshake.
 =========================  ==================================================================
 Key                        Value
 =========================  ==================================================================
-\*email_address:           Student's email address
-\*username:                Student's username
+\*email_address            Student's email address
+\*username                 Student's username
 =========================  ==================================================================
 
 \*One of email_address or username must be passed in order to find the user to remove
@@ -278,11 +286,11 @@ Tells the Handshake API that you are beginning a student data sync and moves the
 
 [POST] /users/create_or_update
 ******************************
-Takes in normal user params (see POST to /users). If user does not yet exists, creates them. If user already exists, updates with given fields.
+Takes in normal user params (see `POST /users<#post-users>`_). If user does not yet exists, creates them. If user already exists, updates with given fields.
 
 **Sample Response**
 
-See POST to /users
+See `POST /users<#post-users>`_ for user params.
 
 [POST] /users/sync_details
 **************************
@@ -375,8 +383,8 @@ Allows administrators to add a major to their school. Returns false if major is 
 ==================  ==================================================================
 Key                 Value
 ==================  ==================================================================
-name:               Name of major
-major_group_names:  Array of major group names to allocate this major into
+name                Name of major
+major_group_names   Array of major group names to allocate this major into
 ==================  ==================================================================
 
 **Sample Response**
@@ -396,7 +404,7 @@ Allows administrators to remove a major from their school. Returns false if majo
 ==========  ==================================================================
 Key         Value
 ==========  ==================================================================
-name:       Name of major
+name        Name of major
 ==========  ==================================================================
 
 **Sample Response**
@@ -421,11 +429,11 @@ Allows administrators to list contacts.
 ================== ==================================================================
 Key                Value
 ================== ==================================================================
-\*first_name:      ..
-\*last_name:       ..
-\*email_address:   ..
-\*\*employer_id:   The id of the employer that you want to list the contact for
-\*\*employer_name: The name of the employer that the contact represents
+\*first_name       ..
+\*last_name        ..
+\*email_address    ..
+\*\*employer_id    The id of the employer that you want to list the contact for
+\*\*employer_name  The name of the employer that the contact represents
 title              The job title of this contact, for example 'University Relations'
 location_name      ..
 phone              ..
@@ -465,16 +473,16 @@ Add a contact to an employer
 ================ ==================================================================
 Key              Value
 ================ ==================================================================
-\*employer_id:   The id of the employer to add the contact to.
-\*email_address: The email address of the contact.
-first_name:      The first name of the contact.
-last_name:       The last name of the contact.
-title:           The title of the contact.
-address:         The address of the contact.
-location_id:     The id of the work location of the contact.
-phone:           The phone number of the contact
-cell_phone:      The cell phone number of the contact
-fax:             The fax number of the contact
+\*employer_id    The id of the employer to add the contact to.
+\*email_address  The email address of the contact.
+first_name       The first name of the contact.
+last_name        The last name of the contact.
+title            The title of the contact.
+address          The address of the contact.
+location_id      The id of the work location of the contact.
+phone            The phone number of the contact
+cell_phone       The cell phone number of the contact
+fax              The fax number of the contact
 ================ ==================================================================
 
 \* Required fields
@@ -500,8 +508,8 @@ Allows administrators to remove a contact from an employer. Returns false if con
 ================ ==================================================================
 Key              Value
 ================ ==================================================================
-\*employer_id:   The id of the employer to add the contact to.
-\*email_address: The email address of the contact.
+\*employer_id    The id of the employer to add the contact to.
+\*email_address  The email address of the contact.
 ================ ==================================================================
 
 **Sample Response**
@@ -548,18 +556,18 @@ Allows administrators to create jobs at your school
 =================================== ==================================================================
 Key                                 Value
 =================================== ==================================================================
-\*title:                            The jobs's title
-\*employer_id:                      System ID of the employer associated with this job
-\*job_type_name:                    The type of job. Must be one of the system job types
+\*title                             The jobs's title
+\*employer_id                       System ID of the employer associated with this job
+\*job_type_name                     The type of job. Must be one of the system job types
 \*application_medium                The method a student should use to apply. One of ['handsake', 'external_link', 'offline', 'handshake_and_external']
 \*physical_application_instructions Instructions on how a student should submit a physical application. This is required if the application medium is 'offline'
-description:                        Description of the job
-job_function_names:                 An array of job function names which must be one of the system job functions.
-location_name:                      The location of the job
-salary_type:                        The salary type. Must be one of the system salary types
-contact_email:                      The email of the contact to be associated with the job. Must match with an existing contact
-expiration_date:                    The date the posting should expire. yyyy-mm-dd
-posting_status:                     The status of the posting, if being posted to a school. Possible values: expired, approved, pending, declined.
+description                         Description of the job
+job_function_names                  An array of job function names which must be one of the system job functions.
+location_name                       The location of the job
+salary_type                         The salary type. Must be one of the system salary types
+contact_email                       The email of the contact to be associated with the job. Must match with an existing contact
+expiration_date                     The date the posting should expire. yyyy-mm-dd
+posting_status                      The status of the posting, if being posted to a school. Possible values: expired, approved, pending, declined.
 =================================== ==================================================================
 
 \* Required fields
@@ -587,9 +595,9 @@ Allows pulling for attendees of an attendable event. The results can be paginate
 ===================== ==================================================================
 Key                   Value
 ===================== ==================================================================
-\*identifier :        The import identifier of the attendable.
-\*identifiable_type:  The type of the event, either 'CareerFair' or 'Event'.
-page:                 The page of results that you want, 0-based.
+\*identifier          The import identifier of the attendable.
+\*identifiable_type   The type of the event, either 'CareerFair' or 'Event'.
+page                  The page of results that you want, 0-based.
 ===================== ==================================================================
 
 **Sample Response**
