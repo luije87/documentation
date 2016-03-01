@@ -103,6 +103,8 @@ query      A simple string query to search with
       ]
     }
 
+.. _post-users:
+
 [POST] /users
 *************
 Allows administrators to add a student.
@@ -213,6 +215,8 @@ industry_name                       (String) The industry that this mentor is in
       }
     }
 
+.. _put-users-update:
+
 [PUT] /users/update
 *******************
 Allows administrators to update a student's details.
@@ -227,7 +231,7 @@ Key                            Value
 change_sensitive_fields        (Boolean) Pass true to force update sensitive user fields.
 ============================== ==================================================================
 
-See `POST /users<#post-users>`_ for user params.
+See :ref:`post-users` for user params.
 
 **Sample Response**
 ::
@@ -286,13 +290,13 @@ Tells the Handshake API that you are beginning a student data sync and moves the
 
 [POST] /users/create_or_update
 ******************************
-Takes in normal user params (see `POST /users<#post-users>`_). If user does not yet exists, creates them. If user already exists, updates with given fields.
+Takes in normal user params (see :ref:`post-users`). If user does not yet exists, creates them. If user already exists, updates with given fields.
 
-Updating sensitive fields require setting top-level param 'change_sensitive_fields' to true. See `PUT /users/update<#put-users-update>`_
+Updating sensitive fields require setting top-level param 'change_sensitive_fields' to true. See :ref:`put-users-update`
 
 **Sample Response**
 
-See `POST /users<#post-users>`_.
+See :ref:`post-users`.
 
 [POST] /users/sync_details
 **************************
