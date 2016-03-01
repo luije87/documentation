@@ -292,7 +292,7 @@ Tells the Handshake API that you are beginning a student data sync and moves the
 ******************************
 Takes in normal user params (see :ref:`post-users`). If user does not yet exists, creates them. If user already exists, updates with given fields.
 
-Updating sensitive fields require setting top-level param 'change_sensitive_fields' to true. See :ref:`put-users-update`
+Updating sensitive fields require setting top-level param 'change_sensitive_fields' to true. See :ref:`put-users-update`.
 
 **Sample Response**
 
