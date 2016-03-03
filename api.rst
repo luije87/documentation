@@ -619,3 +619,43 @@ page                  The page of results that you want, 0-based.
         }
       ]
     }
+
+Events
+--------
+Allows managing events at your institution.
+
+[POST] /events
+****************
+Add an event
+
+**Params**
+
+=============================== ==================================================================
+Key                             Value
+=============================== ==================================================================
+\*start_date                    (String) The date and time when the event starts. Ex: '2017-03-10 9:00 AM'
+\*end_date                      (String) The date and time when the event ends. Ex: '2017-03-10 10:00 AM'
+\*name                          (String) The name of the event.
+\*event_type_name               (String) The type of event. Possible types: 'Workshop', 'Info Session', 'Group Appointment', 'Other'
+status                          (String) The status of the event. Possible status: 'approved', 'pending', 'declined'. Defaults to 'pending'.
+description                     (String) The description of the event.
+student_registration_start      (String) The date students can start registering. Ex: '2017-03-01 7:00 AM'
+student_registration_end        (String) The date students can no longer register. Ex: '2017-03-09 8:00 PM'
+invite_only                     (Boolean) If the event requires an invite.
+attendee_limit                  (Integer) The number of attendees allowed to register.
+external_link                   (String) If provided, students will be redirected to this link when they register.
+welcome_student_email           (String) This content will be emailed to students when they join this event.
+=============================== ==================================================================
+
+\* Required fields
+
+**Sample Success Response**
+::
+
+    {
+      success: true,
+      event: {
+      "id": 1,
+      "name": "New Event"
+      }
+    }
