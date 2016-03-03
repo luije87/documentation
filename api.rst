@@ -637,7 +637,7 @@ Key                             Value
 \*end_date                      (String) The date and time when the event ends. Ex: '2017-03-10 10:00 AM'
 \*name                          (String) The name of the event.
 \*event_type_name               (String) The type of event. Possible types: 'Workshop', 'Info Session', 'Group Appointment', 'Other'
-status                          (String) The status of the event. Possible status: 'approved', 'pending', 'declined'
+status                          (String) The status of the event. Possible status: 'approved', 'pending', 'declined'. Defaults to 'pending'.
 description                     (String) The description of the event.
 student_registration_start      (String) The date students can start registering. Ex: '2017-03-01 7:00 AM'
 student_registration_end        (String) The date students can no longer register. Ex: '2017-03-09 8:00 PM'
