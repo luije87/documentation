@@ -297,6 +297,7 @@ Header                              Value
 \*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
 \*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 \*user_type                         If the identifiable_type is a User, the user_type must be specified.
+label_type                          Either 'normal' or 'public'. Defaults to 'normal'.
 name                                The label name to apply.
 =================================== ==================================================================
 
