@@ -57,7 +57,7 @@ CSV Header Value                  Value Description
 ================================= ======================================================================================
 \*email_address                   Student’s email address. In general this should be a .edu address
 \*username                        Student’s username. This MUST be unique and should not be something that changes
-\*user_type                       Defaults to "Students", one of "Students", "Career Services", "Mentors"
+\*user_type                       Defaults to "Students", one of "Students", "Career Services", "Mentors". user_type is case sensitive so it must be "Students". 
 auth_identifier                   This is the identifier that is required if you use Single Sign On.
 ================================= ======================================================================================
 
@@ -103,7 +103,7 @@ disabled                                  Pass true if this student should not b
 override_disabled_field                   (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
 work_study_eligible                       Pass true if this student is eligible for work study jobs
 campus_name                               The name of the campus the student is at. Must be one of the campuses set up in your settings.
-mobile_number                             The user's mobile phone number
+mobile_number                             The user's mobile phone number. The format should follow the following format: (999)999-9999 Ext:9999
 system_label_names                        Semi-colon separated list of label names to apply to the user
 profile_review_status                     This can be used to manage a students review status. Set this to "approved" if this student will not need a profile review. (Not relevant if profile review is not turned on for your school). All options: ['unsubmitted', 'pending', 'approved'].
 document_review_status                    This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']

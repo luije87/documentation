@@ -76,6 +76,33 @@ Does Handshake use SSL?
 -----------------------
 Yes, the production application forces SSL / TLS 1.2 to ensure that all interactions with the Handshake application are as secure as possible. The demo version of the application does not force SSL, and only test data should be used on the demo version.
 
+Does Handshake use SFTP?
+------------------------
+
+Handshake leverages a secure amazon web services s3 bucket to receive data on an automated basis.  We also offer a secure web service for manually uploading data to handshake, our project management software. 
+
+We don't currently support SFTP but if this is only option for you let us know and we can work though a solution with you.
+
+
+Is a header row required in the CSV file?
+-----------------------------------------
+Yes we do need a header for the file. But every header is not required to be in the file (e.g. if you don't want to include a non-required field). Order also doesn't matter.
+
+
+Do you have a preffered format for Booleans?
+--------------------------------------------
+True and False are the preferred format. 
+
+
+What happens if the email_address field is passed with a blank?
+---------------------------------------------------------------
+If the email is blank an error will be thrown and that row will be ignored. 
+
+
+Are column headers case sensitive?
+----------------------------------
+Yes, column headers are case sensitive and must match what we have listed in the csv documentation. 
+
 
 Where can I find your terms of service and privacy policy?
 ----------------------------------------------------------
