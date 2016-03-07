@@ -125,7 +125,7 @@ last_name                      (String) Student's last name
 school_year_name               (String) The name of student's school year. See references for possible values.
 preferred_name                 (String) The student's preferred name
 middle_name                    (String) The student's middle name
-work_authorization_name        (String) One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa"
+work_authorization_name        (String) One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa", “L1 Visa”, “Work Card”,”H4 Visa”
 ethnicity                      (String) The ethnicity of the user. See the reference section for options.
 gender                         (String) The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
 bio                            (String) A student bio
