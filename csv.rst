@@ -40,7 +40,6 @@ For an example file of the required fields `[Click Here] <https://docs.google.co
 Students
 -----
 
-Note: Users are synced, not added.  The user list that is provided will replace your schools current users entirely.
 
 Format: TIMESTAMP_users.csv OR users.csv
 
@@ -69,14 +68,14 @@ Header                                    Value
 first_name                                Student’s first name
 last_name                                 Student’s last name
 school_year_name                          The name of student’s school year. For a list of acceptable values see the references section.
-primary_education:education_level_name    (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
+primary_education:education_level_name    This shows up on their main education on their profile. For a list of acceptable values see the references section.
 primary_education:cumulative_gpa          (Decimal) The student's cumulative GPA
 primary_education:department_gpa          (Decimal) Decimal of student's departmental GPA
 primary_education:major_names             (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
 primary_education:minor_names             (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
 primary_education:college_name            (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
 primary_education:start_date              (Date) The date the student started at the school in any standard date format. See references for date formats.
-primary_education:end_date                (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). See references for date formats.
+primary_education:end_date                (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). Must be after the education start date. See references for date formats.
 primary_education:currently_attending     (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
 ========================================= ==========================================================================================
 
@@ -98,9 +97,8 @@ gender                                    The gender of the user. One of "Male",
 bio                                       A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
 skill_names                               Semi-colon separated list of skills. This generally should not be used in a sync.
 external_link_urls                        Semi-colon separated list of external links for the profile
-time_zone                                 The time zone that this user is in. See time zones section for more details.
 disabled                                  Pass true if this student should not be able to login and access Handshake.
-override_disabled_field                   (Boolean) This field tells Handshake to ignore this user in future syncs and is used to transition a student to an alumni.
+override_disabled_field                   (Boolean) This field tells Handshake to ignore this user in future disabling syncs and is used to transition a student to an alumni.
 work_study_eligible                       Pass true if this student is eligible for work study jobs
 campus_name                               The name of the campus the student is at. Must be one of the campuses set up in your settings.
 mobile_number                             The user's mobile phone number. The format should follow the following format: (999)999-9999 Ext:9999
