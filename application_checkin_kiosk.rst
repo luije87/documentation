@@ -31,6 +31,23 @@ Checkin Kiosks can be configured to read in card swipe data. Setting up card swi
 
 **Card Substring Regex**: An optional second regex used to determine what data to send to the server for matching. If specified, only the first string match of the swiped card data will be sent.
 
+Security
+--------
+To securely look students up with possibly sensitive card ID's - Handshake and the University first agree on a salt to append to the card_id and when the card is swiped.  Handshake's application then appends this salt, hash the results, and then looks the student up based on that value.  This supposes that the university is also salting and hashing the card_id's they are sending to Handshake in there student sync.  Throughout the whole process the card id is never stored and security transmitted.  
+
++------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------+
+| Step | Process                                                                                                                                                | Where it Happens   | Security           |
++======+========================================================================================================================================================+====================+====================+
+| 1    | With the kiosk page open, a user swipes their card and Handshake’s client side code applies a regex to the input validate that is indeed a card output | End User's Browser | Sent via HTTPS     |
++------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------+
+| 2    | Handshake applies a second regex to the output of first to get the card_id from the string                                                             | Handshake Server   | Card ID not stored |
++------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------+
+| 3    | Handshake’s server then appends the pre-defined salt and SHA-512 hashes the result (optional)                                                          | Handshake Server   | Card ID not stored |
++------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------+
+| 4    | Handshake then looks up the value returned on all the user’s card_ids. The card_id is not logged only the hash.                                        | Handshake Server   | Card ID not stored |
++------+--------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------------+
+
+
 Nametag Printing
 ----------------
 
