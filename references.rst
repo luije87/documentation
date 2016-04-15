@@ -36,6 +36,32 @@ The fields below are deprecated. They are still supported on the api, but will m
    Graduate (Masters)
    Post Graduate (Doctorate)
 
+Gender
+------
+
+The following standardized list of genders supported in Handshake::
+
+    Male
+    Female
+    Other
+
+
+Work Authorizations
+-------------------
+
+The following standardized list of work authorizations supported in Handshake::
+
+    U.S. Citizen
+    Student (F-1) Visa
+    J-1 Visa (Exchange Program)
+    Permanent U.S. Resident
+    Employment (H-1) Visa
+    TN Visa
+    L1 Visa
+    Work Card
+    H4 Visa
+
+
 Education Levels
 ----------------
 
@@ -86,7 +112,7 @@ The following roles are supported in Handshake::
    Pins
    View Shared Notes
    Manage Labels
-   Launch Check-in Kiosk"
+   Launch Check-in Kiosk
 
 Salary Type Names
 -----------------
@@ -127,7 +153,7 @@ The following standardized list of ethnicities is supported in Handshake::
 
    Native American/Alaskan Native
    Black or African American
-   Asian/Asian American"
+   Asian/Asian American
    Native Hawaiian/Pacific Islander
    Latino(a)
    White/Caucasian
