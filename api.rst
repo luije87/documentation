@@ -195,7 +195,7 @@ student_contact_preference          (String) Whether or not this mentor can be c
 advice                              (String) Generic advice that this mentor has to offer
 hobbies                             (String) Relevant hobbies that this mentor listed
 expertise_names                     (String Array) An array of expertise that this mentor has. Will create if not already listed on school administrator page.
-maximum_mentees                     (Integer) The maximum number of ongoing mentorships that this mentor is willing to do.
+maximum_mentees                     (Integer) The maximum number of ongoing mentorships that this mentor is willing to do. Defaults to 50.
 maximum_student_contacts_per_month  (Integer) The maximum number of messages that this mentor is willing to receive.
 industry_name                       (String) The industry that this mentor is in. See references for possible values
 =================================== ==================================================================
