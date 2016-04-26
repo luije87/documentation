@@ -3,7 +3,19 @@
 CSV Upload
 =================
 
-The easiest way to get data into Handshake is using the CSV upload. Below you will find an explanation of the different files.
+The easiest way to get data into Handshake is using the CSV upload. 
+Below you will find tips, requirements, and an explanation of the different files.
+
+File Requirements
+-----
+
+- All headers are case-sensitive; Must be downcased
+- All preset values are case-sensitive; Casing varies
+- All fields with an asterisk (*) denotes a required field; Do not include asterisk in header
+- File must be exported in .CSV format
+- File must be exported in Unicode (UTF-8) 
+Note: Not exporting to UTF-8 can cause bad encoding issues, which can lead to poorly translated records or failure to sync/import correctly. For information on how to export or convert your file to UTF-8, please see: http://help.meetedgar.com/article/107-help-how-do-i-export-my-spreadsheet-to-a-utf-8-encoded-csv
+
 
 Staff
 -----
@@ -88,7 +100,7 @@ Note: these fields generally add value to career services but are not required f
 CSV Header Value                          Value Description
 ========================================= ==================================================================
 preferred_name                            The student's preferred name
-middle_name                               Coming Soon: The student's middle name
+middle_name                               The student's middle name
 work_authorization_name                   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa", "L1 Visa", "Work Card","H4 Visa"
 recommended_authentication                One of "sso" or "standard". Allows you to suggest what type of authentication the user should use when logging in.
 card_id                                   Used for checking in students using a card swipe
