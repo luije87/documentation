@@ -5,21 +5,19 @@ Data Transfer FAQ
 
 Why do you use Amazon S3?
 -------------------------
-In order to best provide for the security of your sensitive data, we make sure of secure Amazon AWS S3 buckets. These buckets are heavily secured with a rigorous access control policy.
+AWS S3 is an industry standard for data storage and transfer.  In order to provide the best security of your sensitive data, we use a rigorous access control policy and encryption in transit and at rest.  Data can only be uploaded not read from AWS s3 and will only sit there for a short time before it is ingested into Handshake by an automated process.  
 
 
 What sort of encryption is used with the data?
 ----------------------------------------------
 We use server side 256 bit AES. "Amazon S3 Server Side Encryption employs strong multi-factor encryption. Amazon S3 encrypts each object with a unique key. As an additional safeguard, it encrypts the key itself with a master key that it regularly rotates. Amazon S3 Server Side Encryption uses one of the strongest block ciphers available, 256-bit Advanced Encryption Standard (AES-256), to encrypt your data."
-All encryption is transferred over SSL
+All data sent in transit is transferred over TLS. 
 
 
 How should I format my [student/staff/alumni] data?
 ---------------------------------------------------
 An up-to-date format for CSV files is included here: :doc:`csv`
 If you have any questions about formatting, or we don't have a field included that you require, let us know and we are more than happy to work with you to ensure we meet all of your needs.
-
-Our preferred format is with all users together in one CSV, and a user type field indicating if they are student, staff, alum, etc. If this is not possible, and they must be separate files, let us know.
 
 
 How do I transfer the data to my secure bucket?
