@@ -65,7 +65,7 @@ The following standardized list of work authorizations supported in Handshake::
 Education Levels
 ----------------
 
-The following standardized list of school years are supported in Handshake::
+The following standardized list of education levels are supported in Handshake::
 
    High School
    Associates
