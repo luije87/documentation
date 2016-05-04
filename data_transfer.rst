@@ -40,10 +40,14 @@ Once you have the CLI set up, uploading your data is as simple as issuing the fo
 
 Hanshake has one aws bucket 'handshake-importer-uploads' and every school has a unique folder which comes after the bucket which they only have write access to upload files.
 
-For example::
+example upload::
 
   aws s3 cp 20140410_users.csv s3://handshake-importer-uploads/importer-production-hudson_university/20140410_users.csv 
 
-The AWS S3 API will respond with a document ID if the file was successfully transferred, otherwise it will respond with an error.  
+example response::
+
+  upload: to s3://handshake-importer-uploads/importer-production-hudson_university/20140410_users.csv
+
+The AWS S3 API will respond with the document ID if the file was successfully transferred, otherwise it will respond with an error.  You can also check the command exit code to determine it it was successful.
 
 If you wish to do a test run, simply send a file and our data team will verify that it is recieived and ready for production.
