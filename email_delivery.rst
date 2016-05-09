@@ -6,13 +6,15 @@ Email Delivery
 Handshake maintains highly reputable emailing domains to ensure that emails are delivered. However, email delivery can sometimes fail due to the various systems in between Handshake and students which are designed to prevent email abuse. In order to maintain high deliverability, Handshake monitors and acts on spam scores, blacklisting, IP throttling and more.
 
 
-Email Delivery Guidelines
--------------------------
+Email Providers 
+---------------
 
 Google
 ######
 
-We recommend whitelisting all IP addresses in your google apps console for gmail as this will ensure no messages are flagged as spam.  Here are some general guidelines for bulk emailing from google: https://support.google.com/mail/answer/81126
+We recommend whitelisting all IP addresses in your google apps console for gmail as this will ensure no messages are flagged as spam.  More info here: https://support.google.com/a/answer/60751?hl=en  
+
+Here are some general guidelines for bulk emailing from google: https://support.google.com/mail/answer/81126
 
 Whitelisting
 ------------
