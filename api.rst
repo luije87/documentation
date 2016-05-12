@@ -663,3 +663,61 @@ welcome_student_email           (String) This content will be emailed to student
       "name": "New Event"
       }
     }
+
+Career Interests
+--------
+Allows getting information about career clusters your school has configured,
+and which students have indicated their interest in those clusters.
+
+[GET] /career_interests
+****************
+Get the list of career clusters that are configured for your school.
+
+**Params**
+None
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      career_clusters: [
+        {
+          id: 1,
+          name: "Software Development"
+        },
+        {
+          id: 2,
+          name: "Business"
+        }
+      ]
+    }
+
+[GET] /career_interests/{id}
+****************
+Get a list of students who are interested in a given career cluster.
+The ID of a career cluster can be determined using the above endpoint.
+
+**Params**
+None
+
+**Sample Response**
+::
+
+    {
+      success: true,
+      students: [
+        {
+          id: 123,
+          email_address: "jane@handshake.edu",
+          first_name: "Jane",
+          last_name: "Doe"
+        },
+        {
+          id: 456,
+          email_address: "john@handshake.edu",
+          first_name: "John",
+          last_name: "Doe"
+        }
+      ]
+    }
