@@ -282,7 +282,8 @@ The items can be a contact, user, job, appointment, or event.
 Header                              Value
 =================================== ==================================================================
 \*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
-\*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
+\*\*identifiable_id                 The id of the identifiable.
+\*\*identifier                      If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 \*user_type                         If the identifiable_type is a User, the user_type must be specified.
 content                             The note contents
 privacy_preference                  If this is a personal note or shared with staff. [personal, institution]
@@ -290,6 +291,7 @@ reminder_date                       If there should be a reminder associated wit
 =================================== ==================================================================
 
 \* Required fields
+\*\* Either identifier or identifiable_id must be provided.
 
 
 Labels
@@ -305,13 +307,15 @@ This will simply apply labels. If a label already exists it will not apply a dup
 Header                              Value
 =================================== ==================================================================
 \*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
-\*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
+\*\*identifiable_id                 The id of the identifiable.
+\*\*identifier                      If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 \*user_type                         If the identifiable_type is a User, the user_type must be specified.
 label_type                          Either 'normal' or 'public'. Defaults to 'normal'.
 name                                The label name to apply.
 =================================== ==================================================================
 
 \* Required fields
+\*\* Either identifier or identifiable_id must be provided.
 
 
 Campuses
@@ -399,5 +403,9 @@ student_email_address               The email address of the student to be check
 registered                          Boolean - Mark this student as pre registered?
 checked_in                          Boolean - Mark this student as checked in at the event?
 \*identifiable_type                 Must be one of: Event or CareerFair (no space between words). Case sensitive.
-\*identifier                        If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
+\*\*identifiable_id                 The id of the identifiable.
+\*\*identifier                      If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 =================================== ==================================================================
+
+\* Required fields
+\*\* Either identifier or identifiable_id must be provided.

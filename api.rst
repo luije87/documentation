@@ -605,10 +605,14 @@ Allows pulling for attendees of an attendable event. The results can be paginate
 ===================== ==================================================================
 Key                   Value
 ===================== ==================================================================
-\*identifier          The import identifier of the attendable.
+\*\*identifier        The import identifier of the attendable.
+\*\*identifiable_id   The id of the attendable.
 \*identifiable_type   The type of the event, either 'CareerFair' or 'Event'.
 page                  The page of results that you want, 0-based.
 ===================== ==================================================================
+
+\* Required fields
+\*\* Either identifier or identifiable_id must be provided.
 
 **Sample Response**
 ::
