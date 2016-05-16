@@ -41,8 +41,12 @@ Mass emails are sent from (mail.joinhandshake.com)
 Whitelist by Email Address
 ##########################
 
-If you need to whitelist by email addresses, these are the addresses we send from:
+We send from:
 
 * ``handshake@notifications.joinhandshake.com``
 * ``handshake@mail.joinhandshake.com``
 
+It is possible to configure a custom reply-to email address, by default it is set to
+
+* ``handshake@mail.joinhandshake.com``
+* ``handshake@notifications.joinhandshake.com``
