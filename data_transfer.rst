@@ -51,3 +51,13 @@ example response::
 The AWS S3 API will respond with the document ID if the file was successfully transferred, otherwise it will respond with an error.  You can also check the command exit code to determine it it was successful.
 
 If you wish to do a test run, simply send a file and our data team will verify that it is recieived and ready for production.
+
+
+Can I whitelist s3 though my firewall?
+--------------------------------------
+
+There are a lot of IPs for s3 but they are updated here on a regular basis: https://ip-ranges.amazonaws.com/ip-ranges.json  (we only use the us-east-1 region)
+
+If you do want to whitelist by domain: 
+
+* ``https://s3.amazonaws.com/*``
