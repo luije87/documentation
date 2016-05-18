@@ -3,6 +3,16 @@
 References
 ==========
 
+
+Encodings
+---------
+
+Handshake requires your file uploads to be UTF-8  (http://www.utf8-chartable.de/)
+
+Example command to check your file's encoding `file ./input_file.csv`
+
+Example command to convert your file to UTF-8 `iconv -f MACROMAN -t UTF-8 ./input_file.csv > ./output_file.csv`
+
 Booleans
 --------
 
