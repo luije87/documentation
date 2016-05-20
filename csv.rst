@@ -11,7 +11,6 @@ File Requirements
 
 - All headers are case-sensitive; Must be downcased
 - All preset values are case-sensitive; Casing varies
-- All fields with an asterisk (*) denotes a required field; Do not include asterisk in header
 - File must be exported in .CSV format
 - File must be exported in Unicode (UTF-8) 
 Note: Not exporting to UTF-8 can cause bad encoding issues, which can lead to poorly translated records or failure to sync/import correctly. For information on how to export or convert your file to UTF-8, please see: http://help.meetedgar.com/article/107-help-how-do-i-export-my-spreadsheet-to-a-utf-8-encoded-csv
@@ -26,9 +25,9 @@ Required Fields
 ================================= ======================================================================================
 CSV Header Value                  Value Description
 ================================= ======================================================================================
-\*email_address                   Staff member's email address. In general this should be a .edu address
-\*username                        Staff member's username. This MUST be unique and should not be something that changes
-\*user_type                       Should be "Career Services"
+email_address                   Staff member's email address. In general this should be a .edu address
+username                        Staff member's username. This MUST be unique and should not be something that changes
+user_type                       Should be "Career Services"
 auth_identifier                   This is the identifier that is required if you use Single Sign On.
 ================================= ======================================================================================
 
@@ -52,6 +51,7 @@ For an example file of the required fields `[Click Here] <https://docs.google.co
 Students
 -----
 
+For an example file of the suggested fields `[Click Here] <https://docs.google.com/spreadsheets/d/12jCXVRVE6hyPKVT69uuQ1z7rqSJXzjXmkr0Lj2UPaUw/edit#gid=0>`_
 
 Format: TIMESTAMP_users.csv OR users.csv
 
@@ -66,9 +66,9 @@ Required Fields
 ================================= ======================================================================================
 CSV Header Value                  Value Description
 ================================= ======================================================================================
-\*email_address                   Student’s email address. In general this should be a .edu address
-\*username                        Student’s username. This MUST be unique and should not be something that changes
-\*user_type                       Defaults to "Students", one of "Students", "Career Services", "Mentors". user_type is case sensitive so it must be "Students". 
+email_address                     Student’s email address. In general this should be a .edu address
+username                          Student’s username. This MUST be unique and should not be something that changes
+user_type                         Defaults to "Students", one of "Students", "Career Services", "Mentors". user_type is case sensitive so it must be "Students". 
 auth_identifier                   This is the identifier that is required if you use Single Sign On.
 ================================= ======================================================================================
 
@@ -79,16 +79,20 @@ Header                                    Value
 ========================================= ==========================================================================================
 first_name                                Student’s first name
 last_name                                 Student’s last name
-school_year_name                          The name of student’s school year. For a list of acceptable values see the references section.
-primary_education:education_level_name    This shows up on their main education on their profile. For a list of acceptable values see the references section.
+school_year_name                          The name of student’s school year. For a list of acceptable values see the references section. Can only have one.
+primary_education:education_level_name    This shows up on their main education on their profile. For a list of acceptable values see the references section.  Can only have one.
 primary_education:cumulative_gpa          (Decimal) The student's cumulative GPA
 primary_education:department_gpa          (Decimal) Decimal of student's departmental GPA
-primary_education:major_names             (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
-primary_education:minor_names             (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
-primary_education:college_name            (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
+primary_education:major_names             (String Array) An array of major names for this student. Semicolon separated list. "major1";"major2";"major3" These must be majors configured in the school's majors list. 
+primary_education:minor_names             (String Array) An array of minor names for this student. Semicolon separated list. "minor1";"minor2";"minor3" These must be minors configured in the school's minors list.
+primary_education:college_name            (String) The college the student belongs to. Must be one of the colleges configured in the school's college list. Can only have one college
 primary_education:start_date              (Date) The date the student started at the school in any standard date format. See references for date formats.
 primary_education:end_date                (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). Must be after the education start date. See references for date formats.
 primary_education:currently_attending     (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
+card_id                                   (String) Used for checking in students using a card swipe. This string must be contained in a card swipe output. Handshake can regex the direct output to match this value.
+work_authorization_name                   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa", "L1 Visa", "Work Card","H4 Visa"
+ethnicity                                 The ethnicity of the user. Can only have one.  See the reference section for options.
+gender                                    The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
 ========================================= ==========================================================================================
 
 Optional Fields
@@ -101,16 +105,11 @@ CSV Header Value                          Value Description
 ========================================= ==================================================================
 preferred_name                            The student's preferred name
 middle_name                               The student's middle name
-work_authorization_name                   One of "U.S. Citizen", "Student (F-1) Visa", "J-1 Visa (Exchange Program)", "Permanent U.S. Resident", "Employment (H-1) Visa", "TN Visa", "L1 Visa", "Work Card","H4 Visa"
-recommended_authentication                One of "sso" or "standard". Allows you to suggest what type of authentication the user should use when logging in.
-card_id                                   Used for checking in students using a card swipe
-ethnicity                                 The ethnicity of the user. See the reference section for options.
-gender                                    The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
+recommended_authentication                One of "sso" or "standard". Allows you to suggest what type of authentication the user should use when logging in. (not currently active)
 bio                                       A student's bio. Shown on the student profile. Visible to everyone who can see the profile.
 skill_names                               Semi-colon separated list of skills. This generally should not be used in a sync.
 external_link_urls                        Semi-colon separated list of external links for the profile
 disabled                                  Pass true if this student should not be able to login and access Handshake.
-override_disabled_field                   (Boolean) This field tells Handshake to ignore this user in future disabling syncs and is used to transition a student to an alumni.
 work_study_eligible                       Pass true if this student is eligible for work study jobs
 campus_name                               The name of the campus the student is at. Must be one of the campuses set up in your settings.
 mobile_number                             The user's mobile phone number. The format should follow the following format: (999)999-9999 Ext:9999
@@ -119,24 +118,6 @@ profile_review_status                     This can be used to manage a students 
 document_review_status                    This can be used to manage a students document review status. Set this to "automatically_approved" if this student will not need documents approved. (Not relevant if document review is not turned on for your school). All options: ['no_pending_documents' 'pending_documents' 'automatically_approved']
 ========================================= ==================================================================
 
-For an example file of the suggested fields `[Click Here] <https://docs.google.com/spreadsheets/d/12jCXVRVE6hyPKVT69uuQ1z7rqSJXzjXmkr0Lj2UPaUw/edit#gid=0>`_
-
-Deprecated Fields
-******************************************************************************************************
-
-These fields are currently deprecated and support for them will be removed soon.
-
-============================== ==================================================================
-education_level_name           (String) Undergraduate, Graduate, Postgraduate. This shows up on their main education on their profile
-cumulative_gpa:                (Decimal) The student's cumulative GPA
-department_gpa:                (Decimal) Decimal of student's departmental GPA
-major_names:                   (String Array) An array of major names for this student. These must be majors configured in the school's majors list.
-minor_names:                   (String Array) An array of minor names for this student. These must be minors configured in the school's minors list.
-primary_college_name           (String) The college the student belongs to. Must be one of the colleges configured in the school's college list.
-education_start_date           (Date) The date the student started at the school in any standard date format. See references for date formats.
-education_end_date             (Date) The date the student graduated or plans to graduate school (can be blank if currently_attending is set). See references for date formats.
-education_currently_attending  (Boolean) Should be set to true if education_end_date is blank. This signifies they are currently attending this school.
-============================== ==================================================================
 
 Training configuration fields
 ******************************************************************************************************
@@ -167,23 +148,10 @@ industry_name                       (String) The industry that this mentor is in
 =================================== ==================================================================
 
 
-Disabling Syncs
-******************************************************************************************************
-
-As mentioned above, the user sync process can be used to automatically disable users who should no longer have access to Handshake. This process is called a "Disabling Sync" and can be done upon request with any new user file. By default, user syncs are *not* "Disabling Sync"'s and will leave user accounts enabled, even if not found in the file. This is to ensure that active and current students are not unexpectedly disabled because of a glitch or accidental removal from the CSV file.
-
-When a "Disabling Sync" is run, all students in Handshake that are not included in the sync and do not have "override_disabled_field" set to true will be disabled. Those students will be able to request reactivation and the Career Services staff will be able to re-enable them upon request or proactively.
-
-For a normal, "Non-disabling Sync", users listed in the CSV will be created or updated, but no users will be disabled.
-
 Handling Students who Graduate
 ******************************************************************************************************
 
-**Recommended option**
-
 + Run a final sync before graduation that updates their school year status to Alumni
-
-+ The file should Also include ‘override_disabled_field’ set to true so that the alumni are not disabling during future Disabling Syncs.
 
 
 System Labels
