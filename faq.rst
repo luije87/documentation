@@ -81,7 +81,7 @@ Does Handshake use SFTP?
 
 Handshake leverages a secure amazon web services s3 bucket to receive data on an automated basis.  We also offer a secure web service for manually uploading data to handshake, our project management software. 
 
-We don't currently support SFTP but if this is only option for you let us know and we can work though a solution with you.
+We don't currently support SFTP but let us know if you have trouble uploading to AWS and we're happy to work though a solution with you. 
 
 
 Is a header row required in the CSV file?
