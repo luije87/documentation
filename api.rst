@@ -468,8 +468,9 @@ Add a contact to an employer
 ================ ==================================================================
 Key              Value
 ================ ==================================================================
-\*employer_id    The id of the employer to add the contact to.
 \*email_address  The email address of the contact.
+employer_id      The id of the employer to add the contact to.
+employer_name    The name of the employer to add the contact to.
 first_name       The first name of the contact.
 last_name        The last name of the contact.
 title            The title of the contact.
@@ -480,7 +481,21 @@ cell_phone       The cell phone number of the contact
 fax              The fax number of the contact
 ================ ==================================================================
 
-\* Required fields
+\* Required
+
+If employer_id or employer_name is specified, the contact will be associated with
+the corresponding employer. Associating contacts using employer_name will only work
+if the name is an exact match with the employer profile's current name. If the name
+is not an exact match or the employer has no Handshake profile, the contact will
+display as belonging to that employer by name only; no employer profile will be
+linked to the contact. That contact may later become associated with an employer
+via the contact invite process, if the contact creates a user account and joins or
+creates an employer profile.
+
+If the contact being created already has a user account on Handshake (looked up via
+the provided email address), and that user account is associated with an employer,
+then the contact will be associated with the same employer as the user. This will
+override anything that is passed for employer_id and/or employer_name.
 
 **Sample Response**
 ::
