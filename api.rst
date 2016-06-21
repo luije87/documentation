@@ -314,40 +314,6 @@ Finishes the sync process. Disables any students who were not accounted for duri
       success: true
     }
 
-Reports
----------
-
-[GET] /report/{id}
-******************
-Allows administrators to output customized data feeds. Because of the highly customizable nature of these reports, the responses are not guaranteed to be performant and are rate limited.
-
-**Params**
-None
-
-**Sample Response**
-::
-
-    {
-      success: true,
-      report: [
-        {
-          id
-          name
-          locked
-          username: “sgringwe”,
-          first_name: “Scott”,
-          …
-        },
-        {...}, {...}
-      ]
-      data: [
-        [column1, column2, column3], #column list
-        [
-          {column1: value, column2: value}, #row 1
-          {column1: value, column2: value}, #row 2
-        ]
-      ]
-    }
 
 Majors/Minors
 -------------
