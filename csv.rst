@@ -223,8 +223,8 @@ You can import appointment types to be used within Handshake.
 Header                                                     Value
 ========================================================== ==================================================================
 \*name                                                     The name of the appointment type
-description                                                A description of the appointment type
 \*length                                                   The length of the appointment type in minutes (Integer)
+description                                                A description of the appointment type
 pre_survey_id                                              The ID of a Handshake survey that the student will fill out as part of their appointment request
 post_survey_id                                             The ID of a Handshake survey that will be sent to the student following their appointment
 advisor_survey_id                                          The ID of a Handshake survey that the staff member may fill out once the appointment has started
