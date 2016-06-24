@@ -165,7 +165,7 @@ Contacts
 Contacts in Handshake are used to keep track of employers, alumni, and other individuals who may not have a username and password for Handshake. The most common use for importing
 contact is to bring over employer relationships. Contacts can be labeled, sorted, tried to a Handshake employer, and more.
 
-\*Params**
+**Params**
 
 =================================== ==================================================================
 Header                              Value
@@ -192,7 +192,7 @@ Appointments
 
 You can import historical appointment records from appointments with students.
 
-\*Params**
+**Params**
 
 ========================= ==================================================================
 Header                    Value
@@ -217,7 +217,7 @@ Appointment Types
 
 You can import appointment types to be used within Handshake.
 
-\*Params**
+**Params**
 
 ========================================================== ==================================================================
 Header                                                     Value
@@ -251,7 +251,7 @@ Events
 
 You can import historical events
 
-\*Params**
+**Params**
 
 ============================ ==================================================================
 Header                       Value
