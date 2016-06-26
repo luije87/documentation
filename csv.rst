@@ -165,7 +165,7 @@ Contacts
 Contacts in Handshake are used to keep track of employers, alumni, and other individuals who may not have a username and password for Handshake. The most common use for importing
 contact is to bring over employer relationships. Contacts can be labeled, sorted, tried to a Handshake employer, and more.
 
-\*Params**
+**Params**
 
 =================================== ==================================================================
 Header                              Value
@@ -192,7 +192,7 @@ Appointments
 
 You can import historical appointment records from appointments with students.
 
-\*Params**
+**Params**
 
 ========================= ==================================================================
 Header                    Value
@@ -212,12 +212,46 @@ import_identifier          This identifier must be completely unique, used if yo
 \* Required
 
 
+Appointment Types
+-----------------
+
+You can import appointment types to be used within Handshake.
+
+**Params**
+
+========================================================== ==================================================================
+Header                                                     Value
+========================================================== ==================================================================
+\*name                                                     The name of the appointment type
+\*length                                                   The length of the appointment type in minutes (Integer)
+description                                                A description of the appointment type
+pre_survey_id                                              The ID of a Handshake survey that the student will fill out as part of their appointment request
+post_survey_id                                             The ID of a Handshake survey that will be sent to the student following their appointment
+advisor_survey_id                                          The ID of a Handshake survey that the staff member may fill out once the appointment has started
+pre_message                                                A message that will be sent to the student prior to their appointment
+post_message                                               A message that will be sent to the student following their appointment
+drop_in_enabled                                            Whether or not you would like students to be able to select this appointment type when checking into Drop In appointments (Boolean)
+appointment_category_names                                 Names of appointment categories that this appointment type should be used for
+student_screen_attributes:department_gpa_required          Whether or not a minimum department GPA is required to schedule this appointment type (Boolean)
+student_screen_attributes:department_gpa                   The minimum department GPA that a student must have to schedule this appointment type (Decimal)
+student_screen_attributes:cumulative_gpa_required          Whether or not a minimum cumulative GPA is required to schedule this appointment type (Boolean)
+student_screen_attributes:cumulative_gpa                   The minimum cumulative GPA that a student must have to schedule this appointment type (Decimal)
+student_screen_attributes:major_names                      Names of majors that a student must be a part of to schedule this appointment type
+student_screen_attributes:major_group_names                Names of major groups that a student must be a part of to schedule this appointment type
+student_screen_attributes:school_year_names                Names of school years that a student must be a part of to schedule this appointment type
+student_screen_attributes:institution_label_names          Names of labels that a student must have to schedule this appointment type
+student_screen_attributes:college_names                    Names of colleges that a student must be a part of to schedule this appointment type
+========================================================== ==================================================================
+
+\* Required
+
+
 Events
 ------
 
 You can import historical events
 
-\*Params**
+**Params**
 
 ============================ ==================================================================
 Header                       Value
