@@ -3,7 +3,7 @@
 CSV Upload
 =================
 
-The easiest way to get data into Handshake is using the CSV upload. 
+The easiest way to get data into Handshake is using the CSV upload.
 Below you will find tips, requirements, and an explanation of the different files.
 
 File Requirements
@@ -12,7 +12,7 @@ File Requirements
 - All headers are case-sensitive; Must be downcased
 - All preset values are case-sensitive; Casing varies
 - File must be exported in .CSV format
-- File must be exported in Unicode (UTF-8) 
+- File must be exported in Unicode (UTF-8)
 Note: Not exporting to UTF-8 can cause bad encoding issues, which can lead to poorly translated records or failure to sync/import correctly. For information on how to export or convert your file to UTF-8, please see: http://help.meetedgar.com/article/107-help-how-do-i-export-my-spreadsheet-to-a-utf-8-encoded-csv
 
 
@@ -68,7 +68,7 @@ CSV Header Value                  Value Description
 ================================= ======================================================================================
 email_address                     Student’s email address. In general this should be a .edu address
 username                          Student’s username. This MUST be unique and should not be something that changes
-user_type                         Defaults to "Students", one of "Students", "Career Services", "Mentors". user_type is case sensitive so it must be "Students". 
+user_type                         Defaults to "Students", one of "Students", "Career Services", "Mentors". user_type is case sensitive so it must be "Students".
 auth_identifier                   This is the identifier that is required if you use Single Sign On.
 ================================= ======================================================================================
 
@@ -83,7 +83,7 @@ school_year_name                          The name of student’s school year. F
 primary_education:education_level_name    This shows up on their main education on their profile. For a list of acceptable values see the references section.  Can only have one.
 primary_education:cumulative_gpa          (Decimal) The student's cumulative GPA
 primary_education:department_gpa          (Decimal) Decimal of student's departmental GPA
-primary_education:major_names             (String Array) An array of major names for this student. Semicolon separated list. "major1";"major2";"major3" These must be majors configured in the school's majors list. 
+primary_education:major_names             (String Array) An array of major names for this student. Semicolon separated list. "major1";"major2";"major3" These must be majors configured in the school's majors list.
 primary_education:minor_names             (String Array) An array of minor names for this student. Semicolon separated list. "minor1";"minor2";"minor3" These must be minors configured in the school's minors list.
 primary_education:college_name            (String) The college the student belongs to. Must be one of the colleges configured in the school's college list. Can only have one college
 primary_education:start_date              (Date) The date the student started at the school in any standard date format. See references for date formats.
@@ -290,6 +290,8 @@ Header                              Value
 content                             The note contents
 privacy_preference                  If this is a personal note or shared with staff. [personal, institution]
 reminder_date                       If there should be a reminder associated with the note. See reference section for date formats.
+written_at                          The date the note was written at.
+created_by_email                    E-mail address of the author of the note. This *must* correspond to a user in Handshake.
 =================================== ==================================================================
 
 \* Required fields
