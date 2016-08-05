@@ -52,6 +52,8 @@ Once a mass email is finalized, it cannot be edited by you or other staff. From 
 Variables in Mass Email
 -----------------------
 
+.. warning::  Variables only work for users, not contacts, at this time.
+
 In order to personalize mass emails, you can use variables in your email body. The variables available should be wrapped with '%' tags when being used, for example '%recipient.first_name%', without the quotes.
 
 The variables available are 'recipient.username' 'recipient.name' 'recipient.first_name' 'recipient.calculated_first_name' 'recipient.last_name' 'recipient.email_address' 'recipient.institution_name'
