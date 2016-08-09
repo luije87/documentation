@@ -163,7 +163,7 @@ System labels are labels that can only be applied during a sync, and can't be ed
 Contacts
 --------
 
-Centacts in Handshake are used to keep track of employers, alumni, and other individuals who may not have a username and password for Handshake. The most common use for importing
+Contacts in Handshake are used to keep track of employers, alumni, and other individuals who may not have a username and password for Handshake. The most common use for importing
 contact is to bring over employer relationships. Contacts can be labeled, sorted, tried to a Handshake employer, and more.
 
 **Params**
