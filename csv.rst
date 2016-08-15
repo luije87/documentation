@@ -28,7 +28,7 @@ CSV Header Value                  Value Description
 email_address                   Staff member's email address. In general this should be a .edu address
 username                        Staff member's username. This MUST be unique and should not be something that changes
 user_type                       Should be "Career Services"
-auth_identifier                   This is the identifier that is required if you use Single Sign On.
+auth_identifier                   This is the identifier that is required if you use Single Sign On. **Must be unique; This cannot be applied to both a staff and student's account**
 ================================= ======================================================================================
 
 Recommended Fields
@@ -36,7 +36,9 @@ Recommended Fields
 ============================= ==========================================================================================
 Header                        Value
 ============================= ==========================================================================================
-preferred_name                The staff member's preferred name
+first_name 										The staff member's first name **Required for new records**
+last_name											The staff member's last name
+preferred_name                The staff member's preferred name **Do not include the last name as this will cause duplication on the user's profile**
 middle_name                   The staff member's middle name
 gender                        The gender of the user. One of "Male", "Female", "Other", or blank (Not specified)
 bio                           The staff member's bio
