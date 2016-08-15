@@ -7,12 +7,13 @@ The easiest way to get data into Handshake is using the CSV upload.
 Below you will find tips, requirements, and an explanation of the different files.
 
 File Requirements
------
+--------------------------
 
 - All headers are case-sensitive; Must be downcased
 - All preset values are case-sensitive; Casing varies
 - File must be exported in .CSV format
 - File must be exported in Unicode (UTF-8)
+
 Note: Not exporting to UTF-8 can cause bad encoding issues, which can lead to poorly translated records or failure to sync/import correctly. For information on how to export or convert your file to UTF-8, please see: http://help.meetedgar.com/article/107-help-how-do-i-export-my-spreadsheet-to-a-utf-8-encoded-csv
 
 
@@ -25,10 +26,10 @@ Required Fields
 ================================= ======================================================================================
 CSV Header Value                  Value Description
 ================================= ======================================================================================
-email_address                   Staff member's email address. In general this should be a .edu address
-username                        Staff member's username. This MUST be unique and should not be something that changes
-user_type                       Should be "Career Services"
-auth_identifier                   This is the identifier that is required if you use Single Sign On. **Must be unique; This cannot be applied to both a staff and student's account**
+email_address                   	Staff member's email address. In general this should be a .edu address
+username                        	Staff member's username. This MUST be unique and should not be something that changes
+user_type                       	Should be "Career Services"
+auth_identifier                 	This is the identifier that is required if you use Single Sign On. **Must be unique. This cannot be applied to both a staff and student's account**
 ================================= ======================================================================================
 
 Recommended Fields
@@ -51,7 +52,7 @@ For an example file of the required fields `[Click Here] <https://docs.google.co
 
 
 Students
------
+-------------
 
 For an example file of the suggested fields `[Click Here] <https://docs.google.com/spreadsheets/d/12jCXVRVE6hyPKVT69uuQ1z7rqSJXzjXmkr0Lj2UPaUw/edit#gid=0>`_
 
