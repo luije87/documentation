@@ -79,7 +79,7 @@ Recommended Fields
 ========================================= ==========================================================================================
 Header                                    Value
 ========================================= ==========================================================================================
-first_name                                Student’s first name
+first_name                                Student’s first name **Required for new records**
 last_name                                 Student’s last name
 school_year_name                          The name of student’s school year. For a list of acceptable values see the references section. Can only have one.
 primary_education:education_level_name    This shows up on their main education on their profile. For a list of acceptable values see the references section.  Can only have one.
