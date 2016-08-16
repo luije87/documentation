@@ -57,4 +57,3 @@ In order to personalize mass emails, you can use variables in your email body. T
 The variables available are 'recipient.username' 'recipient.name' 'recipient.first_name' 'recipient.calculated_first_name' 'recipient.last_name' 'recipient.email_address' 'recipient.institution_name'
 
 .. note::  The 'caluclated_first_name' variable uses the preferred first name if available, and otherwise uses their first name.
-.. warning::  Variables only work for users, not contacts, at this time.
