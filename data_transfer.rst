@@ -7,6 +7,14 @@ Why do you use Amazon S3?
 -------------------------
 AWS S3 is an industry standard for data storage and transfer.  In order to provide the best security of your sensitive data, we use a rigorous access control policy and encryption in transit and at rest.  Data can only be uploaded not read from AWS s3 and will only sit there for a short time before it is ingested into Handshake by an automated process.  
 
+What setup do I have do on my end?
+----------------------------------
+You do not have to setup an s3 bucket or interact with amazon in any way other then using one of the many tools avaiable to uplaod to Handshake's s3 bucket and folder for your team.  We will provide you with the bucket, access id, secret key, and required prefix for uploding your file.  
+
+What if I cant install python to use the aws cli?
+-------------------------------------------------
+The AWS cli is just interacting with the AWS s3 rest api, if you like, you can use any tool that can talk to a RESTful service such as curl.  This isnt recommended because it opens up more opportunities for errors.  See here for an example: http://tmont.com/blargh/2014/1/uploading-to-s3-in-bash 
+
 
 What sort of encryption is used with the data?
 ----------------------------------------------
