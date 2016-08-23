@@ -288,7 +288,7 @@ The items can be a contact, user, job, appointment, or event.
 Header                              Value
 =================================== ==================================================================
 \*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
-\*\*identifiable_id                 The id of the identifiable.
+\*\*identifiable_id                 The Handshake ID of the identifiable (found in URL) **Do not include unless you are linking an appointment or event created in Handshake**
 \*\*identifier                      If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 \*user_type                         If the identifiable_type is a User, the user_type must be specified.
 content                             The note contents
@@ -315,7 +315,7 @@ This will simply apply labels. If a label already exists it will not apply a dup
 Header                              Value
 =================================== ==================================================================
 \*identifiable_type                 One of [User, Contact, Job, Appointment, Event]. Case sensitive.
-\*\*identifiable_id                 The id of the identifiable.
+\*\*identifiable_id                 The Handshake ID of the identifiable (found in URL) **Do not include unless you are linking an appointment or event created in Handshake**
 \*\*identifier                      If the identifiable_type is a User or contact, this is email. Otherwise it is the import_identifier
 \*user_type                         If the identifiable_type is a User, the user_type must be specified.
 label_type                          Either 'normal' or 'public'. Defaults to 'normal'.
