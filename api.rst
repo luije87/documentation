@@ -13,7 +13,7 @@ The API root URL is : `https://app.joinhandshake.com/api/v1/ <https://app.joinha
 Tokens
 ----------
 
-API Calls must use an API token to authenticate with the service. API Tokens can be managed in the school administration page. To create an API token, simply specify the purpose (description) of the token and click create. API tokens can be removed at any time.
+API Calls must use an API token to authenticate with the service. API Tokens can be managed in the school administration page. To create an API token, please contact your Handshake account manager. 
 
 Please safeguard the API token like you would for password. Never include or check-in the API token into any publicly hosted repositories (such as GitHub), nor post it to any publicly accessible pages.
 
