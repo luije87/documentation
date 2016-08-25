@@ -9,7 +9,7 @@ AWS S3 is an industry standard for data storage and transfer.  In order to provi
 
 What setup do I have do on my end?
 ----------------------------------
-You do not have to setup an s3 bucket or interact with amazon in any way other then using one of the many tools avaiable to uplaod to Handshake's s3 bucket and folder for your team.  We will provide you with the bucket, access id, secret key, and required prefix for uploding your file.  
+You do not have to setup an s3 bucket or interact with amazon in any way other then using one of the many tools avaiable to upload to Handshake's s3 bucket and folder for your team.  We will provide you with the bucket, access id, secret key, and required prefix for uploding your file.  
 
 What if I cant install python to use the aws cli?
 -------------------------------------------------
